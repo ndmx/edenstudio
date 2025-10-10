@@ -24,7 +24,7 @@ let siteContent = {
 };
 
 // API endpoint for content updates
-async function handleContentRequest(request) {
+async function handleContentRequest(request, env) {
     const url = new URL(request.url);
 
     if (request.method === 'GET') {
@@ -37,7 +37,16 @@ async function handleContentRequest(request) {
     }
 
     if (request.method === 'POST') {
-        // Update content (add authentication in production!)
+        // Check API key authentication
+        const apiKey = request.headers.get('X-API-Key');
+        if (apiKey !== env.API_KEY) {
+            return new Response(JSON.stringify({ error: 'Unauthorized - Invalid API Key' }), {
+                status: 401,
+                headers: { 'Content-Type': 'application/json' }
+            });
+        }
+
+        // Update content with authentication
         if (url.pathname === '/api/content/update') {
             try {
                 const updates = await request.json();
@@ -59,7 +68,7 @@ async function handleContentRequest(request) {
 
 // Export for Cloudflare Workers
 export default {
-    async fetch(request) {
-        return handleContentRequest(request);
+    async fetch(request, env) {
+        return handleContentRequest(request, env);
     }
 };
