@@ -16,22 +16,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Mobile menu toggle
+// Mobile menu toggle (only if elements exist)
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
-navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    navToggle.classList.toggle('active');
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        navToggle.classList.remove('active');
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
     });
-});
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+        });
+    });
+}
 
 // Navbar background change on scroll
 const navbar = document.querySelector('.navbar');
@@ -43,27 +45,29 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Active navigation link highlighting
+// Active navigation link highlighting (only if sections exist)
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
 
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop) {
-            current = section.getAttribute('id');
-        }
-    });
+if (sections.length > 0 && navLinks.length > 0) {
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
 
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').substring(1) === current) {
-            link.classList.add('active');
-        }
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
     });
-});
+}
 
 // Improved Intersection Observer for staggered animations
 const observerOptions = {
@@ -99,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('loaded');
 });
 
-// Improved parallax effect for hero section with throttling
+// Improved parallax effect for hero section with throttling (only if hero exists)
 let ticking = false;
 window.addEventListener('scroll', () => {
     if (!ticking) {
@@ -117,52 +121,56 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add smooth reveal animations for hero elements
+// Add smooth reveal animations for hero elements (only if they exist)
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.body.classList.add('loaded');
     }, 100);
 
-    // Add subtle entrance animations to hero elements
+    // Add subtle entrance animations to hero elements (only on index page)
     const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .hero-buttons, .cycling-card');
-    heroElements.forEach((element, index) => {
-        setTimeout(() => {
-            element.classList.add('animate-in');
-        }, index * 200);
-    });
+    if (heroElements.length > 0) {
+        heroElements.forEach((element, index) => {
+            setTimeout(() => {
+                element.classList.add('animate-in');
+            }, index * 200);
+        });
+    }
 
-    // Cycling card functionality
+    // Cycling card functionality (only on index page)
     const cyclingCard = document.querySelector('.cycling-card');
     if (cyclingCard) {
         const cardContents = cyclingCard.querySelectorAll('.card-content');
-        let currentIndex = 0;
-        let cycleInterval;
+        if (cardContents.length > 0) {
+            let currentIndex = 0;
+            let cycleInterval;
 
-        function cycleCard() {
-            // Remove active class from current
-            cardContents[currentIndex].classList.remove('active');
+            function cycleCard() {
+                // Remove active class from current
+                cardContents[currentIndex].classList.remove('active');
 
-            // Move to next card
-            currentIndex = (currentIndex + 1) % cardContents.length;
+                // Move to next card
+                currentIndex = (currentIndex + 1) % cardContents.length;
 
-            // Add active class to new current
-            cardContents[currentIndex].classList.add('active');
+                // Add active class to new current
+                cardContents[currentIndex].classList.add('active');
+            }
+
+            function startCycling() {
+                cycleInterval = setInterval(cycleCard, 2000);
+            }
+
+            function stopCycling() {
+                clearInterval(cycleInterval);
+            }
+
+            // Start cycling
+            startCycling();
+
+            // Pause cycling on hover
+            cyclingCard.addEventListener('mouseenter', stopCycling);
+            cyclingCard.addEventListener('mouseleave', startCycling);
         }
-
-        function startCycling() {
-            cycleInterval = setInterval(cycleCard, 2000);
-        }
-
-        function stopCycling() {
-            clearInterval(cycleInterval);
-        }
-
-        // Start cycling
-        startCycling();
-
-        // Pause cycling on hover
-        cyclingCard.addEventListener('mouseenter', stopCycling);
-        cyclingCard.addEventListener('mouseleave', startCycling);
     }
 });
 
