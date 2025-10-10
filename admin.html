@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdenTV Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .admin-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        .admin-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .btn-update {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .btn-update:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        .status {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            display: none;
+        }
+        .status.success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #34d399;
+        }
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #f87171;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>EdenTV Content Management</h1>
+        <div class="admin-form">
+            <div class="form-group">
+                <label for="apiKey">API Key:</label>
+                <input type="password" id="apiKey" placeholder="Enter your API key">
+            </div>
+
+            <h3>Update App Information</h3>
+            <div class="form-group">
+                <label for="appName">App Name:</label>
+                <input type="text" id="appName" value="ParkMemoryHub">
+            </div>
+            <div class="form-group">
+                <label for="appDesc">App Description:</label>
+                <textarea id="appDesc">Advanced memory enhancement and cognitive training platform for iOS18.</textarea>
+            </div>
+
+            <h3>Update Contact Information</h3>
+            <div class="form-group">
+                <label for="contactEmail">Contact Email:</label>
+                <input type="email" id="contactEmail" value="contact@edentv.us">
+            </div>
+            <div class="form-group">
+                <label for="supportEmail">Support Email:</label>
+                <input type="email" id="supportEmail" value="support@edentv.us">
+            </div>
+
+            <h3>Update Stats</h3>
+            <div class="form-group">
+                <label for="appsCount">Apps Count:</label>
+                <input type="text" id="appsCount" value="1+">
+            </div>
+            <div class="form-group">
+                <label for="iosVersion">iOS Version:</label>
+                <input type="text" id="iosVersion" value="iOS18">
+            </div>
+
+            <button class="btn-update" onclick="updateContent()">Update Content</button>
+
+            <div id="status" class="status"></div>
+        </div>
+    </div>
+
+    <script src="dynamic-content.js"></script>
+    <script>
+        async function updateContent() {
+            const apiKey = document.getElementById('apiKey').value;
+            const statusDiv = document.getElementById('status');
+
+            if (!apiKey) {
+                showStatus('Please enter your API key', 'error');
+                return;
+            }
+
+            const updates = {
+                apps: [{
+                    id: 'parkmemoryhub',
+                    name: document.getElementById('appName').value,
+                    description: document.getElementById('appDesc').value,
+                    icon: '🧠'
+                }],
+                contact: {
+                    email: document.getElementById('contactEmail').value,
+                    support: document.getElementById('supportEmail').value
+                },
+                stats: {
+                    apps: document.getElementById('appsCount').value,
+                    creativity: '∞',
+                    ios_version: document.getElementById('iosVersion').value
+                }
+            };
+
+            try {
+                const result = await window.edentvContent.updateContent(updates, apiKey);
+                if (result.success) {
+                    showStatus('Content updated successfully!', 'success');
+                } else {
+                    showStatus('Update failed: ' + result.error, 'error');
+                }
+            } catch (error) {
+                showStatus('Update failed: ' + error.message, 'error');
+            }
+        }
+
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.textContent = message;
+            statusDiv.className = `status ${type}`;
+            statusDiv.style.display = 'block';
+
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
