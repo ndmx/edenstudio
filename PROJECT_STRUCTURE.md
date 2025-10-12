@@ -1,221 +1,161 @@
-# EdenTV Website Project Structure
+# EdenTV Website - Project Structure
 
-## 📁 Directory Organization
+## Directory Organization
 
-### Core Website Pages
 ```
-├── index.html              # Homepage with hero and overview
-├── apps.html               # Mobile applications showcase
-├── podcasts.html           # Podcast series and episodes
-├── multimedia.html         # Video and creative projects
-├── developer-docs.html     # Main developer documentation hub
-└── about.html              # Company information and story
-```
+edentv/
+├── index.html                 # Homepage (root level for easy access)
+├── css/
+│   └── styles.css            # All website styling
+├── js/
+│   └── script.js             # All website JavaScript
+├── pages/
+│   ├── apps.html             # Apps showcase page
+│   ├── podcasts.html         # Podcasts page (coming soon)
+│   ├── multimedia.html       # Multimedia page (coming soon)
+│   ├── developer-docs.html   # Developer documentation hub
+│   └── about.html            # About EdenTV page
+├── legal/
+│   ├── privacy-policy.html   # Platform privacy policy
+│   ├── terms-of-service.html # Platform terms of service
+│   ├── app-store-compliance.html # App Store compliance
+│   └── support.html          # Support & help documentation
+├── docs/
+│   ├── parkmemory-privacy.html    # ParkMemoryHub privacy policy
+│   ├── parkmemory-terms.html      # ParkMemoryHub terms
+│   ├── parkmemory-compliance.html # ParkMemoryHub App Store compliance
+│   └── parkmemory-support.html    # ParkMemoryHub support docs
+├── README.md                 # Project documentation
+└── PROJECT_STRUCTURE.md      # This file
 
-### Platform Legal Documentation
-```
-├── privacy-policy.html          # Platform-wide privacy policy
-├── terms-of-service.html        # Platform terms of service
-├── app-store-compliance.html    # App Store compliance documentation
-└── support.html                 # General support and help center
-```
-
-### App-Specific Documentation
-```
-docs/
-├── parkmemory-privacy.html      # ParkMemoryHub privacy policy
-├── parkmemory-terms.html        # ParkMemoryHub terms of service
-├── parkmemory-compliance.html   # ParkMemoryHub App Store compliance
-└── parkmemory-support.html      # ParkMemoryHub support documentation
-```
-
-### Core Assets
-```
-├── styles.css              # Main stylesheet with all page styles
-├── script.js               # Interactive functionality and animations
-└── README.md               # Project documentation
 ```
 
-## 🗑️ Optional/Removable Files
+## File Organization Logic
 
-The following files are part of the **Dynamic Content System** and are **optional**:
-- `admin.html` - Admin panel for content management
-- `content-api.js` - Cloudflare Worker API for dynamic content
-- `dynamic-content.js` - Client-side dynamic content loader
-- `update-api.js` - Programmatic content update script
+### Root Level
+- `index.html` - Homepage stays at root for easy access and SEO
 
-**When to keep them:**
-- If you're using Cloudflare Workers for dynamic content updates
-- If you need remote content management without redeploying
+### `/css/` - Stylesheets
+- All CSS files
+- Currently single `styles.css` with all styling
 
-**When to remove them:**
-- If you prefer static content (recommended for simplicity)
-- If you're only using Cloudflare Pages without Workers
+### `/js/` - JavaScript
+- All JavaScript files
+- Currently single `script.js` with all functionality
 
-## 🏗️ Architecture
+### `/pages/` - Main Content Pages
+- All main website pages (apps, podcasts, multimedia, docs, about)
+- Pages that showcase platform content
 
-### Page Hierarchy
-```
-Homepage (index.html)
-├── Apps (apps.html)
-│   └── ParkMemoryHub Details
-│
-├── Podcasts (podcasts.html)
-│   └── Episode Listings
-│
-├── Multimedia (multimedia.html)
-│   └── Project Gallery
-│
-├── Developer Docs (developer-docs.html)
-│   ├── Platform Documentation
-│   └── App-Specific Docs (docs/*)
-│       ├── Privacy Policy
-│       ├── Terms of Service
-│       ├── App Store Compliance
-│       └── Support Documentation
-│
-└── About (about.html)
-    ├── Mission & Values
-    ├── Company Story
-    └── Contact Information
-```
+### `/legal/` - Legal & Compliance
+- Privacy policies
+- Terms of service
+- App Store compliance documentation
+- Support resources
 
-### Footer Links (Consistent Across All Pages)
-```
-Platform:
-- Apps → apps.html
-- Podcasts → podcasts.html
-- Multimedia → multimedia.html
-- About → about.html
+### `/docs/` - App-Specific Documentation
+- Individual app documentation
+- App-specific legal documents
+- Currently contains ParkMemoryHub docs
 
-Legal:
-- Privacy Policy → privacy-policy.html
-- Terms of Service → terms-of-service.html
-- App Store Compliance → app-store-compliance.html
+## Link Structure
 
-Connect:
-- Support → mailto:support@edentv.us
-- Help Center → support.html
-```
+### From Root (`index.html`)
+- Pages: `pages/[page].html`
+- Legal: `legal/[document].html`
+- CSS: `css/styles.css`
+- JS: `js/script.js`
 
-## 🎨 Styling Structure
+### From Pages (`pages/*.html`)
+- Home: `../index.html`
+- Other Pages: `[page].html` (same directory)
+- Legal: `../legal/[document].html`
+- App Docs: `../docs/[doc].html`
+- CSS: `../css/styles.css`
+- JS: `../js/script.js`
 
-### CSS Organization
-```
-styles.css
-├── Reset & Base Styles
-├── CSS Variables (colors, spacing, animations)
-├── Typography
-├── Layout Components
-│   ├── Navbar
-│   ├── Hero Section
-│   ├── Footer
-│   └── Containers
-├── Interactive Components
-│   ├── Buttons
-│   ├── Cards
-│   ├── Animations
-│   └── Cycling Cards
-├── Page-Specific Styles
-│   ├── Apps Page
-│   ├── Podcasts Page
-│   ├── Multimedia Page
-│   ├── Developer Docs
-│   └── About Page
-└── Responsive Design (@media queries)
-```
+### From Legal (`legal/*.html`)
+- Home: `../index.html`
+- Pages: `../pages/[page].html`
+- Other Legal: `[document].html` (same directory)
+- CSS: `../css/styles.css`
+- JS: `../js/script.js`
 
-## 🔧 JavaScript Functionality
+### From Docs (`docs/*.html`)
+- Home: `../index.html`
+- Pages: `../pages/[page].html`
+- Legal: `../legal/[document].html`
+- CSS: `../css/styles.css`
+- JS: `../js/script.js`
 
-### script.js Features
-```
-├── Smooth Scrolling (anchor links & TOC)
-├── Mobile Menu Toggle
-├── Navbar Scroll Effects
-├── Active Navigation Highlighting
-├── Intersection Observer (animations)
-├── Cycling Card Animation
-├── Parallax Effects
-├── Back to Top Button
-└── TOC Section Highlighting
-```
+## Content Status
 
-## 📱 Responsive Breakpoints
+### Live Content
+- **Homepage**: Fully functional with dynamic cycling cards
+- **Apps Page**: Features ParkMemoryHub with full details
+- **Developer Docs**: Hub for all documentation with links to app-specific docs
+- **About Page**: Company mission and information
+- **Legal Documents**: Complete platform and app-specific legal documentation
 
-- **Desktop:** 1200px+
-- **Tablet:** 768px - 1199px
-- **Mobile:** < 768px
+### Coming Soon
+- **Podcasts**: Page structure ready, content in development
+- **Multimedia**: Page structure ready, content in development
 
-## 🚀 Deployment
+## Deployment
 
-### Cloudflare Pages (Static Site)
-- Automatic deployment from GitHub
-- Custom domain: `edentv.us`
-- All HTML, CSS, JS files served directly
+This is a static website designed for Cloudflare Pages deployment:
 
-### Optional: Cloudflare Workers (Dynamic Content)
-- Only needed if using `content-api.js`
-- Route: `edentv.us/api/*`
-- Environment variable: `API_KEY`
+1. Root directory contains `index.html` for main entry point
+2. All assets properly organized in subdirectories
+3. Relative paths used throughout for portability
+4. No build process required - deploy as-is
 
-## 📝 Content Management
+### Cloudflare Pages Setup
+1. Connect GitHub repository
+2. Set build directory to root (`.`)
+3. No build command needed
+4. Deploy automatically on push to `main`
 
-### Static Content (Recommended)
-1. Edit HTML files directly
-2. Commit changes to Git
-3. Push to GitHub
-4. Cloudflare Pages auto-deploys
+## Maintenance Notes
 
-### Dynamic Content (Optional)
-1. Use `admin.html` for content updates
-2. API Key authentication required
-3. Updates via `content-api.js` Worker
-4. No redeployment needed
+### Adding New Pages
+1. Create HTML file in appropriate directory (`pages/`, `legal/`, or `docs/`)
+2. Update navigation in all existing pages
+3. Follow the link structure patterns above
+4. Update this documentation
 
-## ✅ Best Practices
-
-### File Naming
-- Use kebab-case for all files: `developer-docs.html`
-- Keep names descriptive and clear
-- App-specific docs prefixed with app name: `parkmemory-*`
-
-### Code Organization
-- One feature per section/component
-- Consistent indentation (4 spaces)
-- Comments for complex functionality
-- Semantic HTML5 elements
-
-### Content Guidelines
-- Short paragraphs (2-3 sentences max)
-- Bullet points for features/lists
-- Headings in logical hierarchy (h1 → h2 → h3)
-- Clear calls-to-action
-
-## 🔍 Quick Reference
-
-### Adding a New App
-1. Add app details to `apps.html`
-2. Create app showcase section
-3. Create docs folder: `docs/newapp-*`
-4. Link from `developer-docs.html`
-5. Update navigation if needed
-
-### Adding Legal Documentation
-1. Create HTML file: `new-policy.html`
-2. Use existing legal page as template
-3. Add navigation and footer
-4. Link from footer across all pages
+### Adding New Apps
+1. Create app documentation in `docs/` folder
+2. Add app section to `pages/apps.html`
+3. Link to new docs from `pages/developer-docs.html`
+4. Create app-specific legal documents if needed
 
 ### Updating Styles
-1. Edit `styles.css`
-2. Use existing CSS variables
-3. Follow mobile-first approach
-4. Test on multiple screen sizes
+- All styles in `css/styles.css`
+- Uses CSS custom properties for consistency
+- Responsive design included
 
-## 📞 Support
+### Updating Functionality
+- All JavaScript in `js/script.js`
+- Includes null checks for page-specific elements
+- Mobile menu, animations, and interactive features
 
-For questions about the project structure or making changes:
-- Email: support@edentv.us
-- Documentation: This file
-- Reference: Any existing page as template
+## Best Practices
 
+1. **Always use relative paths** - Makes deployment flexible
+2. **Keep content honest** - Only showcase real, available features
+3. **Maintain structure** - Files organized by purpose
+4. **Update navigation consistently** - All pages should have same nav structure
+5. **Test cross-page links** - Verify links work after moving files
+
+## Quick Reference
+
+- Homepage: `/index.html`
+- Apps: `/pages/apps.html`
+- Podcasts: `/pages/podcasts.html`
+- Multimedia: `/pages/multimedia.html`
+- Developer Docs: `/pages/developer-docs.html`
+- About: `/pages/about.html`
+- Privacy Policy (Platform): `/legal/privacy-policy.html`
+- Privacy Policy (ParkMemoryHub): `/docs/parkmemory-privacy.html`
+- Support: `/legal/support.html`
