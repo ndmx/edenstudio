@@ -1,0 +1,9 @@
+# Dynamic Content System (optional - only needed if using Cloudflare Workers)
+admin.html
+content-api.js
+dynamic-content.js
+update-api.js
+
+# Plan files
+*.plan.md
+

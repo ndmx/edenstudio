@@ -1406,17 +1406,26 @@ section {
 }
 
 .feature-list li {
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
     padding-left: 1.5rem;
     position: relative;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
 }
 
 .feature-list li::before {
     content: "✓";
     position: absolute;
     left: 0;
+    top: 0.75rem;
     color: var(--primary-color);
     font-weight: bold;
+}
+
+.feature-list li strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
 }
 
 /* Stats Grid */
