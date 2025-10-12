@@ -1513,6 +1513,105 @@ section {
     margin-top: 1rem;
 }
 
+/* Documentation Links Styling */
+.doc-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.doc-category h4 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.doc-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.doc-link {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.doc-link:hover {
+    background: white;
+    border-color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.doc-link .doc-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.doc-link .doc-desc {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.doc-link:hover .doc-title {
+    color: var(--primary-dark);
+}
+
+/* App Documentation Section */
+.app-doc-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.app-doc-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--bg-secondary);
+}
+
+.app-doc-header .app-icon {
+    font-size: 3rem;
+    background: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.app-doc-header .app-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-primary);
+}
+
+.app-doc-header .app-info p {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-secondary);
+}
+
+.version-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
 /* Responsive Design for New Pages */
 @media (max-width: 768px) {
     .page-hero h1 {
@@ -1540,5 +1639,20 @@ section {
     
     .app-stats, .project-stats, .podcast-stats {
         grid-template-columns: 1fr;
+    }
+    
+    .doc-categories {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .app-doc-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .app-doc-section {
+        padding: 1.5rem;
     }
 }
