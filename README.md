@@ -13,7 +13,7 @@ A modern, responsive website for EdenTV - showcasing apps, podcasts, multimedia 
 
 ## 📁 Project Structure
 
-```
+```text
 edentv.us/
 ├── index.html              # Main landing page
 ├── styles.css              # Main stylesheet
