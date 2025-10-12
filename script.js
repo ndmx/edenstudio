@@ -222,3 +222,98 @@ class TypeWriter {
 // if (heroTitle) {
 //     new TypeWriter(heroTitle, ['Welcome to EdenTV', 'Creator Studio', 'Innovation Hub'], 2000);
 // }
+
+// Back to Top Button Functionality
+const backToTopButton = document.getElementById('backToTop');
+if (backToTopButton) {
+    // Show/hide back to top button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+
+    // Smooth scroll to top when clicked
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Table of Contents Smooth Scrolling
+document.querySelectorAll('.toc-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            const headerOffset = 100;
+            const elementPosition = targetElement.offsetTop;
+            const offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Highlight current section in TOC
+const tocLinks = document.querySelectorAll('.toc-link');
+const docSections = document.querySelectorAll('.doc-section');
+
+if (tocLinks.length > 0 && docSections.length > 0) {
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        docSections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        tocLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+}
+
+// Enhanced mobile menu for new pages
+document.addEventListener('DOMContentLoaded', function() {
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (navToggle && navMenu && navMenu.classList.contains('active')) {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        }
+    });
+
+    // Handle escape key to close mobile menu
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (navToggle && navMenu && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        }
+    });
+});
