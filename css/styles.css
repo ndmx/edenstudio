@@ -1720,3 +1720,116 @@ section {
         padding: 1.5rem;
     }
 }
+
+/* Tech Badges and Status Indicators */
+.tech-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.status {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.status.available {
+    background: #10b981;
+    color: white;
+}
+
+.status.in-dev {
+    background: #f59e0b;
+    color: white;
+}
+
+.edentv-badge {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.feature-list li {
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.feature-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* App Card Improvements */
+.app-card h3 {
+    color: var(--text-primary);
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.app-card > p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.app-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Section Alt Styling */
+.section-alt {
+    background: var(--bg-secondary);
+}
+
+/* Apps Grid Responsive Updates */
+@media (max-width: 768px) {
+    .tech-badge, .status {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+    
+    .edentv-badge {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+    
+    .feature-list li {
+        font-size: 0.9rem;
+    }
+}

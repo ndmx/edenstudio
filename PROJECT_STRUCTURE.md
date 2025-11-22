@@ -91,11 +91,18 @@ edentv/
 ## Content Status
 
 ### Live Content
-- **Homepage**: Fully functional with dynamic cycling cards
-- **Apps Page**: Features ParkMemoryHub with full details
+- **Homepage**: Fully functional with dynamic cycling cards and portfolio overview
+- **Apps Page**: Comprehensive showcase of 16 projects across 5 platforms (iOS/macOS, Android, Web, Python, Study Resources)
 - **Developer Docs**: Hub for all documentation with links to app-specific docs
-- **About Page**: Company mission and information
+- **About Page**: Studio mission and portfolio statistics
 - **Legal Documents**: Complete platform and app-specific legal documentation
+
+### Portfolio Categories
+1. **iOS & macOS Apps** (4): ParkMemoryHub, Jx Scheduler, cosmix, pulsetrackr
+2. **Android Apps** (2): MoodQuest, Frisbie
+3. **Web Applications** (6): PulseTrack, snapshot, NebulaChat, LxRose, Guess Correctly, Virtual Wig Studio
+4. **Python & Data Tools** (3): Blockchain Transfer Sim, Philly Real Estate Tracker, Upscale AI Bootcamp
+5. **Study Resources** (1): AWS SAA-C03 Exam Prep
 
 ### Coming Soon
 - **Podcasts**: Page structure ready, content in development
@@ -124,11 +131,13 @@ This is a static website designed for Cloudflare Pages deployment:
 3. Follow the link structure patterns above
 4. Update this documentation
 
-### Adding New Apps
-1. Create app documentation in `docs/` folder
-2. Add app section to `pages/apps.html`
-3. Link to new docs from `pages/developer-docs.html`
-4. Create app-specific legal documents if needed
+### Adding New Projects
+1. Add project card to appropriate platform section in `pages/apps.html`
+2. Include project icon, name, description, features, and tech badges
+3. Add "Designed by edentv" badge
+4. Update portfolio statistics in `index.html` and documentation
+5. Create project-specific documentation in `docs/` folder if needed
+6. Add subtle edentv branding footer to project's README
 
 ### Updating Styles
 - All styles in `css/styles.css`

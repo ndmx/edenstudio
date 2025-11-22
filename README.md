@@ -1,6 +1,6 @@
 # EdenTV Creator Studio Website
 
-A modern, responsive website showcasing EdenTV's mobile applications, with comprehensive developer documentation and legal compliance materials.
+A modern, responsive website showcasing EdenTV's complete portfolio of software and media projects across all platforms, with comprehensive developer documentation and legal compliance materials.
 
 ## 🌟 Features
 
@@ -90,20 +90,43 @@ Edit CSS custom properties in `css/styles.css`:
 - **Legal docs**: Modify files in `legal/` folder
 - **App-specific docs**: Update files in `docs/` folder
 
-## 📱 Current Apps
+## 📱 Portfolio Overview
 
-### ParkMemoryHub
-- **Status**: Available
-- **Platform**: iOS 18+
-- **Description**: Family memory sharing and preservation platform
-- **Documentation**: Full legal and compliance documentation in `docs/` folder
+### iOS & macOS Apps (4 projects)
+- **ParkMemoryHub**: Family memory sharing platform (iOS 18+)
+- **Jx Scheduler**: Logistics scheduling with CloudKit (iOS 18+)
+- **cosmix**: Real-time audio visualizer (macOS 14+)
+- **pulsetrackr**: Health tracking application (iOS)
+
+### Android Apps (2 projects)
+- **MoodQuest**: Mood-based adventure planner (Android 8+)
+- **Frisbie**: Android application with Material Design
+
+### Web Applications (6 projects)
+- **PulseTrack**: Nigerian political sentiment tracker (React + Firebase)
+- **snapshot**: Photo sharing platform (React + Firebase)
+- **NebulaChat**: WhatsApp clone with MERN stack (React 19)
+- **LxRose**: Healthcare services platform (React + Express + Firebase)
+- **Guess Correctly**: Halloween memory game with multiplayer (JavaScript + Firebase)
+- **Virtual Wig Studio**: AI-powered wig try-on (Gemini AI)
+
+### Python & Data Tools (3 projects)
+- **Blockchain Transfer Sim**: Educational blockchain with Streamlit
+- **Philly Real Estate Tracker**: ETL pipeline for property analysis
+- **Upscale AI Bootcamp**: Learning management platform (Flask)
+
+### Study Resources (1 project)
+- **AWS SAA-C03 Exam Prep**: 650+ MCQs for AWS certification
+
+**Total**: 16 projects across 5 platforms
 
 ## 🔗 Key Pages
 
-- **Homepage**: Modern landing page with cycling feature cards
-- **Apps**: Showcase of mobile applications
+- **Homepage**: Modern landing page with cycling feature cards and portfolio overview
+- **Apps**: Comprehensive showcase of 16 projects across all platforms
 - **Developer Docs**: Complete documentation hub
 - **Legal**: Privacy, terms, compliance, and support
+- **About**: Studio mission and portfolio statistics
 
 ## 🛠️ Technical Details
 
@@ -138,15 +161,18 @@ Each app has its own set of legal documents:
 - App Store Compliance
 - Support Documentation
 
-## 🎯 Future Plans
+## 🎯 About EdenTV
 
-### In Development
-- **Podcasts**: Audio content and conversations
-- **Multimedia**: Visual content and tutorials
-- **Additional Apps**: More innovative applications
+EdenTV is a design studio responsible for creating software and media across multiple platforms. Our portfolio spans iOS and Android mobile applications, full-stack web platforms, data processing tools, and educational resources. Every project showcased on this website is designed, developed, and maintained by the EdenTV team.
 
-### Stay Updated
-Contact us at `contact@edentv.us` for updates on new features and releases.
+### Platform Expertise
+- **Mobile Development**: iOS (SwiftUI), Android (Kotlin), macOS
+- **Web Development**: React, Firebase, Node.js, Flask
+- **Data & Analytics**: Python, Pandas, ETL pipelines
+- **Technologies**: Cloud services (Firebase, CloudKit), AI integration (Gemini), Real-time systems
+
+### Stay Connected
+Contact us at `contact@edentv.us` for project inquiries and collaborations.
 
 ## 💼 Contact & Support
 
