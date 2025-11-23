@@ -215,6 +215,7 @@ p { margin-bottom: 1rem; }
     display: flex;
     align-items: center;
     padding: 6rem 0;
+    padding-top: calc(6rem + 80px);
 }
 
 .hero-shell {
@@ -259,7 +260,8 @@ p { margin-bottom: 1rem; }
 }
 
 .sub-hero {
-    padding: 8rem 0 5rem;
+    padding: 6rem 0 5rem;
+    padding-top: calc(6rem + 80px);
     background: linear-gradient(135deg, #0f172a, #1f2434);
     color: white;
     text-align: center;
@@ -1749,8 +1751,8 @@ section {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
 }
 
 .project-grid.two-col {
