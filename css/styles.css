@@ -1873,11 +1873,17 @@ section {
     padding: 1.75rem 0;
     gap: 2rem;
     border-bottom: 1px solid var(--border-color);
+    align-items: flex-start;
 }
 
 .doc-list.compact .doc-list-item {
     padding: 1.5rem 1.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
+    background: white;
+}
+
+.doc-list-item:nth-child(even):not(.compact .doc-list-item) {
+    background: rgba(99, 102, 241, 0.03);
 }
 
 .doc-list-item:last-child {
@@ -1892,6 +1898,15 @@ section {
 .doc-list-item p {
     margin: 0;
     color: var(--text-secondary);
+}
+
+.doc-type {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
 }
 
 .doc-list-item a {
