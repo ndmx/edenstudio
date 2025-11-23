@@ -34,204 +34,140 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h2 class="hero-title">Welcome to EdenTV</h2>
-                <p class="hero-subtitle">A design studio creating innovative software and media across all platforms. From iOS and Android apps to web platforms and data tools - we bring ideas to life.</p>
-                <div class="hero-buttons">
-                <a href="pages/apps.html" class="btn btn-primary">Explore Apps</a>
-                <a href="pages/developer-docs.html" class="btn btn-secondary">Developer Portal</a>
-                </div>
+    <section class="hero hero-full">
+        <div class="hero-shell">
+            <p class="eyebrow">EdenTV Creator Studio</p>
+            <h1>Software and media experiences designed for every platform.</h1>
+            <p class="hero-lead">From flagship iOS launches to cross-platform web systems and compliance-ready documentation, we design, build, and ship products that feel premium everywhere.</p>
+            <div class="hero-cta">
+                <a href="pages/apps.html" class="btn btn-primary">Explore the work</a>
+                <a href="pages/developer-docs.html" class="btn btn-link">Developer resources</a>
             </div>
-            <div class="hero-visual">
-                <div class="floating-elements">
-                    <div class="cycling-card">
-                        <div class="card-content active" data-slide="apps">
-                            <div class="card-icon">📱</div>
-                            <h3>Mobile Apps</h3>
-                            <p>Innovative iOS applications</p>
-                        </div>
-                        <div class="card-content" data-slide="podcasts">
-                            <div class="card-icon">🎙️</div>
-                            <h3>Podcasts</h3>
-                            <p>Audio content & discussions</p>
-                        </div>
-                        <div class="card-content" data-slide="multimedia">
-                            <div class="card-icon">🎬</div>
-                            <h3>Multimedia</h3>
-                            <p>Visual storytelling & content</p>
-                        </div>
+        </div>
+    </section>
+
+    <!-- Platform Panels -->
+    <section class="section platform-panels">
+        <div class="container">
+            <div class="panel-grid">
+                <div class="panel-card large">
+                    <div>
+                        <p class="panel-eyebrow">Featured</p>
+                        <h2>ParkMemoryHub</h2>
+                        <p>Our flagship iOS experience for families, built exclusively with SwiftUI and CloudKit—designed to look at home on iPhone, iPad, and Mac.</p>
                     </div>
+                    <div class="panel-links">
+                        <a href="pages/apps.html">View the Apple collection</a>
+                    </div>
+                </div>
+                <div class="panel-card dark">
+                    <div>
+                        <p class="panel-eyebrow">Web Platforms</p>
+                        <h3>PulseTrack</h3>
+                        <p>Real-time political sentiment tracker powered by React, TypeScript, and Firebase.</p>
+                    </div>
+                    <a href="pages/apps.html">See all web work</a>
+                </div>
+                <div class="panel-card light">
+                    <div>
+                        <p class="panel-eyebrow">Android</p>
+                        <h3>MoodQuest</h3>
+                        <p>Kotlin and Jetpack Compose adventures for Android 8+.</p>
+                    </div>
+                    <a href="pages/apps.html">Browse Android lineup</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Apps Section -->
-    <section id="apps" class="section">
+    <!-- Experience Section -->
+    <section class="section experience-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Featured Apps</h2>
-                <p>Discover our innovative mobile applications designed to enhance your digital experience.</p>
+            <div class="experience-lead">
+                <p class="eyebrow">What we make</p>
+                <h2>Five platforms. One point of view.</h2>
+                <p>Every EdenTV release is crafted by the same team, ensuring design systems, performance, and accessibility remain consistent across iOS, Android, Web, Python tooling, and study resources.</p>
             </div>
-            <div class="apps-grid">
-                <div class="app-card">
-                    <div class="app-icon">📱</div>
-                    <h3>iOS & macOS Apps</h3>
-                    <p>Native Apple platform applications including ParkMemoryHub, Jx Scheduler, cosmix, and pulsetrackr.</p>
-                    <div class="app-meta">
-                        <span class="platform">iOS 18+ / macOS 14+</span>
-                        <span class="status">4 Projects</span>
-                    </div>
-                    <a href="pages/apps.html" class="app-link">View All</a>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <p class="label">iOS & macOS</p>
+                    <h3>Native apps that embrace Apple platforms.</h3>
+                    <p>SwiftUI, CloudKit, and AVFoundation implementations that feel immediate and fluid.</p>
                 </div>
-                <div class="app-card">
-                    <div class="app-icon">🌐</div>
-                    <h3>Web Applications</h3>
-                    <p>Full-stack platforms including PulseTrack, LxRose, NebulaChat, and more with React and Firebase.</p>
-                    <div class="app-meta">
-                        <span class="platform">Web</span>
-                        <span class="status">6 Projects</span>
-                    </div>
-                    <a href="pages/apps.html" class="app-link">View All</a>
+                <div class="experience-card">
+                    <p class="label">Android</p>
+                    <h3>Jetpack Compose journeys.</h3>
+                    <p>Kotlin-first builds with offline support and Material You principles.</p>
                 </div>
-                <div class="app-card">
-                    <div class="app-icon">🤖</div>
-                    <h3>Android Apps</h3>
-                    <p>Native Android applications built with Kotlin including MoodQuest adventure planner.</p>
-                    <div class="app-meta">
-                        <span class="platform">Android</span>
-                        <span class="status">2 Projects</span>
-                    </div>
-                    <a href="pages/apps.html" class="app-link">View All</a>
+                <div class="experience-card">
+                    <p class="label">Web</p>
+                    <h3>Full-stack systems.</h3>
+                    <p>React 19, Node.js, Firebase, and real-time dashboards for teams that move fast.</p>
                 </div>
-                <div class="app-card">
-                    <div class="app-icon">🐍</div>
-                    <h3>Python & Data Tools</h3>
-                    <p>Data processing and educational tools including blockchain simulation and real estate analytics.</p>
-                    <div class="app-meta">
-                        <span class="platform">Python</span>
-                        <span class="status">3 Projects</span>
-                    </div>
-                    <a href="pages/apps.html" class="app-link">View All</a>
+                <div class="experience-card">
+                    <p class="label">Data & Tools</p>
+                    <h3>Python pipelines & study platforms.</h3>
+                    <p>ETL workflows, analytics dashboards, and training suites for teams.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Podcasts Section -->
-    <section id="podcasts" class="section section-alt">
+    <!-- Studio Showcase -->
+    <section class="section studio-showcase">
         <div class="container">
-            <div class="section-header">
-                <h2>Podcasts</h2>
-                <p>Engaging audio content that explores technology, creativity, and innovation.</p>
+            <div class="studio-header">
+                <p class="eyebrow">Inside the studio</p>
+                <h2>16 products, one design language.</h2>
+                <p>Every launch follows the same standards: focused storytelling, intentional typography, precise interaction.</p>
             </div>
-            <div class="podcasts-grid">
-                <div class="podcast-card">
-                    <div class="podcast-cover">
-                        <div class="podcast-icon">🎧</div>
-                    </div>
-                    <div class="podcast-info">
-                        <h3>Tech Talks</h3>
-                        <p>Deep dives into emerging technologies and their impact on society.</p>
-                        <div class="podcast-meta">
-                            <span>Coming Soon</span>
-                        </div>
-                    </div>
+            <div class="showcase-grid">
+                <div class="showcase-card">
+                    <h3>Live releases</h3>
+                    <p>PulseTrack, LxRose, NebulaChat, Guess Correctly, Virtual Wig Studio.</p>
+                    <a href="pages/apps.html">See the live lineup</a>
+                </div>
+                <div class="showcase-card">
+                    <h3>In development</h3>
+                    <p>Jx Scheduler, pulsetrackr, Tech Talks podcasts, cinematic multimedia content.</p>
+                    <a href="pages/apps.html">View roadmap</a>
+                </div>
+                <div class="showcase-card">
+                    <h3>Compliance ready</h3>
+                    <p>Complete legal, privacy, and support documentation for every property.</p>
+                    <a href="pages/developer-docs.html">Open documentation</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Multimedia Section -->
-    <section id="multimedia" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Multimedia Content</h2>
-                <p>Visual storytelling through videos, animations, and interactive media experiences.</p>
+    <!-- Documentation Strip -->
+    <section class="section documentation-strip">
+        <div class="container doc-container">
+            <div>
+                <p class="eyebrow">Documentation</p>
+                <h2>Legal, privacy, and support. All in one place.</h2>
             </div>
-            <div class="multimedia-grid">
-                <div class="media-card">
-                    <div class="media-preview">
-                        <div class="media-icon">🎬</div>
-                    </div>
-                    <h3>Video Content</h3>
-                    <p>Coming soon - cinematic experiences and educational videos.</p>
-                </div>
-                <div class="media-card">
-                    <div class="media-preview">
-                        <div class="media-icon">🎨</div>
-                    </div>
-                    <h3>Digital Art</h3>
-                    <p>AI-generated artwork and digital creations exploring new creative frontiers.</p>
-                </div>
+            <div class="doc-links">
+                <a href="legal/privacy-policy.html">Privacy policy</a>
+                <a href="legal/terms-of-service.html">Terms of service</a>
+                <a href="legal/app-store-compliance.html">App Store compliance</a>
+                <a href="legal/support.html">Support hub</a>
             </div>
         </div>
     </section>
 
-    <!-- Developer Docs Section -->
-    <section id="docs" class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2>Developer Documentation</h2>
-                <p>All the legal and compliance documentation required for our apps and services.</p>
+    <!-- Contact CTA -->
+    <section class="section contact-cta">
+        <div class="container contact-shell">
+            <div>
+                <p class="eyebrow">Work with EdenTV</p>
+                <h2>Have an idea for the next build?</h2>
+                <p>Whether you need a flagship mobile release or a comprehensive documentation stack, we can help ship it.</p>
             </div>
-            <div class="docs-grid">
-                <a href="legal/privacy-policy.html" class="doc-card">
-                    <div class="doc-icon">🔒</div>
-                    <h3>Privacy Policy</h3>
-                    <p>How we collect, use, and protect your personal information.</p>
-                </a>
-                <a href="legal/terms-of-service.html" class="doc-card">
-                    <div class="doc-icon">📋</div>
-                    <h3>Terms of Service</h3>
-                    <p>Legal terms and conditions for using our services.</p>
-                </a>
-                <a href="legal/app-store-compliance.html" class="doc-card">
-                    <div class="doc-icon">📱</div>
-                    <h3>App Store Compliance</h3>
-                    <p>Apple App Store guidelines and compliance information.</p>
-                </a>
-                <a href="legal/support.html" class="doc-card">
-                    <div class="doc-icon">💬</div>
-                    <h3>Support & Contact</h3>
-                    <p>Get help and connect with our development team.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About EdenTV</h2>
-                    <p>EdenTV is a creative studio focused on developing innovative digital experiences. We combine cutting-edge technology with thoughtful design to create products that make a difference in people's lives.</p>
-                    <p>Our mission is to push the boundaries of what's possible in mobile technology, audio content, and multimedia storytelling.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">16+</span>
-                            <span class="stat-label">Projects Delivered</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">5</span>
-                            <span class="stat-label">Platforms</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">∞</span>
-                            <span class="stat-label">Innovation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="brand-elements">
-                        <div class="brand-circle">
-                            <span class="brand-text">EDEN</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="contact-actions">
+                <a href="mailto:contact@edentv.us" class="btn btn-primary">Start a conversation</a>
+                <a href="pages/about.html" class="btn btn-secondary">Learn about the studio</a>
             </div>
         </div>
     </section>
