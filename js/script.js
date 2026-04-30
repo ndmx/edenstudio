@@ -75,12 +75,11 @@ const observerOptions = {
     rootMargin: '0px 0px -100px 0px'
 };
 
-let animationDelay = 0;
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
             // Add staggered delay for elements within the same container
-            const elements = Array.from(entry.target.querySelectorAll('.app-card, .podcast-card, .media-card, .doc-card, .contact-card, .stat, .about-text, .about-visual'));
+            const elements = Array.from(entry.target.querySelectorAll('.panel-card, .experience-card, .project-card, .timeline-item, .doc-list-item, .contact-card, .stat-card, .showcase-card'));
             elements.forEach((element, index) => {
                 setTimeout(() => {
                     element.classList.add('animate-in');
@@ -96,11 +95,6 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all sections and major content blocks for animation
 document.querySelectorAll('section, .hero-content, .hero-visual').forEach(element => {
     observer.observe(element);
-});
-
-// Add loading animation class
-document.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('loaded');
 });
 
 // Improved parallax effect for hero section with throttling (only if hero exists)
@@ -123,9 +117,7 @@ window.addEventListener('scroll', () => {
 
 // Add smooth reveal animations for hero elements (only if they exist)
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        document.body.classList.add('loaded');
-    }, 100);
+    document.body.classList.add('loaded');
 
     // Add subtle entrance animations to hero elements (only on index page)
     const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .hero-buttons, .cycling-card');
@@ -133,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         heroElements.forEach((element, index) => {
             setTimeout(() => {
                 element.classList.add('animate-in');
-            }, index * 200);
+            }, 100 + index * 200);
         });
     }
 
@@ -173,55 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
-// Typing animation for hero title (optional enhancement)
-class TypeWriter {
-    constructor(element, words, wait = 3000) {
-        this.element = element;
-        this.words = words;
-        this.txt = '';
-        this.wordIndex = 0;
-        this.wait = parseInt(wait, 10);
-        this.type();
-        this.isDeleting = false;
-    }
-
-    type() {
-        const current = this.wordIndex % this.words.length;
-        const fullTxt = this.words[current];
-
-        if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.element.innerHTML = `<span class="txt">${this.txt}</span><span class="cursor">|</span>`;
-
-        let typeSpeed = 100;
-
-        if (this.isDeleting) {
-            typeSpeed /= 2;
-        }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-            typeSpeed = this.wait;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.wordIndex++;
-            typeSpeed = 500;
-        }
-
-        setTimeout(() => this.type(), typeSpeed);
-    }
-}
-
-// Initialize typewriter effect (commented out as it might be too distracting)
-// const heroTitle = document.querySelector('.hero-title');
-// if (heroTitle) {
-//     new TypeWriter(heroTitle, ['Welcome to EdenTV', 'Creator Studio', 'Innovation Hub'], 2000);
-// }
 
 // Back to Top Button Functionality
 const backToTopButton = document.getElementById('backToTop');

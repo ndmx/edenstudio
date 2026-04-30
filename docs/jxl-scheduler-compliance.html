@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JxL Scheduler App Store Compliance - EdenTV Developer Docs</title>
+    <meta name="description" content="App Store compliance information for JxL Scheduler - privacy, local-first data, CloudKit sharing, location, uploads, and release review notes.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <h1>EdenTV</h1>
+                <span class="tagline">Creator Studio</span>
+            </a>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../pages/apps.html" class="nav-link">Apps</a>
+                <a href="../pages/podcasts.html" class="nav-link">Podcasts</a>
+                <a href="../pages/multimedia.html" class="nav-link">Multimedia</a>
+                <a href="../pages/developer-docs.html" class="nav-link active">Developer Docs</a>
+                <a href="../pages/about.html" class="nav-link">About</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="../pages/developer-docs.html">Developer Docs</a>
+                <span class="separator">/</span>
+                <a href="../pages/developer-docs.html#app-docs">JxL Scheduler</a>
+                <span class="separator">/</span>
+                <span class="current">App Store Compliance</span>
+            </nav>
+        </div>
+    </section>
+
+    <section class="doc-header">
+        <div class="container">
+            <div class="doc-title-group">
+                <div class="app-icon">JxL</div>
+                <div class="doc-info">
+                    <h1>JxL Scheduler App Store Compliance</h1>
+                    <p class="doc-subtitle">Product summary and compliance notes for TestFlight and App Store review.</p>
+                    <div class="doc-meta">
+                        <span class="last-updated">Last updated: April 30, 2026</span>
+                        <span class="version">Version 1.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="toc-section">
+        <div class="container">
+            <div class="toc-container">
+                <h2>Table of Contents</h2>
+                <nav class="toc">
+                    <ol>
+                        <li><a href="#overview" class="toc-link">Overview</a></li>
+                        <li><a href="#functionality" class="toc-link">Core Functionality</a></li>
+                        <li><a href="#content" class="toc-link">User Content</a></li>
+                        <li><a href="#privacy" class="toc-link">Privacy and Permissions</a></li>
+                        <li><a href="#cloudkit" class="toc-link">CloudKit and Sync</a></li>
+                        <li><a href="#business" class="toc-link">Business Model</a></li>
+                        <li><a href="#review-notes" class="toc-link">Suggested Review Notes</a></li>
+                        <li><a href="#contact" class="toc-link">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-content">
+        <div class="container">
+            <div class="doc-body">
+                <section id="overview" class="doc-section">
+                    <h2>1. Overview</h2>
+                    <p>JxL Scheduler is an iPhone scheduling and route-planning app for local-first availability, routes, messages, uploads, and optional iCloud sharing.</p>
+                    <div class="highlight-box">
+                        <h3>Current App Model</h3>
+                        <ul>
+                            <li>SwiftUI app for iPhone</li>
+                            <li>SwiftData local-first storage</li>
+                            <li>Optional CloudKit sharing and sync</li>
+                            <li>No app-specific account sign-in</li>
+                            <li>No advertising, external payments, or subscriptions in the current app</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="functionality" class="doc-section">
+                    <h2>2. Core Functionality</h2>
+                    <ul>
+                        <li><strong>Schedule:</strong> Create and edit availability, including recurring availability.</li>
+                        <li><strong>Routes:</strong> Create routes, add stops, reorder stops, and open directions in Apple Maps or Google Maps.</li>
+                        <li><strong>Messages:</strong> Keep local notes, direct messages, and group updates depending on sharing state.</li>
+                        <li><strong>Uploads:</strong> Store selected files and prepare shared records when supported by the current app version.</li>
+                        <li><strong>Profile:</strong> Manage local profile and optional group sharing settings.</li>
+                    </ul>
+                </section>
+
+                <section id="content" class="doc-section">
+                    <h2>3. User Content</h2>
+                    <p>JxL Scheduler includes user-created content such as schedules, route names, route stops, messages, notes, and uploads.</p>
+                    <ul>
+                        <li>Content is intended for private planning and trusted group sharing, not public feeds.</li>
+                        <li>Users control when they create, edit, delete, or share supported content.</li>
+                        <li>Location-based route data is added by user action or permission-based current-location features.</li>
+                    </ul>
+                </section>
+
+                <section id="privacy" class="doc-section">
+                    <h2>4. Privacy and Permissions</h2>
+                    <ul>
+                        <li><strong>Location permission:</strong> Used for route features that need current location or map context.</li>
+                        <li><strong>Photos/files permission:</strong> Used only when a user selects media or files for upload features.</li>
+                        <li><strong>iCloud:</strong> Used for optional group sharing and CloudKit sync.</li>
+                        <li><strong>App privacy:</strong> The app's public privacy policy is available at the JxL Scheduler privacy document.</li>
+                    </ul>
+                </section>
+
+                <section id="cloudkit" class="doc-section">
+                    <h2>5. CloudKit and Sync</h2>
+                    <p>The current app uses Apple's CloudKit service for optional shared sync between trusted members.</p>
+                    <ul>
+                        <li>The app remains usable when iCloud is unavailable.</li>
+                        <li>Apps distributed through the App Store use the production CloudKit environment.</li>
+                        <li>Shared schedules, routes, messages, uploads, and group metadata may depend on the app's CloudKit container.</li>
+                    </ul>
+                </section>
+
+                <section id="business" class="doc-section">
+                    <h2>6. Business Model</h2>
+                    <p>JxL Scheduler is currently a free app with no in-app purchases, subscriptions, or third-party advertising.</p>
+                </section>
+
+                <section id="review-notes" class="doc-section">
+                    <h2>7. Suggested Review Notes</h2>
+                    <p>Suggested App Review note:</p>
+                    <div class="highlight-box">
+                        <p>JxL Scheduler is a local-first scheduling and route-planning app. The app does not require a separate app sign-in. Core schedule, route, message, and upload workflows work locally. Optional group sharing uses Apple's iCloud and CloudKit services. To test local functionality, open the app and create availability, routes, messages, and uploads. To test sharing, sign in to iCloud on test devices and use the app's group sharing controls.</p>
+                    </div>
+                </section>
+
+                <section id="contact" class="doc-section">
+                    <h2>8. Contact</h2>
+                    <p>For compliance or App Store review questions, contact <a href="mailto:support@edentv.us">support@edentv.us</a>. We aim to respond within 2 business days.</p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>EdenTV</h3>
+                    <p>Creating tomorrow's digital experiences today.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>JxL Scheduler</h4>
+                        <a href="jxl-scheduler-privacy.html">Privacy Policy</a>
+                        <a href="jxl-scheduler-compliance.html">App Store Compliance</a>
+                        <a href="jxl-scheduler-support.html">Support</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Platform</h4>
+                        <a href="../pages/apps.html">Apps</a>
+                        <a href="../pages/developer-docs.html">Developer Docs</a>
+                        <a href="../legal/app-store-compliance.html">Legal Hub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EdenTV. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
