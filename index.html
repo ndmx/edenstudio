@@ -7,42 +7,42 @@
     <meta name="description" content="EdenTV Creator Studio - Showcasing innovative apps, podcasts, and multimedia content. Developer portal with App Store compliance documentation.">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="assets/brand/etv-favicon.svg">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">
+    <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
+        <div class="nav-container site-header__container">
+            <a href="index.html" class="nav-brand site-brand" data-component="site-brand">
                 <h1>EdenTV</h1>
-                <span class="tagline">Creator Studio</span>
+                <span class="tagline site-brand__tagline">Creator Studio</span>
             </a>
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="pages/apps.html" class="nav-link">Apps</a>
-                <a href="pages/podcasts.html" class="nav-link">Podcasts</a>
-                <a href="pages/multimedia.html" class="nav-link">Multimedia</a>
-                <a href="pages/developer-docs.html" class="nav-link">Developer Docs</a>
-                <a href="pages/about.html" class="nav-link">About</a>
+            <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
+                <a href="index.html" class="nav-link site-nav__link active">Home</a>
+                <a href="pages/apps.html" class="nav-link site-nav__link">Apps</a>
+                <a href="pages/podcasts.html" class="nav-link site-nav__link">Podcasts</a>
+                <a href="pages/multimedia.html" class="nav-link site-nav__link">Multimedia</a>
+                <a href="pages/developer-docs.html" class="nav-link site-nav__link">Developer Docs</a>
+                <a href="pages/about.html" class="nav-link site-nav__link">About</a>
             </div>
-            <div class="nav-toggle">
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero hero-full">
+    <section class="hero hero-full site-hero" data-component="site-hero">
         <div class="container hero-container">
             <div class="hero-content">
-                <p class="eyebrow">EdenTV Creator Studio</p>
+                <p class="eyebrow ds-eyebrow">EdenTV Creator Studio</p>
                 <h1 class="hero-title">Software and media experiences designed for every platform.</h1>
                 <p class="hero-lead hero-subtitle">From flagship iOS launches to cross-platform web systems and compliance-ready documentation, we design, build, and ship products that feel premium everywhere.</p>
                 <div class="hero-cta hero-buttons">
-                    <a href="pages/apps.html" class="btn btn-primary">Explore the work</a>
-                    <a href="pages/developer-docs.html" class="btn btn-link">Developer resources</a>
+                    <a href="pages/apps.html" class="btn ds-button btn-primary">Explore the work</a>
+                    <a href="pages/developer-docs.html" class="btn ds-button btn-link">Developer resources</a>
                 </div>
             </div>
             <div class="hero-visual" aria-hidden="true">
@@ -70,10 +70,10 @@
     </section>
 
     <!-- Platform Panels -->
-    <section class="section platform-panels">
+    <section class="section site-section platform-panels">
         <div class="container">
             <div class="panel-grid">
-                <div class="panel-card large">
+                <div class="panel-card ds-card large">
                     <div>
                         <p class="panel-eyebrow">Featured</p>
                         <h2>ParkMemoryHub</h2>
@@ -83,7 +83,7 @@
                         <a href="pages/apps.html">View the Apple collection</a>
                     </div>
                 </div>
-                <div class="panel-card dark">
+                <div class="panel-card ds-card dark">
                     <div>
                         <p class="panel-eyebrow">Web Platforms</p>
                         <h3>PulseTrack</h3>
@@ -91,7 +91,7 @@
                     </div>
                     <a href="pages/apps.html">See all web work</a>
                 </div>
-                <div class="panel-card light">
+                <div class="panel-card ds-card light">
                     <div>
                         <p class="panel-eyebrow">Android</p>
                         <h3>MoodQuest</h3>
@@ -104,30 +104,30 @@
     </section>
 
     <!-- Experience Section -->
-    <section class="section experience-section">
+    <section class="section site-section experience-section">
         <div class="container">
             <div class="experience-lead">
-                <p class="eyebrow">What we make</p>
+                <p class="eyebrow ds-eyebrow">What we make</p>
                 <h2>Five platforms. One point of view.</h2>
                 <p>Every EdenTV release is crafted by the same team, ensuring design systems, performance, and accessibility remain consistent across iOS, Android, Web, Python tooling, and study resources.</p>
             </div>
             <div class="experience-grid">
-                <div class="experience-card">
+                <div class="experience-card ds-card">
                     <p class="label">iOS & macOS</p>
                     <h3>Native apps that embrace Apple platforms.</h3>
                     <p>SwiftUI, CloudKit, and AVFoundation implementations that feel immediate and fluid.</p>
                 </div>
-                <div class="experience-card">
+                <div class="experience-card ds-card">
                     <p class="label">Android</p>
                     <h3>Jetpack Compose journeys.</h3>
                     <p>Kotlin-first builds with offline support and Material You principles.</p>
                 </div>
-                <div class="experience-card">
+                <div class="experience-card ds-card">
                     <p class="label">Web</p>
                     <h3>Full-stack systems.</h3>
                     <p>React 19, Node.js, Firebase, and real-time dashboards for teams that move fast.</p>
                 </div>
-                <div class="experience-card">
+                <div class="experience-card ds-card">
                     <p class="label">Data & Tools</p>
                     <h3>Python pipelines & study platforms.</h3>
                     <p>ETL workflows, analytics dashboards, and training suites for teams.</p>
@@ -137,25 +137,25 @@
     </section>
 
     <!-- Studio Showcase -->
-    <section class="section studio-showcase">
+    <section class="section site-section studio-showcase">
         <div class="container">
             <div class="studio-header">
-                <p class="eyebrow">Inside the studio</p>
+                <p class="eyebrow ds-eyebrow">Inside the studio</p>
                 <h2>16 products, one design language.</h2>
                 <p>Every launch follows the same standards: focused storytelling, intentional typography, precise interaction.</p>
             </div>
             <div class="showcase-grid">
-                <div class="showcase-card">
+                <div class="showcase-card ds-card">
                     <h3>Live releases</h3>
                     <p>PulseTrack, LxRose, NebulaChat, Guess Correctly, Virtual Wig Studio.</p>
                     <a href="pages/apps.html">See the live lineup</a>
                 </div>
-                <div class="showcase-card">
+                <div class="showcase-card ds-card">
                     <h3>In development</h3>
                     <p>Jx Scheduler, pulsetrackr, Tech Talks podcasts, cinematic multimedia content.</p>
                     <a href="pages/apps.html">View roadmap</a>
                 </div>
-                <div class="showcase-card">
+                <div class="showcase-card ds-card">
                     <h3>Compliance ready</h3>
                     <p>Complete legal, privacy, and support documentation for every property.</p>
                     <a href="pages/developer-docs.html">Open documentation</a>
@@ -165,10 +165,10 @@
     </section>
 
     <!-- Documentation Strip -->
-    <section class="section documentation-strip">
+    <section class="section site-section documentation-strip">
         <div class="container doc-container">
             <div>
-                <p class="eyebrow">Documentation</p>
+                <p class="eyebrow ds-eyebrow">Documentation</p>
                 <h2>Legal, privacy, and support. All in one place.</h2>
             </div>
             <div class="doc-links">
@@ -181,50 +181,50 @@
     </section>
 
     <!-- Contact CTA -->
-    <section class="section contact-cta">
+    <section class="section site-section contact-cta">
         <div class="container contact-shell">
             <div>
-                <p class="eyebrow">Work with EdenTV</p>
+                <p class="eyebrow ds-eyebrow">Work with EdenTV</p>
                 <h2>Have an idea for the next build?</h2>
                 <p>Whether you need a flagship mobile release or a comprehensive documentation stack, we can help ship it.</p>
             </div>
             <div class="contact-actions">
-                <a href="mailto:contact@edentv.us" class="btn btn-primary">Start a conversation</a>
-                <a href="pages/about.html" class="btn btn-secondary">Learn about the studio</a>
+                <a href="mailto:contact@edentv.us" class="btn ds-button btn-primary">Start a conversation</a>
+                <a href="pages/about.html" class="btn ds-button btn-secondary">Learn about the studio</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer site-footer" data-component="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
+            <div class="footer-content site-footer__content">
+                <div class="footer-brand site-footer__brand">
                     <h3>EdenTV</h3>
                     <p>Creating tomorrow's digital experiences today.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-section">
+                <div class="footer-links site-footer__links">
+                    <div class="footer-section site-footer__section">
                         <h4>Platform</h4>
                         <a href="pages/apps.html">Apps</a>
                         <a href="pages/podcasts.html">Podcasts</a>
                         <a href="pages/multimedia.html">Multimedia</a>
                         <a href="pages/about.html">About</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Legal</h4>
                         <a href="legal/privacy-policy.html">Privacy Policy</a>
                         <a href="legal/terms-of-service.html">Terms of Service</a>
                         <a href="legal/app-store-compliance.html">App Store Compliance</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Connect</h4>
                         <a href="mailto:support@edentv.us">Support</a>
                         <a href="legal/support.html">Help Center</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom site-footer__bottom">
                 <p>&copy; 2024 EdenTV. All rights reserved.</p>
             </div>
         </div>

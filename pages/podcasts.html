@@ -7,49 +7,49 @@
     <meta name="description" content="EdenTV Podcasts - Coming Soon">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../assets/brand/etv-favicon.svg">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-brand">
+    <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
+        <div class="nav-container site-header__container">
+            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand">
                 <h1>EdenTV</h1>
-                <span class="tagline">Creator Studio</span>
+                <span class="tagline site-brand__tagline">Creator Studio</span>
             </a>
-            <div class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="apps.html" class="nav-link">Apps</a>
-                <a href="podcasts.html" class="nav-link active">Podcasts</a>
-                <a href="multimedia.html" class="nav-link">Multimedia</a>
-                <a href="developer-docs.html" class="nav-link">Developer Docs</a>
-                <a href="about.html" class="nav-link">About</a>
+            <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
+                <a href="../index.html" class="nav-link site-nav__link">Home</a>
+                <a href="apps.html" class="nav-link site-nav__link">Apps</a>
+                <a href="podcasts.html" class="nav-link site-nav__link active">Podcasts</a>
+                <a href="multimedia.html" class="nav-link site-nav__link">Multimedia</a>
+                <a href="developer-docs.html" class="nav-link site-nav__link">Developer Docs</a>
+                <a href="about.html" class="nav-link site-nav__link">About</a>
             </div>
-            <div class="nav-toggle">
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section class="sub-hero dark">
+    <section class="sub-hero dark site-hero" data-component="page-hero">
         <div class="container narrow">
-            <p class="eyebrow">Audio Studio</p>
+            <p class="eyebrow ds-eyebrow">Audio Studio</p>
             <h1>Soundtracks for builders, designers, and creative teams.</h1>
             <p>Our podcast slate is currently in production. Each series pairs thoughtful conversation with the same precision we bring to our software work.</p>
             <div class="hero-cta">
-                <a href="mailto:contact@edentv.us" class="btn btn-primary">Get launch updates</a>
-                <a href="../pages/apps.html" class="btn btn-link">Explore the product lineup</a>
+                <a href="mailto:contact@edentv.us" class="btn ds-button btn-primary">Get launch updates</a>
+                <a href="../pages/apps.html" class="btn ds-button btn-link">Explore the product lineup</a>
             </div>
         </div>
     </section>
 
-    <section class="section platform-panels">
+    <section class="section site-section platform-panels">
         <div class="container">
             <div class="panel-grid">
-                <div class="panel-card large">
+                <div class="panel-card ds-card large">
                     <div>
                         <p class="panel-eyebrow">Flagship Series</p>
                         <h2>Tech Talks</h2>
@@ -57,7 +57,7 @@
                     </div>
                     <a href="mailto:contact@edentv.us">Request early access</a>
                 </div>
-                <div class="panel-card dark">
+                <div class="panel-card ds-card dark">
                     <div>
                         <p class="panel-eyebrow">Mini Sessions</p>
                         <h3>Launch Notes</h3>
@@ -65,7 +65,7 @@
                     </div>
                     <a href="mailto:contact@edentv.us">Pitch a topic</a>
                 </div>
-                <div class="panel-card light">
+                <div class="panel-card ds-card light">
                     <div>
                         <p class="panel-eyebrow">In production</p>
                         <h3>Studio Diaries</h3>
@@ -77,36 +77,36 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section site-section">
         <div class="container">
             <div class="experience-lead">
-                <p class="eyebrow">Production Roadmap</p>
+                <p class="eyebrow ds-eyebrow">Production Roadmap</p>
                 <h2>Episodes ship in layers.</h2>
                 <p>We treat audio like product work: research, writing, engineering, and release all follow the same cadence.</p>
             </div>
             <div class="timeline-list">
-                <div class="timeline-item">
+                <div class="timeline-item ds-card ds-timeline-item">
                     <span class="timeline-step">01</span>
                     <div>
                         <h3>Research & scripting</h3>
                         <p>Interview prep, storyboarding, and sound direction for each limited run.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item ds-card ds-timeline-item">
                     <span class="timeline-step">02</span>
                     <div>
                         <h3>Recording sessions</h3>
                         <p>Remote and in-person sessions recorded with studio-grade gear.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item ds-card ds-timeline-item">
                     <span class="timeline-step">03</span>
                     <div>
                         <h3>Post-production</h3>
                         <p>Editing, scoring, and mixing to match the EdenTV aesthetic.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item ds-card ds-timeline-item">
                     <span class="timeline-step">04</span>
                     <div>
                         <h3>Platform syndication</h3>
@@ -117,50 +117,50 @@
         </div>
     </section>
 
-    <section class="section contact-cta">
+    <section class="section site-section contact-cta">
         <div class="container contact-shell">
             <div>
-                <p class="eyebrow">Collaborate</p>
+                <p class="eyebrow ds-eyebrow">Collaborate</p>
                 <h2>Want to appear on the EdenTV mic?</h2>
                 <p>We’re booking founders, designers, engineers, and storytellers for the first slate. Share your idea and we’ll follow up.</p>
             </div>
             <div class="contact-actions">
-                <a href="mailto:contact@edentv.us" class="btn btn-primary">Pitch a segment</a>
-                <a href="../pages/about.html" class="btn btn-secondary">Learn about the studio</a>
+                <a href="mailto:contact@edentv.us" class="btn ds-button btn-primary">Pitch a segment</a>
+                <a href="../pages/about.html" class="btn ds-button btn-secondary">Learn about the studio</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer site-footer" data-component="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
+            <div class="footer-content site-footer__content">
+                <div class="footer-brand site-footer__brand">
                     <h3>EdenTV</h3>
                     <p>Creating tomorrow's digital experiences today.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-section">
+                <div class="footer-links site-footer__links">
+                    <div class="footer-section site-footer__section">
                         <h4>Platform</h4>
                         <a href="apps.html">Apps</a>
                         <a href="podcasts.html">Podcasts</a>
                         <a href="multimedia.html">Multimedia</a>
                         <a href="about.html">About</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Legal</h4>
                         <a href="../legal/privacy-policy.html">Privacy Policy</a>
                         <a href="../legal/terms-of-service.html">Terms of Service</a>
                         <a href="../legal/app-store-compliance.html">App Store Compliance</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Connect</h4>
                         <a href="mailto:support@edentv.us">Support</a>
                         <a href="../legal/support.html">Help Center</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom site-footer__bottom">
                 <p>&copy; 2024 EdenTV. All rights reserved.</p>
             </div>
         </div>

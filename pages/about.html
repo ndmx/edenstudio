@@ -7,49 +7,49 @@
     <meta name="description" content="Learn about EdenTV Creator Studio - a design studio creating innovative software and media across multiple platforms.">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../assets/brand/etv-favicon.svg">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-brand">
+    <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
+        <div class="nav-container site-header__container">
+            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand">
                 <h1>EdenTV</h1>
-                <span class="tagline">Creator Studio</span>
+                <span class="tagline site-brand__tagline">Creator Studio</span>
             </a>
-            <div class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="apps.html" class="nav-link">Apps</a>
-                <a href="podcasts.html" class="nav-link">Podcasts</a>
-                <a href="multimedia.html" class="nav-link">Multimedia</a>
-                <a href="developer-docs.html" class="nav-link">Developer Docs</a>
-                <a href="about.html" class="nav-link active">About</a>
+            <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
+                <a href="../index.html" class="nav-link site-nav__link">Home</a>
+                <a href="apps.html" class="nav-link site-nav__link">Apps</a>
+                <a href="podcasts.html" class="nav-link site-nav__link">Podcasts</a>
+                <a href="multimedia.html" class="nav-link site-nav__link">Multimedia</a>
+                <a href="developer-docs.html" class="nav-link site-nav__link">Developer Docs</a>
+                <a href="about.html" class="nav-link site-nav__link active">About</a>
             </div>
-            <div class="nav-toggle">
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- About Hero Section -->
-    <section class="sub-hero dark">
+    <section class="sub-hero dark site-hero" data-component="page-hero">
         <div class="container narrow">
-            <p class="eyebrow">Studio Profile</p>
+            <p class="eyebrow ds-eyebrow">Studio Profile</p>
             <h1>We design, build, and document premium software for every platform.</h1>
             <p>From Apple-first launches to data tooling and compliance frameworks, EdenTV is a multidisciplinary studio delivering product and process with the same craft.</p>
             <div class="hero-cta">
-                <a href="apps.html" class="btn btn-primary">See the portfolio</a>
-                <a href="mailto:contact@edentv.us" class="btn btn-link">Start a project</a>
+                <a href="apps.html" class="btn ds-button btn-primary">See the portfolio</a>
+                <a href="mailto:contact@edentv.us" class="btn ds-button btn-link">Start a project</a>
             </div>
         </div>
     </section>
 
-    <section class="section platform-panels">
+    <section class="section site-section platform-panels">
         <div class="container">
             <div class="panel-grid">
-                <div class="panel-card large">
+                <div class="panel-card ds-card large">
                     <div>
                         <p class="panel-eyebrow">Mission</p>
                         <h2>Ship work that feels intentional on every surface.</h2>
@@ -57,7 +57,7 @@
                     </div>
                     <a href="pages/developer-docs.html">Explore our documentation</a>
                 </div>
-                <div class="panel-card dark">
+                <div class="panel-card ds-card dark">
                     <div>
                         <p class="panel-eyebrow">Focus</p>
                         <h3>Design + Engineering</h3>
@@ -65,7 +65,7 @@
                     </div>
                     <a href="#what-we-do">What we do</a>
                 </div>
-                <div class="panel-card light">
+                <div class="panel-card ds-card light">
                     <div>
                         <p class="panel-eyebrow">Values</p>
                         <h3>Clarity & Consistency</h3>
@@ -78,7 +78,7 @@
     </section>
 
     <!-- What We Do Section -->
-    <section id="what-we-do" class="section section-alt">
+    <section id="what-we-do" class="section site-section section-alt">
         <div class="container">
             <div class="about-content-section">
                 <h2>What We Do</h2>
@@ -101,26 +101,26 @@
     </section>
 
     <!-- Our Portfolio Section -->
-    <section class="section">
+    <section class="section site-section">
         <div class="container">
             <div class="about-content-section">
                 <h2>Our Portfolio</h2>
                 <p class="lead-text">16 projects across 5 platforms - from iOS and Android mobile apps to full-stack web applications and data tools.</p>
                 
                 <div class="stats-row">
-                    <div class="stat-card">
+                    <div class="stat-card ds-card ds-stat-card">
                         <h3>4 Projects</h3>
                         <p>iOS & macOS Applications</p>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card ds-card ds-stat-card">
                         <h3>2 Projects</h3>
                         <p>Android Applications</p>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card ds-card ds-stat-card">
                         <h3>6 Projects</h3>
                         <p>Web Applications</p>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card ds-card ds-stat-card">
                         <h3>4 Projects</h3>
                         <p>Python & Study Tools</p>
                     </div>
@@ -129,14 +129,14 @@
                 <div class="cta-box">
                     <h3>Explore Our Work</h3>
                     <p>View all projects, technologies, and platforms we work with</p>
-                    <a href="apps.html" class="btn btn-primary">View Portfolio</a>
+                    <a href="apps.html" class="btn ds-button btn-primary">View Portfolio</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Technology Stack Section -->
-    <section class="section section-alt">
+    <section class="section site-section section-alt">
         <div class="container">
             <div class="about-content-section">
                 <h2>Technology Stack</h2>
@@ -185,35 +185,35 @@
     </section>
 
     <!-- Timeline Section -->
-    <section class="section">
+    <section class="section site-section">
         <div class="container">
             <div class="about-content-section">
                 <h2>How we got here</h2>
                 <p class="lead-text">EdenTV grows by shipping. Each milestone built a new capability that now ships across the entire portfolio.</p>
             </div>
             <div class="timeline-list">
-                <div class="timeline-item">
+                <div class="timeline-item ds-card ds-timeline-item">
                     <span class="timeline-step">2023</span>
                     <div>
                         <h3>Studio formation</h3>
                         <p>Core team forms around Apple-first design and compliance-ready documentation.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item ds-card ds-timeline-item">
                     <span class="timeline-step">2024</span>
                     <div>
                         <h3>ParkMemoryHub launch</h3>
                         <p>Flagship SwiftUI + CloudKit release pairs product experience with full legal stack.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item ds-card ds-timeline-item">
                     <span class="timeline-step">2024 Q3</span>
                     <div>
                         <h3>Web + Data expansion</h3>
                         <p>PulseTrack, LxRose, and Python-based tooling broaden the EdenTV platform scope.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item ds-card ds-timeline-item">
                     <span class="timeline-step">Now</span>
                     <div>
                         <h3>Studio + Media</h3>
@@ -225,7 +225,7 @@
     </section>
 
     <!-- Approach Section -->
-    <section id="approach" class="section">
+    <section id="approach" class="section site-section">
         <div class="container">
             <div class="about-content-section">
                 <h2>Our Approach</h2>
@@ -250,50 +250,50 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section contact-cta">
+    <section class="section site-section contact-cta">
         <div class="container contact-shell">
             <div>
-                <p class="eyebrow">Get in touch</p>
+                <p class="eyebrow ds-eyebrow">Get in touch</p>
                 <h2>Have a build, a media engagement, or documentation request?</h2>
                 <p>We work end-to-end: product, multimedia, and compliance. Tell us what you’re planning and we’ll assemble the right stack.</p>
             </div>
             <div class="contact-actions">
-                <a href="mailto:contact@edentv.us" class="btn btn-primary">Contact EdenTV</a>
-                <a href="mailto:support@edentv.us" class="btn btn-secondary">Support channel</a>
+                <a href="mailto:contact@edentv.us" class="btn ds-button btn-primary">Contact EdenTV</a>
+                <a href="mailto:support@edentv.us" class="btn ds-button btn-secondary">Support channel</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer site-footer" data-component="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
+            <div class="footer-content site-footer__content">
+                <div class="footer-brand site-footer__brand">
                     <h3>EdenTV</h3>
                     <p>Creating tomorrow's digital experiences today.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-section">
+                <div class="footer-links site-footer__links">
+                    <div class="footer-section site-footer__section">
                         <h4>Platform</h4>
                         <a href="apps.html">Apps</a>
                         <a href="podcasts.html">Podcasts</a>
                         <a href="multimedia.html">Multimedia</a>
                         <a href="about.html">About</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Legal</h4>
                         <a href="../legal/privacy-policy.html">Privacy Policy</a>
                         <a href="../legal/terms-of-service.html">Terms of Service</a>
                         <a href="../legal/app-store-compliance.html">App Store Compliance</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Connect</h4>
                         <a href="mailto:support@edentv.us">Support</a>
                         <a href="../legal/support.html">Help Center</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom site-footer__bottom">
                 <p>&copy; 2024 EdenTV. All rights reserved.</p>
             </div>
         </div>

@@ -20,47 +20,57 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
+function setMobileNavigationState(isOpen) {
+    if (!navToggle || !navMenu) {
+        return;
+    }
+
+    navMenu.classList.toggle('active', isOpen);
+    navToggle.classList.toggle('active', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+}
+
 if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        navToggle.classList.toggle('active');
+        setMobileNavigationState(!navMenu.classList.contains('active'));
     });
 
     // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
+            setMobileNavigationState(false);
         });
     });
 }
 
 // Navbar background change on scroll
 const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
+if (navbar) {
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+}
 
 // Active navigation link highlighting (only if sections exist)
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
+const hashNavLinks = Array.from(navLinks).filter(link => {
+    const href = link.getAttribute('href');
+    return href && href.startsWith('#');
+});
 
-if (sections.length > 0 && navLinks.length > 0) {
+if (sections.length > 0 && hashNavLinks.length > 0) {
     window.addEventListener('scroll', () => {
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 100;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop) {
+            if (window.scrollY >= sectionTop) {
                 current = section.getAttribute('id');
             }
         });
 
-        navLinks.forEach(link => {
+        hashNavLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href').substring(1) === current) {
                 link.classList.add('active');
@@ -118,6 +128,7 @@ window.addEventListener('scroll', () => {
 // Add smooth reveal animations for hero elements (only if they exist)
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('loaded');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     // Add subtle entrance animations to hero elements (only on index page)
     const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .hero-buttons, .cycling-card');
@@ -131,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Cycling card functionality (only on index page)
     const cyclingCard = document.querySelector('.cycling-card');
-    if (cyclingCard) {
+    if (cyclingCard && !prefersReducedMotion) {
         const cardContents = cyclingCard.querySelectorAll('.card-content');
         if (cardContents.length > 0) {
             let currentIndex = 0;
@@ -217,8 +228,7 @@ if (tocLinks.length > 0 && docSections.length > 0) {
         
         docSections.forEach(section => {
             const sectionTop = section.offsetTop - 150;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop) {
+            if (window.scrollY >= sectionTop) {
                 current = section.getAttribute('id');
             }
         });
@@ -241,8 +251,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (navToggle && navMenu && navMenu.classList.contains('active')) {
             if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
+                setMobileNavigationState(false);
             }
         }
     });
@@ -254,8 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const navMenu = document.querySelector('.nav-menu');
             
             if (navToggle && navMenu && navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
+                setMobileNavigationState(false);
             }
         }
     });

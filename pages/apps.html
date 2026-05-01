@@ -7,49 +7,49 @@
     <meta name="description" content="Discover innovative applications and projects from EdenTV. From iOS and Android apps to web platforms and data tools - all designed by EdenTV Creator Studio.">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../assets/brand/etv-favicon.svg">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-brand">
+    <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
+        <div class="nav-container site-header__container">
+            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand">
                 <h1>EdenTV</h1>
-                <span class="tagline">Creator Studio</span>
+                <span class="tagline site-brand__tagline">Creator Studio</span>
             </a>
-            <div class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="apps.html" class="nav-link active">Apps</a>
-                <a href="podcasts.html" class="nav-link">Podcasts</a>
-                <a href="multimedia.html" class="nav-link">Multimedia</a>
-                <a href="developer-docs.html" class="nav-link">Developer Docs</a>
-                <a href="about.html" class="nav-link">About</a>
+            <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
+                <a href="../index.html" class="nav-link site-nav__link">Home</a>
+                <a href="apps.html" class="nav-link site-nav__link active">Apps</a>
+                <a href="podcasts.html" class="nav-link site-nav__link">Podcasts</a>
+                <a href="multimedia.html" class="nav-link site-nav__link">Multimedia</a>
+                <a href="developer-docs.html" class="nav-link site-nav__link">Developer Docs</a>
+                <a href="about.html" class="nav-link site-nav__link">About</a>
             </div>
-            <div class="nav-toggle">
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Apps Hero Section -->
-    <section class="sub-hero dark">
+    <section class="sub-hero dark site-hero" data-component="page-hero">
         <div class="container narrow">
-            <p class="eyebrow">Portfolio</p>
+            <p class="eyebrow ds-eyebrow">Portfolio</p>
             <h1>EdenTV apps & multi-platform systems.</h1>
             <p>16 releases spanning iOS, Android, web, and data tooling—each crafted by the same studio to feel intentional, responsive, and compliance-ready.</p>
             <div class="hero-cta">
-                <a href="../pages/developer-docs.html" class="btn btn-primary">Open developer documentation</a>
-                <a href="mailto:contact@edentv.us" class="btn btn-link">Work with us</a>
+                <a href="../pages/developer-docs.html" class="btn ds-button btn-primary">Open developer documentation</a>
+                <a href="mailto:contact@edentv.us" class="btn ds-button btn-link">Work with us</a>
             </div>
         </div>
     </section>
 
-    <section class="section platform-panels">
+    <section class="section site-section platform-panels">
         <div class="container">
             <div class="panel-grid">
-                <div class="panel-card large">
+                <div class="panel-card ds-card large">
                     <div>
                         <p class="panel-eyebrow">Flagship release</p>
                         <h2>ParkMemoryHub</h2>
@@ -57,7 +57,7 @@
                     </div>
                     <a href="mailto:contact@edentv.us">See the Apple lineup</a>
                 </div>
-                <div class="panel-card dark">
+                <div class="panel-card ds-card dark">
                     <div>
                         <p class="panel-eyebrow">Realtime data</p>
                         <h3>PulseTrack</h3>
@@ -65,7 +65,7 @@
                     </div>
                     <a href="pages/apps.html#web">View featured web work</a>
                 </div>
-                <div class="panel-card light">
+                <div class="panel-card ds-card light">
                     <div>
                         <p class="panel-eyebrow">Android</p>
                         <h3>MoodQuest</h3>
@@ -77,26 +77,26 @@
         </div>
     </section>
 
-    <section class="section apps-overview">
+    <section class="section site-section apps-overview">
         <div class="container">
             <div class="experience-lead">
                 <h2>Five categories. One design system.</h2>
                 <p>Everything EdenTV ships shares a common language—SwiftUI interfaces, Compose layouts, React dashboards, and data tooling with the same typographic rhythm and compliance support.</p>
             </div>
             <div class="stats-row">
-                <div class="stat-card">
+                <div class="stat-card ds-card ds-stat-card">
                     <h3>04</h3>
                     <p>iOS & macOS releases</p>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card ds-card ds-stat-card">
                     <h3>02</h3>
                     <p>Android builds</p>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card ds-card ds-stat-card">
                     <h3>06</h3>
                     <p>Full-stack web platforms</p>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card ds-card ds-stat-card">
                     <h3>04</h3>
                     <p>Data tools & study resources</p>
                 </div>
@@ -105,18 +105,18 @@
     </section>
 
     <!-- iOS Apps Section -->
-    <section id="ios" class="section category-section">
+    <section id="ios" class="section site-section category-section">
         <div class="container">
             <div class="category-header">
                 <div>
-                    <p class="eyebrow">iOS & macOS</p>
+                    <p class="eyebrow ds-eyebrow">iOS & macOS</p>
                     <h2>Native Apple experiences.</h2>
                     <p>SwiftUI, CloudKit, AVFoundation, and Apple Health integrations tuned for iPhone, iPad, and Mac.</p>
                 </div>
                 <span class="category-count">4 projects</span>
             </div>
             <div class="project-grid">
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>ParkMemoryHub</h3>
                     <p>Circle-based trip memories, shared planning, and optional live location sharing for families and friends.</p>
@@ -132,7 +132,7 @@
                         <li>Local-first storage with iCloud sync</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label in-dev">In Development</div>
                     <h3>Jx Scheduler</h3>
                     <p>Modern logistics scheduling with real-time messaging and Apple Sign In.</p>
@@ -148,7 +148,7 @@
                         <li>Driver and dispatcher messaging</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>cosmix</h3>
                     <p>macOS audio visualizer with multiple render modes and low-latency capture.</p>
@@ -164,7 +164,7 @@
                         <li>Studio-friendly dark UI</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label in-dev">In Development</div>
                     <h3>pulsetrackr</h3>
                     <p>Health tracking companion app with iOS Health integration and privacy-first storage.</p>
@@ -183,18 +183,18 @@
     </section>
 
     <!-- Android -->
-    <section id="android" class="section category-section alt">
+    <section id="android" class="section site-section category-section alt">
         <div class="container">
             <div class="category-header">
                 <div>
-                    <p class="eyebrow">Android</p>
+                    <p class="eyebrow ds-eyebrow">Android</p>
                     <h2>Jetpack Compose journeys.</h2>
                     <p>Modern Android 8+ applications built with Kotlin, offline-first data layers, and Material You visuals.</p>
                 </div>
                 <span class="category-count">2 projects</span>
             </div>
             <div class="project-grid two-col">
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>MoodQuest</h3>
                     <p>Mood-based adventure planner with smart location filters and history.</p>
@@ -210,7 +210,7 @@
                         <li>Adventure history timeline</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label in-dev">In Development</div>
                     <h3>Frisbie</h3>
                     <p>Kotlin-first Android experience optimized for performance and modern patterns.</p>
@@ -229,18 +229,18 @@
     </section>
 
     <!-- Web -->
-    <section id="web" class="section category-section">
+    <section id="web" class="section site-section category-section">
         <div class="container">
             <div class="category-header">
                 <div>
-                    <p class="eyebrow">Web Platforms</p>
+                    <p class="eyebrow ds-eyebrow">Web Platforms</p>
                     <h2>React, Node.js, Firebase, and live data.</h2>
                     <p>Full-stack launches designed for realtime dashboards, sentiment tracking, onboarding, and AI-assisted workflows.</p>
                 </div>
                 <span class="category-count">6 projects</span>
             </div>
             <div class="project-grid">
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Live</div>
                     <h3>PulseTrack</h3>
                     <p>Political sentiment tracker with automated NLP pipelines and interactive charts.</p>
@@ -255,7 +255,7 @@
                         <li>Realtime updates</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>Snapshot</h3>
                     <p>Photo sharing network with responsive React UI and Firestore backend.</p>
@@ -269,7 +269,7 @@
                         <li>Global search</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>NebulaChat</h3>
                     <p>MERN messaging platform with concurrent React features and Firebase sync.</p>
@@ -284,7 +284,7 @@
                         <li>Message search + filters</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Live</div>
                     <h3>LxRose</h3>
                     <p>Healthcare services platform with admin dashboards and messaging.</p>
@@ -299,7 +299,7 @@
                         <li>Multi-role dashboards</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Live</div>
                     <h3>Guess Correctly</h3>
                     <p>Atmospheric Halloween memory game with multiplayer and Firebase sync.</p>
@@ -313,7 +313,7 @@
                         <li>Custom soundscape</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>Virtual Wig Studio</h3>
                     <p>AI-powered try-on tool using Gemini Flash Image API.</p>
@@ -332,18 +332,18 @@
     </section>
 
     <!-- Python & Data -->
-    <section id="python" class="section category-section alt">
+    <section id="python" class="section site-section category-section alt">
         <div class="container">
             <div class="category-header">
                 <div>
-                    <p class="eyebrow">Python & Data</p>
+                    <p class="eyebrow ds-eyebrow">Python & Data</p>
                     <h2>ETL, dashboards, and learning platforms.</h2>
                     <p>Data processing pipelines, Streamlit explorations, and LMS tooling built with Python.</p>
                 </div>
                 <span class="category-count">3 projects</span>
             </div>
             <div class="project-grid three-col">
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>Blockchain Transfer Simulation</h3>
                     <p>Interactive blockchain explorer for education, powered by Streamlit.</p>
@@ -357,7 +357,7 @@
                         <li>Live blockchain view</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>Philly Real Estate Tracker</h3>
                     <p>ETL pipeline covering Southeast Philadelphia property data.</p>
@@ -372,7 +372,7 @@
                         <li>CSV export pipelines</li>
                     </ul>
                 </article>
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>Upscale AI Bootcamp</h3>
                     <p>Learning management platform with Paystack integration and course tracking.</p>
@@ -391,18 +391,18 @@
     </section>
 
     <!-- Study Resources -->
-    <section id="study" class="section category-section">
+    <section id="study" class="section site-section category-section">
         <div class="container">
             <div class="category-header">
                 <div>
-                    <p class="eyebrow">Study Resources</p>
+                    <p class="eyebrow ds-eyebrow">Study Resources</p>
                     <h2>High-volume prep content.</h2>
                     <p>Large-format educational tools built with lightweight web stacks.</p>
                 </div>
                 <span class="category-count">1 project</span>
             </div>
             <div class="project-grid">
-                <article class="project-card">
+                <article class="project-card ds-card">
                     <div class="project-label available">Available</div>
                     <h3>AWS SAA-C03 Exam Prep</h3>
                     <p>Interactive prep tool featuring 650+ MCQs with detailed explanations.</p>
@@ -420,50 +420,50 @@
         </div>
     </section>
 
-    <section class="section contact-cta">
+    <section class="section site-section contact-cta">
         <div class="container contact-shell">
             <div>
-                <p class="eyebrow">Bring your idea to EdenTV</p>
+                <p class="eyebrow ds-eyebrow">Bring your idea to EdenTV</p>
                 <h2>Need a flagship release or supporting toolkit?</h2>
                 <p>Every app here was designed, engineered, and documented by EdenTV. Reach out if you need the same end-to-end treatment.</p>
             </div>
             <div class="contact-actions">
-                <a href="mailto:contact@edentv.us" class="btn btn-primary">Start a conversation</a>
-                <a href="../pages/about.html" class="btn btn-secondary">Meet the studio</a>
+                <a href="mailto:contact@edentv.us" class="btn ds-button btn-primary">Start a conversation</a>
+                <a href="../pages/about.html" class="btn ds-button btn-secondary">Meet the studio</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer site-footer" data-component="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
+            <div class="footer-content site-footer__content">
+                <div class="footer-brand site-footer__brand">
                     <h3>EdenTV</h3>
                     <p>Creating tomorrow's digital experiences today.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-section">
+                <div class="footer-links site-footer__links">
+                    <div class="footer-section site-footer__section">
                         <h4>Platform</h4>
                         <a href="apps.html">Apps</a>
                         <a href="podcasts.html">Podcasts</a>
                         <a href="multimedia.html">Multimedia</a>
                         <a href="about.html">About</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Legal</h4>
                         <a href="../legal/privacy-policy.html">Privacy Policy</a>
                         <a href="../legal/terms-of-service.html">Terms of Service</a>
                         <a href="../legal/app-store-compliance.html">App Store Compliance</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Connect</h4>
                         <a href="mailto:support@edentv.us">Support</a>
                         <a href="../legal/support.html">Help Center</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom site-footer__bottom">
                 <p>&copy; 2024 EdenTV. All rights reserved.</p>
             </div>
         </div>

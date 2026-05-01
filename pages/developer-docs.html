@@ -7,49 +7,49 @@
     <meta name="description" content="Comprehensive developer documentation for EdenTV applications including privacy policies and compliance guidelines.">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../assets/brand/etv-favicon.svg">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-brand">
+    <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
+        <div class="nav-container site-header__container">
+            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand">
                 <h1>EdenTV</h1>
-                <span class="tagline">Creator Studio</span>
+                <span class="tagline site-brand__tagline">Creator Studio</span>
             </a>
-            <div class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="apps.html" class="nav-link">Apps</a>
-                <a href="podcasts.html" class="nav-link">Podcasts</a>
-                <a href="multimedia.html" class="nav-link">Multimedia</a>
-                <a href="developer-docs.html" class="nav-link active">Developer Docs</a>
-                <a href="about.html" class="nav-link">About</a>
+            <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
+                <a href="../index.html" class="nav-link site-nav__link">Home</a>
+                <a href="apps.html" class="nav-link site-nav__link">Apps</a>
+                <a href="podcasts.html" class="nav-link site-nav__link">Podcasts</a>
+                <a href="multimedia.html" class="nav-link site-nav__link">Multimedia</a>
+                <a href="developer-docs.html" class="nav-link site-nav__link active">Developer Docs</a>
+                <a href="about.html" class="nav-link site-nav__link">About</a>
             </div>
-            <div class="nav-toggle">
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Developer Docs Hero Section -->
-    <section class="sub-hero dark">
+    <section class="sub-hero dark site-hero" data-component="page-hero">
         <div class="container narrow">
-            <p class="eyebrow">Developer Hub</p>
+            <p class="eyebrow ds-eyebrow">Developer Hub</p>
             <h1>Compliance, privacy, and support in one place.</h1>
             <p>Every EdenTV launch ships with documentation that mirrors our software polish. Browse platform-wide policies, app-specific guidelines, and support resources.</p>
             <div class="hero-cta">
-                <a href="../legal/privacy-policy.html" class="btn btn-primary">View platform policies</a>
-                <a href="mailto:legal@edentv.us" class="btn btn-link">Contact legal</a>
+                <a href="../legal/privacy-policy.html" class="btn ds-button btn-primary">View platform policies</a>
+                <a href="mailto:legal@edentv.us" class="btn ds-button btn-link">Contact legal</a>
             </div>
         </div>
     </section>
 
-    <section class="section platform-panels">
+    <section class="section site-section platform-panels">
         <div class="container">
             <div class="panel-grid">
-                <div class="panel-card large">
+                <div class="panel-card ds-card large">
                     <div>
                         <p class="panel-eyebrow">Platform</p>
                         <h2>Privacy, terms, compliance.</h2>
@@ -57,7 +57,7 @@
                     </div>
                     <a href="../legal/privacy-policy.html">Review platform docs</a>
                 </div>
-                <div class="panel-card dark">
+                <div class="panel-card ds-card dark">
                     <div>
                         <p class="panel-eyebrow">Application</p>
                         <h3>ParkMemoryHub suite</h3>
@@ -65,7 +65,7 @@
                     </div>
                     <a href="#app-docs">See per-app docs</a>
                 </div>
-                <div class="panel-card light">
+                <div class="panel-card ds-card light">
                     <div>
                         <p class="panel-eyebrow">Support</p>
                         <h3>Help center + contact</h3>
@@ -78,11 +78,11 @@
     </section>
 
     <!-- Platform Documentation -->
-    <section id="platform-docs" class="section category-section">
+    <section id="platform-docs" class="section site-section category-section">
         <div class="container">
             <div class="category-header">
                 <div>
-                    <p class="eyebrow">Platform documentation</p>
+                    <p class="eyebrow ds-eyebrow">Platform documentation</p>
                     <h2>Policies that cover every EdenTV surface.</h2>
                     <p>Use these links whenever you need globally applied legal copy or compliance reference.</p>
                 </div>
@@ -90,7 +90,7 @@
             </div>
             
             <div class="doc-list">
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Policy</span>
                         <h3>Privacy Policy</h3>
@@ -98,7 +98,7 @@
                     </div>
                     <a href="../legal/privacy-policy.html">Read policy</a>
                 </article>
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Agreement</span>
                         <h3>Terms of Service</h3>
@@ -106,7 +106,7 @@
                     </div>
                     <a href="../legal/terms-of-service.html">View terms</a>
                 </article>
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Compliance</span>
                         <h3>App Store Compliance</h3>
@@ -114,7 +114,7 @@
                     </div>
                     <a href="../legal/app-store-compliance.html">Open compliance</a>
                 </article>
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Support</span>
                         <h3>Support & Help Center</h3>
@@ -127,11 +127,11 @@
     </section>
 
     <!-- App-Specific Documentation -->
-    <section id="app-docs" class="section category-section alt">
+    <section id="app-docs" class="section site-section category-section alt">
         <div class="container">
             <div class="category-header">
                 <div>
-                    <p class="eyebrow">Application documentation</p>
+                    <p class="eyebrow ds-eyebrow">Application documentation</p>
                     <h2>App release paperwork.</h2>
                     <p>App-specific policies that accompany our iOS launches.</p>
                 </div>
@@ -139,7 +139,7 @@
             </div>
 
             <div class="doc-list compact">
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Privacy</span>
                         <h3>JxL Scheduler Privacy</h3>
@@ -147,7 +147,7 @@
                     </div>
                     <a href="../docs/jxl-scheduler-privacy.html">Open document</a>
                 </article>
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Compliance</span>
                         <h3>JxL Scheduler App Store Compliance</h3>
@@ -155,7 +155,7 @@
                     </div>
                     <a href="../docs/jxl-scheduler-compliance.html">Review compliance</a>
                 </article>
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Support</span>
                         <h3>JxL Scheduler Support</h3>
@@ -163,7 +163,7 @@
                     </div>
                     <a href="../docs/jxl-scheduler-support.html">Browse support</a>
                 </article>
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Privacy</span>
                         <h3>ParkMemoryHub Privacy</h3>
@@ -171,7 +171,7 @@
                     </div>
                     <a href="../docs/parkmemory-privacy.html">Open document</a>
                 </article>
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Terms</span>
                         <h3>ParkMemoryHub Terms</h3>
@@ -179,7 +179,7 @@
                     </div>
                     <a href="../docs/parkmemory-terms.html">View terms</a>
                 </article>
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Compliance</span>
                         <h3>App Store Compliance</h3>
@@ -187,7 +187,7 @@
                     </div>
                     <a href="../docs/parkmemory-compliance.html">Review compliance</a>
                 </article>
-                <article class="doc-list-item">
+                <article class="doc-list-item ds-card ds-document-card">
                     <div>
                         <span class="doc-type">Support</span>
                         <h3>Support Documentation</h3>
@@ -200,52 +200,52 @@
     </section>
 
     <!-- Support Section -->
-    <section class="section contact-cta">
+    <section class="section site-section contact-cta">
         <div class="container">
             <div class="contact-shell">
                 <div>
-                    <p class="eyebrow">Need something custom?</p>
+                    <p class="eyebrow ds-eyebrow">Need something custom?</p>
                     <h2>We can create tailored privacy, terms, or compliance docs for your release.</h2>
                     <p>Whether you’re extending an existing product or introducing a new platform, EdenTV handles the end-to-end documentation.</p>
                 </div>
                 <div class="contact-actions">
-                    <a href="mailto:legal@edentv.us" class="btn btn-primary">Contact legal</a>
-                    <a href="../pages/apps.html" class="btn btn-secondary">See the work</a>
+                    <a href="mailto:legal@edentv.us" class="btn ds-button btn-primary">Contact legal</a>
+                    <a href="../pages/apps.html" class="btn ds-button btn-secondary">See the work</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer site-footer" data-component="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
+            <div class="footer-content site-footer__content">
+                <div class="footer-brand site-footer__brand">
                     <h3>EdenTV</h3>
                     <p>Creating tomorrow's digital experiences today.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-section">
+                <div class="footer-links site-footer__links">
+                    <div class="footer-section site-footer__section">
                         <h4>Platform</h4>
                         <a href="apps.html">Apps</a>
                         <a href="podcasts.html">Podcasts</a>
                         <a href="multimedia.html">Multimedia</a>
                         <a href="about.html">About</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Legal</h4>
                         <a href="../legal/privacy-policy.html">Privacy Policy</a>
                         <a href="../legal/terms-of-service.html">Terms of Service</a>
                         <a href="../legal/app-store-compliance.html">App Store Compliance</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Connect</h4>
                         <a href="mailto:support@edentv.us">Support</a>
                         <a href="../legal/support.html">Help Center</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom site-footer__bottom">
                 <p>&copy; 2024 EdenTV. All rights reserved.</p>
             </div>
         </div>

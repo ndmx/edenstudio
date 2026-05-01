@@ -9,6 +9,9 @@ edentv/
 │   └── styles.css            # All website styling
 ├── js/
 │   └── script.js             # All website JavaScript
+├── assets/
+│   └── brand/
+│       └── etv-favicon.svg   # EdenTV Etv browser icon
 ├── pages/
 │   ├── apps.html             # Apps showcase page
 │   ├── podcasts.html         # Podcasts page (coming soon)
@@ -26,6 +29,7 @@ edentv/
 │   ├── parkmemory-compliance.html # ParkMemoryHub App Store compliance
 │   └── parkmemory-support.html    # ParkMemoryHub support docs
 ├── README.md                 # Project documentation
+├── DESIGN_SYSTEM.md          # EdenTV component naming and visual system
 └── PROJECT_STRUCTURE.md      # This file
 
 ```
@@ -42,6 +46,10 @@ edentv/
 ### `/js/` - JavaScript
 - All JavaScript files
 - Currently single `script.js` with all functionality
+
+### `/assets/` - Brand & Media Assets
+- Brand marks, icons, and reusable media
+- Current favicon is `assets/brand/etv-favicon.svg`
 
 ### `/pages/` - Main Content Pages
 - All main website pages (apps, podcasts, multimedia, docs, about)
@@ -65,6 +73,7 @@ edentv/
 - Legal: `legal/[document].html`
 - CSS: `css/styles.css`
 - JS: `js/script.js`
+- Favicon: `assets/brand/etv-favicon.svg`
 
 ### From Pages (`pages/*.html`)
 - Home: `../index.html`
@@ -73,6 +82,7 @@ edentv/
 - App Docs: `../docs/[doc].html`
 - CSS: `../css/styles.css`
 - JS: `../js/script.js`
+- Favicon: `../assets/brand/etv-favicon.svg`
 
 ### From Legal (`legal/*.html`)
 - Home: `../index.html`
@@ -80,6 +90,7 @@ edentv/
 - Other Legal: `[document].html` (same directory)
 - CSS: `../css/styles.css`
 - JS: `../js/script.js`
+- Favicon: `../assets/brand/etv-favicon.svg`
 
 ### From Docs (`docs/*.html`)
 - Home: `../index.html`
@@ -87,6 +98,7 @@ edentv/
 - Legal: `../legal/[document].html`
 - CSS: `../css/styles.css`
 - JS: `../js/script.js`
+- Favicon: `../assets/brand/etv-favicon.svg`
 
 ## Content Status
 
@@ -141,8 +153,14 @@ This is a static website designed for Cloudflare Pages deployment:
 
 ### Updating Styles
 - All styles in `css/styles.css`
-- Uses CSS custom properties for consistency
+- Uses CSS custom properties and the EdenTV design-system tokens for consistency
 - Responsive design included
+
+### Updating Components
+- Follow `DESIGN_SYSTEM.md`
+- Use `site-*` for global regions such as header, hero, section, and footer
+- Use `ds-*` for reusable primitives such as cards, buttons, icons, and badges
+- Keep legacy classes in place until their CSS and JavaScript dependencies are removed
 
 ### Updating Functionality
 - All JavaScript in `js/script.js`

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">EdenTV Etv mark</title>
+  <desc id="desc">A cursive Etv monogram on a dark glass background.</desc>
+  <defs>
+    <radialGradient id="aura" cx="32%" cy="22%" r="88%">
+      <stop offset="0" stop-color="#fff4e8" stop-opacity="0.92"/>
+      <stop offset="0.34" stop-color="#ff8f70" stop-opacity="0.52"/>
+      <stop offset="0.68" stop-color="#4bd8ca" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#05070a"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="22" y1="34" x2="108" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff8ed"/>
+      <stop offset="0.42" stop-color="#ffd7a6"/>
+      <stop offset="1" stop-color="#8bf1e7"/>
+    </linearGradient>
+    <filter id="softShadow" x="-24%" y="-24%" width="148%" height="148%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="#07090d"/>
+  <rect x="8" y="8" width="112" height="112" rx="25" fill="url(#aura)" opacity="0.95"/>
+  <rect x="11" y="11" width="106" height="106" rx="23" fill="none" stroke="#ffffff" stroke-opacity="0.16"/>
+  <path
+    d="M34 76c18 3 39-2 42-17 2-10-8-17-21-15-19 3-30 20-25 33 5 15 31 17 51 6m-4-39c-5 21-9 39-6 47 2 6 8 5 15-2m-24-22h32m-3-18c4 10 8 25 8 38 0 8 3 11 9 5"
+    fill="none"
+    stroke="url(#stroke)"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#softShadow)"
+  />
+  <path
+    d="M34 76c18 3 39-2 42-17 2-10-8-17-21-15-19 3-30 20-25 33 5 15 31 17 51 6m-4-39c-5 21-9 39-6 47 2 6 8 5 15-2m-24-22h32m-3-18c4 10 8 25 8 38 0 8 3 11 9 5"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.42"
+  />
+</svg>

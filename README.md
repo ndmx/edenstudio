@@ -5,7 +5,8 @@ A modern, responsive website showcasing EdenTV's complete portfolio of software 
 ## 🌟 Features
 
 - **Responsive Design**: Optimized for all devices (desktop, tablet, mobile)
-- **Modern UI**: Clean interface with smooth animations and transitions
+- **Design System**: Shared `site-*` and `ds-*` component classes with reusable visual tokens
+- **Modern UI**: Apple-inspired dark interface with glass surfaces, clear states, and restrained motion
 - **Dynamic Content**: Interactive cycling cards and animated sections
 - **Complete Documentation**: Comprehensive legal and technical documentation
 - **Well-Organized**: Clean folder structure for easy maintenance
@@ -19,6 +20,9 @@ edentv/
 │   └── styles.css            # All styling
 ├── js/
 │   └── script.js             # All JavaScript
+├── assets/
+│   └── brand/
+│       └── etv-favicon.svg   # EdenTV Etv browser icon
 ├── pages/
 │   ├── apps.html             # Apps showcase
 │   ├── podcasts.html         # Podcasts (coming soon)
@@ -30,14 +34,15 @@ edentv/
 │   ├── terms-of-service.html # Terms of service
 │   ├── app-store-compliance.html # App Store compliance
 │   └── support.html          # Support docs
-└── docs/
+├── docs/
     ├── parkmemory-privacy.html    # App-specific privacy
     ├── parkmemory-terms.html      # App-specific terms
     ├── parkmemory-compliance.html # App-specific compliance
     └── parkmemory-support.html    # App-specific support
+└── DESIGN_SYSTEM.md          # Component naming and visual system guide
 ```
 
-See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for detailed documentation.
+See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) and [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) for detailed documentation.
 
 ## 🚀 Deployment
 
@@ -65,15 +70,24 @@ See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for detailed documentation.
 
 ## 🎨 Customization
 
+### Design System
+Use `DESIGN_SYSTEM.md` when adding or editing pages. New reusable components should use:
+
+- `site-*` for global regions such as header, footer, hero, and section shell
+- `ds-*` for reusable primitives such as cards, buttons, icons, and badges
+- `page-*` for one-off page composition
+
+Legacy classes remain in markup until the whole site is migrated away from them.
+
 ### Updating Colors
-Edit CSS custom properties in `css/styles.css`:
+Edit design-system tokens in `css/styles.css`:
 
 ```css
 :root {
-    --primary-color: #6366f1;
-    --primary-dark: #4f46e5;
-    --text-primary: #1a202c;
-    --text-secondary: #4a5568;
+    --color-page: #090a0d;
+    --color-ink: #fff8ef;
+    --color-gold: #f0c86a;
+    --color-seafoam: #61d5c8;
     /* ... */
 }
 ```

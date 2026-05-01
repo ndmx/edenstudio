@@ -7,28 +7,28 @@
     <meta name="description" content="Privacy Policy specific to JxL Scheduler - local-first schedules, routes, messages, uploads, location, and optional iCloud sharing.">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../assets/brand/etv-favicon.svg">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-brand">
+    <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
+        <div class="nav-container site-header__container">
+            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand">
                 <h1>EdenTV</h1>
-                <span class="tagline">Creator Studio</span>
+                <span class="tagline site-brand__tagline">Creator Studio</span>
             </a>
-            <div class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="../pages/apps.html" class="nav-link">Apps</a>
-                <a href="../pages/podcasts.html" class="nav-link">Podcasts</a>
-                <a href="../pages/multimedia.html" class="nav-link">Multimedia</a>
-                <a href="../pages/developer-docs.html" class="nav-link active">Developer Docs</a>
-                <a href="../pages/about.html" class="nav-link">About</a>
+            <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
+                <a href="../index.html" class="nav-link site-nav__link">Home</a>
+                <a href="../pages/apps.html" class="nav-link site-nav__link">Apps</a>
+                <a href="../pages/podcasts.html" class="nav-link site-nav__link">Podcasts</a>
+                <a href="../pages/multimedia.html" class="nav-link site-nav__link">Multimedia</a>
+                <a href="../pages/developer-docs.html" class="nav-link site-nav__link active">Developer Docs</a>
+                <a href="../pages/about.html" class="nav-link site-nav__link">About</a>
             </div>
-            <div class="nav-toggle">
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -47,7 +47,7 @@
     <section class="doc-header">
         <div class="container">
             <div class="doc-title-group">
-                <div class="app-icon">JxL</div>
+                <div class="app-icon ds-app-icon">JxL</div>
                 <div class="doc-info">
                     <h1>JxL Scheduler Privacy Policy</h1>
                     <p class="doc-subtitle">How JxL Scheduler stores, shares, and protects schedules, routes, messages, uploads, and optional location data.</p>
@@ -188,21 +188,21 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer site-footer" data-component="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
+            <div class="footer-content site-footer__content">
+                <div class="footer-brand site-footer__brand">
                     <h3>EdenTV</h3>
                     <p>Creating tomorrow's digital experiences today.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-section">
+                <div class="footer-links site-footer__links">
+                    <div class="footer-section site-footer__section">
                         <h4>JxL Scheduler</h4>
                         <a href="jxl-scheduler-privacy.html">Privacy Policy</a>
                         <a href="jxl-scheduler-compliance.html">App Store Compliance</a>
                         <a href="jxl-scheduler-support.html">Support</a>
                     </div>
-                    <div class="footer-section">
+                    <div class="footer-section site-footer__section">
                         <h4>Platform</h4>
                         <a href="../pages/apps.html">Apps</a>
                         <a href="../pages/developer-docs.html">Developer Docs</a>
@@ -210,7 +210,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom site-footer__bottom">
                 <p>&copy; 2026 EdenTV. All rights reserved.</p>
             </div>
         </div>
