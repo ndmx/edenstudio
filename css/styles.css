@@ -2642,6 +2642,46 @@ body::before {
     background: var(--surface-inset);
 }
 
+.platform-panels .panel-card.ds-card,
+.platform-panels .panel-card.ds-card.large,
+.platform-panels .panel-card.ds-card.dark,
+.platform-panels .panel-card.ds-card.light {
+    color: var(--color-text);
+    border-color: var(--color-line);
+    background:
+        linear-gradient(145deg, rgba(255, 248, 239, 0.07), rgba(255, 248, 239, 0.025)),
+        rgba(14, 13, 15, 0.96);
+}
+
+.platform-panels .panel-card.ds-card.large {
+    border-color: rgba(240, 200, 106, 0.32);
+    background:
+        linear-gradient(145deg, rgba(240, 200, 106, 0.16), rgba(230, 90, 66, 0.07) 48%, rgba(97, 213, 200, 0.08)),
+        rgba(16, 13, 14, 0.98);
+}
+
+.platform-panels .panel-card.ds-card h2,
+.platform-panels .panel-card.ds-card h3 {
+    color: var(--color-ink);
+}
+
+.platform-panels .panel-card.ds-card p:not(.panel-eyebrow) {
+    color: #e1d4c7;
+}
+
+.platform-panels .panel-card.ds-card .panel-eyebrow {
+    color: var(--color-gold);
+    opacity: 1;
+}
+
+.platform-panels .panel-card.ds-card a {
+    color: var(--color-seafoam);
+}
+
+.platform-panels .panel-card.ds-card a:hover {
+    color: var(--color-gold);
+}
+
 .experience-card,
 .showcase-card,
 .doc-list-item,
@@ -2659,6 +2699,7 @@ body::before {
 
 .floating-elements .cycling-card,
 .contact-cta .contact-content,
+.contact-cta .contact-shell,
 .documentation-strip .container,
 .support-hero,
 .support-content,
@@ -2669,6 +2710,52 @@ body::before {
     box-shadow: var(--shadow-soft);
     backdrop-filter: blur(18px) saturate(145%);
     -webkit-backdrop-filter: blur(18px) saturate(145%);
+}
+
+.documentation-strip,
+.contact-cta {
+    background: transparent;
+}
+
+.documentation-strip .doc-container,
+.contact-cta .contact-shell {
+    padding: clamp(24px, 4vw, 44px);
+}
+
+.documentation-strip .doc-container {
+    align-items: center;
+}
+
+.documentation-strip h2,
+.contact-cta h2 {
+    color: var(--color-ink);
+    margin-bottom: 0;
+}
+
+.contact-cta p:not(.eyebrow) {
+    max-width: 680px;
+    color: #e1d4c7;
+}
+
+.doc-links {
+    gap: 12px;
+}
+
+.doc-links a {
+    min-height: 42px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 14px;
+    border: 1px solid var(--color-line);
+    border-radius: 999px;
+    color: var(--color-ink);
+    background: rgba(255, 248, 239, 0.07);
+}
+
+.doc-links a:hover {
+    color: #120d09;
+    border-color: rgba(240, 200, 106, 0.58);
+    background: var(--color-gold);
 }
 
 .card-icon,
