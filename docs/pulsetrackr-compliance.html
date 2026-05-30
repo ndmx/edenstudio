@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseTrackr App Store Compliance - EdenTV Developer Docs</title>
+    <meta name="description" content="App Store compliance information for PulseTrackr - privacy, safety disclaimers, user-generated incident content, Firebase, SOS, and review notes.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../assets/brand/etv-favicon.svg">
+</head>
+<body>
+    <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
+        <div class="nav-container site-header__container">
+            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand">
+                <h1>EdenTV</h1>
+                <span class="tagline site-brand__tagline">Creator Studio</span>
+            </a>
+            <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
+                <a href="../index.html" class="nav-link site-nav__link">Home</a>
+                <a href="../pages/apps.html" class="nav-link site-nav__link">Apps</a>
+                <a href="../pages/podcasts.html" class="nav-link site-nav__link">Podcasts</a>
+                <a href="../pages/multimedia.html" class="nav-link site-nav__link">Multimedia</a>
+                <a href="../pages/developer-docs.html" class="nav-link site-nav__link active">Developer Docs</a>
+                <a href="../pages/about.html" class="nav-link site-nav__link">About</a>
+            </div>
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="../pages/developer-docs.html">Developer Docs</a>
+                <span class="separator">/</span>
+                <a href="../pages/developer-docs.html#app-docs">PulseTrackr</a>
+                <span class="separator">/</span>
+                <span class="current">App Store Compliance</span>
+            </nav>
+        </div>
+    </section>
+
+    <section class="doc-header">
+        <div class="container">
+            <div class="doc-title-group">
+                <div class="app-icon ds-app-icon">PT</div>
+                <div class="doc-info">
+                    <h1>PulseTrackr App Store Compliance</h1>
+                    <p class="doc-subtitle">Product summary, App Store URLs, privacy notes, and suggested review notes for PulseTrackr.</p>
+                    <div class="doc-meta">
+                        <span class="last-updated">Last updated: May 30, 2026</span>
+                        <span class="version">Version 1.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="toc-section">
+        <div class="container">
+            <div class="toc-container">
+                <h2>Table of Contents</h2>
+                <nav class="toc">
+                    <ol>
+                        <li><a href="#urls" class="toc-link">App Store URLs</a></li>
+                        <li><a href="#overview" class="toc-link">Overview</a></li>
+                        <li><a href="#functionality" class="toc-link">Core Functionality</a></li>
+                        <li><a href="#content" class="toc-link">User-Generated Content</a></li>
+                        <li><a href="#privacy" class="toc-link">Privacy and Permissions</a></li>
+                        <li><a href="#safety" class="toc-link">Safety Positioning</a></li>
+                        <li><a href="#business" class="toc-link">Business Model</a></li>
+                        <li><a href="#metadata" class="toc-link">Suggested Metadata</a></li>
+                        <li><a href="#review-notes" class="toc-link">Suggested Review Notes</a></li>
+                        <li><a href="#contact" class="toc-link">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-content">
+        <div class="container">
+            <div class="doc-body">
+                <section id="urls" class="doc-section">
+                    <h2>1. App Store URLs</h2>
+                    <div class="highlight-box">
+                        <h3>Ready-to-paste fields</h3>
+                        <ul>
+                            <li><strong>Marketing URL:</strong> https://edentv.us/pages/pulsetrackr.html</li>
+                            <li><strong>Support URL:</strong> https://edentv.us/docs/pulsetrackr-support.html</li>
+                            <li><strong>Privacy Policy URL:</strong> https://edentv.us/docs/pulsetrackr-privacy.html</li>
+                            <li><strong>User Privacy Choices URL:</strong> https://edentv.us/docs/pulsetrackr-privacy.html#choices</li>
+                            <li><strong>Terms URL:</strong> https://edentv.us/docs/pulsetrackr-terms.html</li>
+                        </ul>
+                    </div>
+                    <p>Use the Support URL in the platform version information section and the Privacy Policy URL in App Privacy. Marketing URL and User Privacy Choices URL can also be supplied where available.</p>
+                </section>
+
+                <section id="overview" class="doc-section">
+                    <h2>2. Overview</h2>
+                    <p>PulseTrackr is an iPhone community safety app for nearby incident awareness, crowd-sourced reports, map-based filtering, community verification, and trusted-contact SOS alerts.</p>
+                    <div class="highlight-box">
+                        <h3>Current App Model</h3>
+                        <ul>
+                            <li>SwiftUI app for iPhone</li>
+                            <li>Firebase backend for reports, anonymous authentication, storage, cloud functions, and App Check</li>
+                            <li>Mapbox map support with Apple map fallback surfaces in the app code</li>
+                            <li>Optional evidence attachments: photo and voice note</li>
+                            <li>No advertising, external payments, subscriptions, or in-app purchases in the current app</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="functionality" class="doc-section">
+                    <h2>3. Core Functionality</h2>
+                    <ul>
+                        <li><strong>Map:</strong> View active reports near the user and inspect incident details.</li>
+                        <li><strong>Feed:</strong> Browse reports inside a selected watch radius and filter by urgency or category.</li>
+                        <li><strong>Report:</strong> Submit a community incident report with classification, status, location, optional photo, and optional voice note.</li>
+                        <li><strong>Community signals:</strong> Mark reports as seen, not seen, unsafe, road blocked, or cleared.</li>
+                        <li><strong>SOS:</strong> Add trusted contacts and activate SOS location updates to selected contacts.</li>
+                        <li><strong>Settings:</strong> Manage watch radius, alert filters, report-location privacy, precise location status, and SOS contacts.</li>
+                    </ul>
+                </section>
+
+                <section id="content" class="doc-section">
+                    <h2>4. User-Generated Content</h2>
+                    <p>PulseTrackr includes user-generated incident reports, optional evidence, and community verification signals.</p>
+                    <ul>
+                        <li>Reports are intended for local safety awareness, not entertainment or public shaming.</li>
+                        <li>Public report fields are limited to safety-relevant incident information and approximate location when enabled.</li>
+                        <li>Backend rate limits reduce report and signal abuse.</li>
+                        <li>Public Firestore records are read-only to clients; writes go through Cloud Functions.</li>
+                    </ul>
+                </section>
+
+                <section id="privacy" class="doc-section">
+                    <h2>5. Privacy and Permissions</h2>
+                    <ul>
+                        <li><strong>Location:</strong> Required for nearby reports, report submission, and SOS location updates.</li>
+                        <li><strong>Contacts:</strong> Used only when importing a trusted contact for SOS.</li>
+                        <li><strong>Microphone:</strong> Used only when recording an optional report voice note.</li>
+                        <li><strong>Photos:</strong> Used only when choosing an optional report photo.</li>
+                        <li><strong>Anonymous authentication:</strong> Used for backend authorization, rate limits, App Check, and abuse prevention.</li>
+                        <li><strong>App privacy:</strong> The public privacy policy is available at the PulseTrackr privacy document.</li>
+                    </ul>
+                </section>
+
+                <section id="safety" class="doc-section">
+                    <h2>6. Safety Positioning</h2>
+                    <p>PulseTrackr should be reviewed as a community safety information app, not as an emergency dispatch, medical, police, or rescue service.</p>
+                    <ul>
+                        <li>The app clearly states that it does not automatically contact police, ambulance, fire, or emergency services.</li>
+                        <li>SOS alerts are sent to user-selected trusted contacts only.</li>
+                        <li>Users in immediate danger should contact local emergency services directly.</li>
+                        <li>Incident information may be unconfirmed and should be treated as community-sourced awareness.</li>
+                    </ul>
+                </section>
+
+                <section id="business" class="doc-section">
+                    <h2>7. Business Model</h2>
+                    <p>PulseTrackr is currently a free app with no in-app purchases, subscriptions, third-party advertising, or external payment flow.</p>
+                </section>
+
+                <section id="metadata" class="doc-section">
+                    <h2>8. Suggested Metadata</h2>
+                    <h3>Subtitle</h3>
+                    <p>Nearby safety alerts</p>
+                    <h3>Promotional text</h3>
+                    <p>See nearby community safety reports, submit incidents with optional evidence, verify updates, and alert trusted contacts with SOS location sharing.</p>
+                    <h3>Description starter</h3>
+                    <p>PulseTrackr helps you stay aware of safety reports near you. View active incidents on a map, adjust your watch radius, submit reports with optional photo or voice evidence, and use community signals to help others understand what is happening nearby. For personal safety, add trusted contacts and activate SOS to share exact location updates with them when needed.</p>
+                </section>
+
+                <section id="review-notes" class="doc-section">
+                    <h2>9. Suggested Review Notes</h2>
+                    <p>Suggested App Review note:</p>
+                    <div class="highlight-box">
+                        <p>PulseTrackr is a community safety incident reporter. The app uses location to show nearby reports and to submit reports. Users can hide exact public report location; public report pins may be offset while exact reporter coordinates are retained only for private backend workflows. Optional photo and voice evidence can be attached by the user. The SOS feature alerts user-selected trusted contacts and does not automatically contact police, ambulance, fire, or other emergency services. To test, allow location access, open the Map or Feed tabs, submit a report from the Report tab, add a trusted contact in Settings, and activate/cancel SOS from the app interface.</p>
+                    </div>
+                </section>
+
+                <section id="contact" class="doc-section">
+                    <h2>10. Contact</h2>
+                    <p>For compliance or App Store review questions, contact <a href="mailto:support@edentv.us">support@edentv.us</a>. We aim to respond within 2 business days.</p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer site-footer" data-component="site-footer">
+        <div class="container">
+            <div class="footer-content site-footer__content">
+                <div class="footer-brand site-footer__brand">
+                    <h3>EdenTV</h3>
+                    <p>Creating tomorrow's digital experiences today.</p>
+                </div>
+                <div class="footer-links site-footer__links">
+                    <div class="footer-section site-footer__section">
+                        <h4>PulseTrackr</h4>
+                        <a href="pulsetrackr-privacy.html">Privacy Policy</a>
+                        <a href="pulsetrackr-terms.html">Terms of Service</a>
+                        <a href="pulsetrackr-compliance.html">App Store Compliance</a>
+                        <a href="pulsetrackr-support.html">Support</a>
+                    </div>
+                    <div class="footer-section site-footer__section">
+                        <h4>Platform</h4>
+                        <a href="../pages/apps.html">Apps</a>
+                        <a href="../pages/developer-docs.html">Developer Docs</a>
+                        <a href="../legal/app-store-compliance.html">Legal Hub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom site-footer__bottom">
+                <p>&copy; 2026 EdenTV. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

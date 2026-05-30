@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseTrackr Privacy Policy - EdenTV Developer Docs</title>
+    <meta name="description" content="Privacy Policy specific to PulseTrackr - community reports, location, evidence uploads, Firebase, Mapbox, and trusted-contact SOS alerts.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../assets/brand/etv-favicon.svg">
+</head>
+<body>
+    <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
+        <div class="nav-container site-header__container">
+            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand">
+                <h1>EdenTV</h1>
+                <span class="tagline site-brand__tagline">Creator Studio</span>
+            </a>
+            <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
+                <a href="../index.html" class="nav-link site-nav__link">Home</a>
+                <a href="../pages/apps.html" class="nav-link site-nav__link">Apps</a>
+                <a href="../pages/podcasts.html" class="nav-link site-nav__link">Podcasts</a>
+                <a href="../pages/multimedia.html" class="nav-link site-nav__link">Multimedia</a>
+                <a href="../pages/developer-docs.html" class="nav-link site-nav__link active">Developer Docs</a>
+                <a href="../pages/about.html" class="nav-link site-nav__link">About</a>
+            </div>
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="../pages/developer-docs.html">Developer Docs</a>
+                <span class="separator">/</span>
+                <a href="../pages/developer-docs.html#app-docs">PulseTrackr</a>
+                <span class="separator">/</span>
+                <span class="current">Privacy Policy</span>
+            </nav>
+        </div>
+    </section>
+
+    <section class="doc-header">
+        <div class="container">
+            <div class="doc-title-group">
+                <div class="app-icon ds-app-icon">PT</div>
+                <div class="doc-info">
+                    <h1>PulseTrackr Privacy Policy</h1>
+                    <p class="doc-subtitle">How PulseTrackr handles community safety reports, location, evidence uploads, and SOS trusted-contact alerts.</p>
+                    <div class="doc-meta">
+                        <span class="last-updated">Last updated: May 30, 2026</span>
+                        <span class="version">Version 1.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="toc-section">
+        <div class="container">
+            <div class="toc-container">
+                <h2>Table of Contents</h2>
+                <nav class="toc">
+                    <ol>
+                        <li><a href="#overview" class="toc-link">Overview</a></li>
+                        <li><a href="#information" class="toc-link">Information We Handle</a></li>
+                        <li><a href="#usage" class="toc-link">How Information Is Used</a></li>
+                        <li><a href="#location" class="toc-link">Location Data</a></li>
+                        <li><a href="#reports" class="toc-link">Reports and Evidence</a></li>
+                        <li><a href="#sos" class="toc-link">SOS and Trusted Contacts</a></li>
+                        <li><a href="#services" class="toc-link">Third-Party Services</a></li>
+                        <li><a href="#choices" class="toc-link">Privacy Choices</a></li>
+                        <li><a href="#retention" class="toc-link">Data Retention</a></li>
+                        <li><a href="#children" class="toc-link">Children</a></li>
+                        <li><a href="#contact" class="toc-link">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-content">
+        <div class="container">
+            <div class="doc-body">
+                <section id="overview" class="doc-section">
+                    <h2>1. Overview</h2>
+                    <p>PulseTrackr is a community safety app that helps users see nearby incident reports, submit incident reports, add community verification signals, and activate SOS alerts to trusted contacts.</p>
+                    <p>The app uses a privacy-focused reporting model: public incident locations can be approximate, exact reporter location is treated as private, and trusted-contact SOS sharing only starts after the user activates SOS.</p>
+                    <div class="highlight-box">
+                        <h3>Core Privacy Principles</h3>
+                        <ul>
+                            <li>PulseTrackr does not sell user data or use third-party advertising tracking.</li>
+                            <li>Public incident pins can be offset from exact reporter location.</li>
+                            <li>Trusted contacts are stored in the device Keychain until SOS delivery is needed.</li>
+                            <li>PulseTrackr does not automatically contact police, ambulance, or other emergency services.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="information" class="doc-section">
+                    <h2>2. Information We Handle</h2>
+                    <p>PulseTrackr may handle the following information when you use related features:</p>
+                    <ul>
+                        <li>Incident report details, such as title, description, category, severity, status, neighborhood, and timestamp</li>
+                        <li>Location information, including approximate public report coordinates and private reporter coordinates</li>
+                        <li>Optional evidence selected or recorded by the user, such as a photo or voice note</li>
+                        <li>Community verification signals, such as seen, not seen, unsafe, road blocked, or cleared</li>
+                        <li>Trusted contact details, such as display name, relationship label, phone number, email address, and notification channels</li>
+                        <li>SOS data, such as last known location, recent route points, direction of travel, and activation or resolution timestamps</li>
+                        <li>Device metadata needed for SOS support, such as app version, build number, device model, iOS version, battery state, and network status</li>
+                        <li>Firebase anonymous authentication identifiers used to protect backend writes and apply abuse-prevention limits</li>
+                    </ul>
+                </section>
+
+                <section id="usage" class="doc-section">
+                    <h2>3. How Information Is Used</h2>
+                    <div class="usage-grid">
+                        <div class="usage-item">
+                            <h3>Community Safety Feed</h3>
+                            <ul>
+                                <li>Show active reports near a user's watch area</li>
+                                <li>Filter reports by category, urgency, and distance</li>
+                                <li>Update report status using community verification signals</li>
+                            </ul>
+                        </div>
+                        <div class="usage-item">
+                            <h3>SOS Support</h3>
+                            <ul>
+                                <li>Create an SOS session after the user activates SOS</li>
+                                <li>Share exact location updates with selected trusted contacts</li>
+                                <li>Keep an audit record for privileged SOS access requests</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="location" class="doc-section">
+                    <h2>4. Location Data</h2>
+                    <p>PulseTrackr uses location to show nearby reports, calculate watch-area distance, submit incident reports, and support SOS location sharing.</p>
+                    <ul>
+                        <li>The app requests When In Use location access.</li>
+                        <li>Users can choose to hide exact report location. In that mode, public incident pins are offset to a nearby area.</li>
+                        <li>Exact reporter location may be sent to the private backend record when submitting a report.</li>
+                        <li>During SOS, exact location and recent route points are shared only after the user activates SOS.</li>
+                        <li>Location access can be changed at any time in iOS Settings.</li>
+                    </ul>
+                </section>
+
+                <section id="reports" class="doc-section">
+                    <h2>5. Reports and Evidence</h2>
+                    <p>Incident reports are user-generated content. A public version of a report can appear in the community feed. Private report records and evidence are protected by backend rules and server-side functions.</p>
+                    <ul>
+                        <li>Photo evidence is optional and uses the photo selected by the user.</li>
+                        <li>Voice evidence is optional and uses the microphone only when the user records a voice note.</li>
+                        <li>Evidence uploads are limited to image or audio files and are scoped to the anonymous reporter identifier.</li>
+                        <li>The public feed is read-only to clients. Report creation and community signals go through Firebase Cloud Functions.</li>
+                    </ul>
+                </section>
+
+                <section id="sos" class="doc-section">
+                    <h2>6. SOS and Trusted Contacts</h2>
+                    <p>PulseTrackr lets users save trusted contacts for SOS alerts. These contacts should be people who understand they may receive location alerts from the user.</p>
+                    <ul>
+                        <li>Trusted contacts are stored locally in the device Keychain.</li>
+                        <li>When SOS is activated, selected contact details may be sent to Firebase Cloud Functions so SMS, phone, or email alerts can be delivered through configured providers.</li>
+                        <li>Recent route data is limited by the SOS privacy policy before upload.</li>
+                        <li>PulseTrackr does not dispatch public emergency services. Users should call local emergency services directly in an emergency.</li>
+                    </ul>
+                </section>
+
+                <section id="services" class="doc-section">
+                    <h2>7. Third-Party Services</h2>
+                    <p>PulseTrackr uses service providers to operate map, reporting, and SOS features:</p>
+                    <ul>
+                        <li><strong>Firebase:</strong> anonymous authentication, Cloud Firestore, Cloud Functions, Firebase Storage, and App Check.</li>
+                        <li><strong>Mapbox:</strong> map display when the Mapbox SDK is available in the app build.</li>
+                        <li><strong>Twilio and SendGrid:</strong> optional SOS trusted-contact SMS, phone, or email delivery when configured.</li>
+                        <li><strong>Apple frameworks:</strong> location, contacts import, photo selection, microphone access, and device Keychain storage.</li>
+                    </ul>
+                </section>
+
+                <section id="choices" class="doc-section">
+                    <h2>8. Privacy Choices</h2>
+                    <ul>
+                        <li>Turn location access on or off in iOS Settings.</li>
+                        <li>Use the in-app privacy toggle to hide exact public report location.</li>
+                        <li>Use approximate location at the iOS level if you do not want to share precise location with the app.</li>
+                        <li>Do not add optional photo or voice evidence unless you want it included with a report.</li>
+                        <li>Add, edit, deactivate, or delete trusted contacts from the SOS contacts screen.</li>
+                        <li>Contact support to request help with privacy questions or data deletion.</li>
+                    </ul>
+                </section>
+
+                <section id="retention" class="doc-section">
+                    <h2>9. Data Retention</h2>
+                    <p>Local settings and saved trusted contacts remain on the device until the user changes them, deletes them, or removes the app.</p>
+                    <p>Private incident reports, SOS sessions, SOS location updates, notification attempts, rate-limit records, and audit records are designed with backend retention metadata. Current backend retention for those private records is 30 days.</p>
+                    <p>Public incident feed records may remain available while they are useful for community safety, moderation, and abuse prevention.</p>
+                </section>
+
+                <section id="children" class="doc-section">
+                    <h2>10. Children</h2>
+                    <p>PulseTrackr is not directed to children under 13. Because the app involves location, incident reporting, and safety-related content, it is intended for users who can make informed privacy and safety decisions.</p>
+                </section>
+
+                <section id="contact" class="doc-section">
+                    <h2>11. Contact</h2>
+                    <p>For privacy or support questions about PulseTrackr, contact <a href="mailto:support@edentv.us">support@edentv.us</a>. We aim to respond within 2 business days.</p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer site-footer" data-component="site-footer">
+        <div class="container">
+            <div class="footer-content site-footer__content">
+                <div class="footer-brand site-footer__brand">
+                    <h3>EdenTV</h3>
+                    <p>Creating tomorrow's digital experiences today.</p>
+                </div>
+                <div class="footer-links site-footer__links">
+                    <div class="footer-section site-footer__section">
+                        <h4>PulseTrackr</h4>
+                        <a href="pulsetrackr-privacy.html">Privacy Policy</a>
+                        <a href="pulsetrackr-terms.html">Terms of Service</a>
+                        <a href="pulsetrackr-compliance.html">App Store Compliance</a>
+                        <a href="pulsetrackr-support.html">Support</a>
+                    </div>
+                    <div class="footer-section site-footer__section">
+                        <h4>Platform</h4>
+                        <a href="../pages/apps.html">Apps</a>
+                        <a href="../pages/developer-docs.html">Developer Docs</a>
+                        <a href="../legal/privacy-policy.html">Legal Hub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom site-footer__bottom">
+                <p>&copy; 2026 EdenTV. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

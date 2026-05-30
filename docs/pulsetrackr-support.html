@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseTrackr Support - EdenTV Developer Docs</title>
+    <meta name="description" content="Support documentation for PulseTrackr - nearby reports, incident submission, permissions, SOS trusted contacts, and troubleshooting.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../assets/brand/etv-favicon.svg">
+</head>
+<body>
+    <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
+        <div class="nav-container site-header__container">
+            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand">
+                <h1>EdenTV</h1>
+                <span class="tagline site-brand__tagline">Creator Studio</span>
+            </a>
+            <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
+                <a href="../index.html" class="nav-link site-nav__link">Home</a>
+                <a href="../pages/apps.html" class="nav-link site-nav__link">Apps</a>
+                <a href="../pages/podcasts.html" class="nav-link site-nav__link">Podcasts</a>
+                <a href="../pages/multimedia.html" class="nav-link site-nav__link">Multimedia</a>
+                <a href="../pages/developer-docs.html" class="nav-link site-nav__link active">Developer Docs</a>
+                <a href="../pages/about.html" class="nav-link site-nav__link">About</a>
+            </div>
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="../pages/developer-docs.html">Developer Docs</a>
+                <span class="separator">/</span>
+                <a href="../pages/developer-docs.html#app-docs">PulseTrackr</a>
+                <span class="separator">/</span>
+                <span class="current">Support</span>
+            </nav>
+        </div>
+    </section>
+
+    <section class="doc-header">
+        <div class="container">
+            <div class="doc-title-group">
+                <div class="app-icon ds-app-icon">PT</div>
+                <div class="doc-info">
+                    <h1>PulseTrackr Support</h1>
+                    <p class="doc-subtitle">Help for nearby reports, incident submission, location permissions, and trusted-contact SOS alerts.</p>
+                    <div class="doc-meta">
+                        <span class="last-updated">Last updated: May 30, 2026</span>
+                        <span class="version">Version 1.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-support">
+        <div class="container">
+            <h2>Quick Support</h2>
+            <div class="support-actions">
+                <a href="#getting-started" class="support-action ds-card ds-support-action">
+                    <div class="action-icon">1</div>
+                    <h3>Getting Started</h3>
+                    <p>Allow location, set a watch radius, and review nearby reports.</p>
+                </a>
+                <a href="#reporting" class="support-action ds-card ds-support-action">
+                    <div class="action-icon">2</div>
+                    <h3>Report Incident</h3>
+                    <p>Submit a title, description, category, location, and optional evidence.</p>
+                </a>
+                <a href="#sos" class="support-action ds-card ds-support-action">
+                    <div class="action-icon">3</div>
+                    <h3>SOS Help</h3>
+                    <p>Manage trusted contacts and understand what SOS does.</p>
+                </a>
+                <a href="mailto:support@edentv.us" class="support-action ds-card ds-support-action">
+                    <div class="action-icon">@</div>
+                    <h3>Contact Support</h3>
+                    <p>Email the EdenTV support team. We aim to respond within 2 business days.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="toc-section">
+        <div class="container">
+            <div class="toc-container">
+                <h2>Table of Contents</h2>
+                <nav class="toc">
+                    <ol>
+                        <li><a href="#getting-started" class="toc-link">Getting Started</a></li>
+                        <li><a href="#permissions" class="toc-link">Permissions</a></li>
+                        <li><a href="#feed" class="toc-link">Map and Feed Help</a></li>
+                        <li><a href="#reporting" class="toc-link">Reporting Help</a></li>
+                        <li><a href="#sos" class="toc-link">SOS Help</a></li>
+                        <li><a href="#troubleshooting" class="toc-link">Troubleshooting</a></li>
+                        <li><a href="#faq" class="toc-link">FAQ</a></li>
+                        <li><a href="#contact" class="toc-link">Contact Support</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-content">
+        <div class="container">
+            <div class="doc-body">
+                <section id="getting-started" class="doc-section">
+                    <h2>1. Getting Started</h2>
+                    <ol>
+                        <li>Install PulseTrackr on your iPhone.</li>
+                        <li>Open the app and allow location access if you want nearby reports and watch-area alerts.</li>
+                        <li>Use the Map and Feed tabs to see active reports near you.</li>
+                        <li>Use Settings to adjust your watch radius, urgent alerts, community notices, and report-location privacy.</li>
+                        <li>Add trusted contacts before travel if you want SOS alerts available.</li>
+                    </ol>
+                </section>
+
+                <section id="permissions" class="doc-section">
+                    <h2>2. Permissions</h2>
+                    <ul>
+                        <li><strong>Location:</strong> Used to show nearby reports, submit reports, calculate distance, and share exact location during SOS.</li>
+                        <li><strong>Contacts:</strong> Used only when you choose to import a trusted contact for SOS alerts.</li>
+                        <li><strong>Microphone:</strong> Used only when you record an optional voice note for an incident report.</li>
+                        <li><strong>Photos:</strong> Used only when you choose an optional photo for an incident report.</li>
+                    </ul>
+                </section>
+
+                <section id="feed" class="doc-section">
+                    <h2>3. Map and Feed Help</h2>
+                    <ul>
+                        <li>Change your watch radius in Settings if the feed is too broad or too narrow.</li>
+                        <li>Urgent alerts include high-risk security, fire, medical, and other severe reports.</li>
+                        <li>Community notices include traffic, utility, weather, structure, and local-awareness reports.</li>
+                        <li>If no location is available, the map may show a default overview until location is granted.</li>
+                    </ul>
+                </section>
+
+                <section id="reporting" class="doc-section">
+                    <h2>4. Reporting Help</h2>
+                    <ol>
+                        <li>Open the Report tab.</li>
+                        <li>Add a short title, neighborhood or landmark, and description.</li>
+                        <li>Confirm whether the incident is happening now or already happened.</li>
+                        <li>Optionally attach a photo or voice note.</li>
+                        <li>Review or change the suggested classification.</li>
+                        <li>Tap Report now.</li>
+                    </ol>
+                    <p>If the Hide exact report location setting is on, the public map pin is moved to a nearby approximate area. The exact reporting coordinate may still be used privately for backend validation and safety workflows.</p>
+                </section>
+
+                <section id="sos" class="doc-section">
+                    <h2>5. SOS Help</h2>
+                    <ul>
+                        <li>Add at least one trusted contact before you need SOS.</li>
+                        <li>Use contacts who know they may receive PulseTrackr SOS location alerts from you.</li>
+                        <li>When SOS is active, PulseTrackr can share your last known location, recent route, direction of travel, and live updates with selected trusted contacts.</li>
+                        <li>PulseTrackr does not automatically contact police, ambulance, fire, or other emergency services. If you are in immediate danger, call local emergency services directly.</li>
+                    </ul>
+                </section>
+
+                <section id="troubleshooting" class="doc-section">
+                    <h2>6. Troubleshooting</h2>
+                    <h3>Reports are not loading</h3>
+                    <p>Check your connection, confirm location access is enabled, and reduce or increase the watch radius in Settings.</p>
+
+                    <h3>Report submission fails</h3>
+                    <p>Check your connection and try again. Large evidence files may take longer to upload.</p>
+
+                    <h3>SOS contacts are not notified</h3>
+                    <p>Confirm the contact has a valid phone number or email address, is marked active, and uses at least one delivery channel. Delivery also depends on configured SMS, phone, or email providers.</p>
+
+                    <h3>Location is inaccurate</h3>
+                    <p>Open iOS Settings and confirm PulseTrackr has Location access. If Precise Location is off, watch-area and SOS accuracy may be reduced.</p>
+                </section>
+
+                <section id="faq" class="doc-section">
+                    <h2>7. Frequently Asked Questions</h2>
+                    <h3>Does PulseTrackr replace emergency services?</h3>
+                    <p>No. PulseTrackr is a community safety and trusted-contact alert app. It does not dispatch official emergency services.</p>
+
+                    <h3>Can I submit a report without evidence?</h3>
+                    <p>Yes. A text report with a valid location is enough. Photo and voice evidence are optional.</p>
+
+                    <h3>Can other users see my exact location?</h3>
+                    <p>Public report pins can be approximate when Hide exact report location is enabled. Exact SOS location is shared only after SOS activation with trusted contacts and authorized backend workflows.</p>
+
+                    <h3>Can I use the app without contacts permission?</h3>
+                    <p>Yes. Contacts permission is only needed if you import a trusted contact. You can also add contact details manually.</p>
+                </section>
+
+                <section id="contact" class="doc-section">
+                    <h2>8. Contact Support</h2>
+                    <p>Email <a href="mailto:support@edentv.us">support@edentv.us</a> with your device model, iOS version, app version, and a short description of the issue.</p>
+                    <p>Support requests for PulseTrackr are typically answered within 2 business days.</p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer site-footer" data-component="site-footer">
+        <div class="container">
+            <div class="footer-content site-footer__content">
+                <div class="footer-brand site-footer__brand">
+                    <h3>EdenTV</h3>
+                    <p>Creating tomorrow's digital experiences today.</p>
+                </div>
+                <div class="footer-links site-footer__links">
+                    <div class="footer-section site-footer__section">
+                        <h4>PulseTrackr</h4>
+                        <a href="pulsetrackr-privacy.html">Privacy Policy</a>
+                        <a href="pulsetrackr-terms.html">Terms of Service</a>
+                        <a href="pulsetrackr-compliance.html">App Store Compliance</a>
+                        <a href="pulsetrackr-support.html">Support</a>
+                    </div>
+                    <div class="footer-section site-footer__section">
+                        <h4>Platform</h4>
+                        <a href="../pages/apps.html">Apps</a>
+                        <a href="../pages/developer-docs.html">Developer Docs</a>
+                        <a href="../legal/support.html">Legal Hub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom site-footer__bottom">
+                <p>&copy; 2026 EdenTV. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
