@@ -114,7 +114,7 @@ edentv/
 
 ### Live Content
 - **Homepage**: Fully functional with dynamic cycling cards and portfolio overview
-- **Apps Page**: Source-verified showcase of 18 local projects with explicit lifecycle status
+- **Apps Page**: Source-verified showcase of 21 local and GitHub projects with explicit lifecycle status
 - **Developer Docs**: Hub for all documentation with links to app-specific docs
 - **About Page**: Studio mission and portfolio statistics
 - **Legal Documents**: Complete platform and app-specific legal documentation

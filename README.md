@@ -111,7 +111,7 @@ Edit design-system tokens in `css/styles.css`:
 ## 📱 Portfolio Overview
 
 The public portfolio is generated from a source-verified inventory of the local
-Codehub workspace. It currently includes 18 projects grouped as Apple-platform
+Codehub workspace and the studio's GitHub repositories. It currently includes 21 projects grouped as Apple-platform
 software, Android, web products, and AI/data/design tools. Status labels are
 deliberately specific: live, current build, prototype, release preparation, or
 in development.
