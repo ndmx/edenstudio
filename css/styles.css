@@ -1133,6 +1133,204 @@ section.doc-content {
     min-width: 0;
 }
 
+/* Documentation index: editorial navigation, not a dashboard of buttons. */
+.docs-index-hero {
+    padding: clamp(148px, 18vw, 210px) 0 clamp(64px, 9vw, 100px);
+    border-bottom: 1px solid var(--line);
+}
+
+.docs-index-hero h1 {
+    max-width: 760px;
+    margin-bottom: 18px;
+}
+
+.docs-index-hero > .container > p:not(.eyebrow) {
+    max-width: 690px;
+    color: var(--text-2);
+    font-size: 1.08rem;
+}
+
+.docs-contact-note {
+    margin-top: 28px;
+    font-size: 0.92rem !important;
+}
+
+.docs-contact-note a,
+.document-row,
+.product-doc-group nav a {
+    color: var(--seafoam);
+}
+
+.docs-index-section {
+    padding: clamp(64px, 9vw, 108px) 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.docs-index-layout {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.5fr);
+    gap: clamp(40px, 8vw, 110px);
+    align-items: start;
+}
+
+.docs-index-heading {
+    position: sticky;
+    top: 130px;
+}
+
+.docs-index-heading h2 {
+    margin-bottom: 12px;
+}
+
+.docs-index-heading p:last-child,
+.product-doc-group p {
+    color: var(--text-2);
+}
+
+.document-index {
+    border-top: 1px solid var(--line-strong);
+}
+
+.document-row {
+    min-height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 4px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text);
+}
+
+.document-row strong,
+.document-row small {
+    display: block;
+}
+
+.document-row strong {
+    margin-bottom: 7px;
+    font-size: 1.08rem;
+}
+
+.document-row small {
+    color: var(--text-2);
+    font-size: 0.93rem;
+}
+
+.document-row > span:last-child {
+    color: var(--gold);
+    font-size: 1.35rem;
+    transition: transform 180ms ease;
+}
+
+.document-row:hover > span:last-child,
+.document-row:focus-visible > span:last-child {
+    transform: translateX(5px);
+}
+
+.product-doc-groups {
+    border-top: 1px solid var(--line-strong);
+}
+
+.product-doc-group {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.75fr);
+    gap: 28px;
+    padding: 30px 4px;
+    border-bottom: 1px solid var(--line);
+}
+
+.product-doc-group h3 {
+    margin-bottom: 8px;
+}
+
+.product-doc-group nav {
+    display: grid;
+    align-content: start;
+    gap: 8px;
+}
+
+.product-doc-group nav a {
+    width: fit-content;
+    padding: 3px 0;
+    border-bottom: 1px solid transparent;
+    font-weight: 650;
+}
+
+.product-doc-group nav a:hover,
+.product-doc-group nav a:focus-visible {
+    border-bottom-color: currentColor;
+}
+
+/* One calm visual grammar across policy, compliance, and support pages. */
+.page-docs .doc-header {
+    border-bottom: 0;
+}
+
+.page-docs .doc-title-group {
+    align-items: flex-start;
+}
+
+.page-docs .app-icon {
+    display: none;
+}
+
+.page-docs .toc-section,
+.page-docs .quick-support {
+    padding: 26px 0;
+    border-block: 1px solid var(--line);
+}
+
+.page-docs .toc-container h2 {
+    margin-bottom: 16px;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.page-docs .toc ol {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0;
+}
+
+.page-docs .toc-link {
+    min-height: 38px;
+    padding: 5px 12px 5px 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.page-docs .toc-link::before {
+    width: 22px;
+    height: 22px;
+    color: var(--gold);
+    border: 1px solid var(--line-strong);
+    background: transparent;
+}
+
+.page-docs section.doc-content {
+    border-radius: 0;
+    border-inline: 0;
+    background: rgba(255, 252, 246, 0.7);
+    box-shadow: none;
+}
+
+@media (max-width: 760px) {
+    .docs-index-layout,
+    .product-doc-group {
+        grid-template-columns: 1fr;
+    }
+
+    .docs-index-heading {
+        position: static;
+    }
+
+    .product-doc-group {
+        gap: 16px;
+    }
+}
+
 .support-actions {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));

@@ -3,286 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Documentation - EdenTV Creator Studio</title>
-    <meta name="description" content="Comprehensive developer documentation for EdenTV applications including privacy policies and compliance guidelines.">
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Documentation - EdenTV Creator Studio</title>
+    <meta name="description" content="Privacy, terms, App Store review notes, and support documentation for EdenTV products.">
+    <link rel="stylesheet" href="../css/styles.css?v=20260823b">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="../assets/brand/etv-favicon.svg">
 </head>
 <body class="page-docs">
-    <!-- Navigation -->
     <nav class="navbar site-header" data-component="site-header" aria-label="Primary navigation">
         <div class="nav-container site-header__container">
-            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand">
-                <span class="brand-name">EdenTV</span>
-                <span class="tagline site-brand__tagline">Creator Studio</span>
-            </a>
+            <a href="../index.html" class="nav-brand site-brand" data-component="site-brand"><span class="brand-name">EdenTV</span><span class="tagline site-brand__tagline">Creator Studio</span></a>
             <div id="primary-navigation" class="nav-menu site-nav" data-component="site-nav">
-                <a href="../index.html" class="nav-link site-nav__link">Home</a>
-                <a href="apps.html" class="nav-link site-nav__link">Apps</a>
-                <a href="podcasts.html" class="nav-link site-nav__link">Podcasts</a>
-                <a href="multimedia.html" class="nav-link site-nav__link">Multimedia</a>
-                <a href="developer-docs.html" class="nav-link site-nav__link active">Developer Docs</a>
-                <a href="about.html" class="nav-link site-nav__link">About</a>
+                <a href="../index.html" class="nav-link site-nav__link">Home</a><a href="apps.html" class="nav-link site-nav__link">Apps</a><a href="podcasts.html" class="nav-link site-nav__link">Podcasts</a><a href="multimedia.html" class="nav-link site-nav__link">Multimedia</a><a href="developer-docs.html" class="nav-link site-nav__link active">Developer Docs</a><a href="about.html" class="nav-link site-nav__link">About</a>
             </div>
-            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <button type="button" class="nav-toggle site-nav__toggle" data-component="site-nav-toggle" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
     </nav>
-
-    <!-- Developer Docs Hero Section -->
-    <section class="sub-hero dark site-hero" data-component="page-hero">
-        <div class="container narrow">
-            <p class="eyebrow ds-eyebrow">Developer Hub</p>
-            <h1>Compliance, privacy, and support in one place.</h1>
-            <p>Every EdenTV launch ships with documentation that mirrors our software polish. Browse platform-wide policies, app-specific guidelines, and support resources.</p>
-            <div class="hero-cta">
-                <a href="../legal/privacy-policy.html" class="btn ds-button btn-primary">View platform policies</a>
-                <a href="mailto:legal@edentv.us" class="btn ds-button btn-link">Contact legal</a>
+    <header class="docs-index-hero"><div class="container narrow">
+        <p class="eyebrow ds-eyebrow">Documentation</p><h1>Product policies and support.</h1>
+        <p>Current public documents for EdenTV products. Choose a product, then the document you need.</p>
+        <p class="docs-contact-note">Questions about a policy? <a href="mailto:legal@edentv.us">legal@edentv.us</a> · Product help: <a href="mailto:support@edentv.us">support@edentv.us</a></p>
+    </div></header>
+    <main class="docs-index">
+        <section class="docs-index-section" aria-labelledby="studio-docs"><div class="container docs-index-layout">
+            <div class="docs-index-heading"><p class="eyebrow ds-eyebrow">Studio</p><h2 id="studio-docs">EdenTV policies</h2><p>Studio-level indexes route you to the policy that applies to each published product.</p></div>
+            <div class="document-index" role="list">
+                <a class="document-row" href="../legal/privacy-policy.html" role="listitem"><span><strong>Privacy</strong><small>How product-specific privacy notices are organized.</small></span><span aria-hidden="true">→</span></a>
+                <a class="document-row" href="../legal/terms-of-service.html" role="listitem"><span><strong>Terms of service</strong><small>Terms available for products with public user agreements.</small></span><span aria-hidden="true">→</span></a>
+                <a class="document-row" href="../legal/app-store-compliance.html" role="listitem"><span><strong>App Store review</strong><small>Review references for current Apple-platform releases.</small></span><span aria-hidden="true">→</span></a>
+                <a class="document-row" href="../legal/support.html" role="listitem"><span><strong>Support</strong><small>Product help, troubleshooting, and direct contact.</small></span><span aria-hidden="true">→</span></a>
             </div>
-        </div>
-    </section>
-
-    <section class="section site-section platform-panels">
-        <div class="container">
-            <div class="panel-grid">
-                <div class="panel-card ds-card large">
-                    <div>
-                        <p class="panel-eyebrow">Platform</p>
-                        <h2>Privacy, terms, compliance.</h2>
-                        <p>Up-to-date policies that cover every EdenTV property with App Store and Play Store readiness.</p>
-                    </div>
-                    <a href="../legal/privacy-policy.html">Review platform docs</a>
-                </div>
-                <div class="panel-card ds-card dark">
-                    <div>
-                        <p class="panel-eyebrow">Application</p>
-                        <h3>ParkMemoryHub suite</h3>
-                        <p>App-specific privacy, terms, support, and App Store documentation.</p>
-                    </div>
-                    <a href="#app-docs">See per-app docs</a>
-                </div>
-                <div class="panel-card ds-card light">
-                    <div>
-                        <p class="panel-eyebrow">Support</p>
-                        <h3>Help center + contact</h3>
-                        <p>Guides for customer support, developer inquiries, and compliance submissions.</p>
-                    </div>
-                    <a href="../legal/support.html">Open support hub</a>
-                </div>
+        </div></section>
+        <section id="app-docs" class="docs-index-section" aria-labelledby="product-docs"><div class="container docs-index-layout">
+            <div class="docs-index-heading"><p class="eyebrow ds-eyebrow">Products</p><h2 id="product-docs">Product documents</h2><p>Only products with maintained public policy or support pages appear here.</p></div>
+            <div class="product-doc-groups">
+                <section class="product-doc-group" aria-labelledby="pulsetrackr-docs"><div><h3 id="pulsetrackr-docs">PulseTrackr</h3><p>Community safety reporting and trusted-contact SOS for iPhone.</p></div><nav aria-label="PulseTrackr documents"><a href="../docs/pulsetrackr-privacy.html">Privacy</a><a href="../docs/pulsetrackr-terms.html">Terms</a><a href="../docs/pulsetrackr-compliance.html">App Store review</a><a href="../docs/pulsetrackr-support.html">Support</a></nav></section>
+                <section class="product-doc-group" aria-labelledby="jxl-docs"><div><h3 id="jxl-docs">JxL Scheduler</h3><p>Local-first scheduling, routes, messages, and optional iCloud sharing for iPhone.</p></div><nav aria-label="JxL Scheduler documents"><a href="../docs/jxl-scheduler-privacy.html">Privacy</a><a href="../docs/jxl-scheduler-compliance.html">App Store review</a><a href="../docs/jxl-scheduler-support.html">Support</a></nav></section>
+                <section class="product-doc-group" aria-labelledby="parkmemory-docs"><div><h3 id="parkmemory-docs">ParkMemory Hub</h3><p>Private circle memories, plans, and optional location sharing through CloudKit.</p></div><nav aria-label="ParkMemory Hub documents"><a href="../docs/parkmemory-privacy.html">Privacy</a><a href="../docs/parkmemory-terms.html">Terms</a><a href="../docs/parkmemory-compliance.html">App Store review</a><a href="../docs/parkmemory-support.html">Support</a></nav></section>
             </div>
-        </div>
-    </section>
-
-    <!-- Platform Documentation -->
-    <section id="platform-docs" class="section site-section category-section">
-        <div class="container">
-            <div class="category-header">
-                <div>
-                    <p class="eyebrow ds-eyebrow">Platform documentation</p>
-                    <h2>Policies that cover every EdenTV surface.</h2>
-                    <p>Use these links whenever you need globally applied legal copy or compliance reference.</p>
-                </div>
-                <span class="category-count">4 documents</span>
-            </div>
-            
-            <div class="doc-list">
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Policy</span>
-                        <h3>Privacy Policy</h3>
-                        <p>Platform-wide policy covering collection, usage, and retention across applications.</p>
-                    </div>
-                    <a href="../legal/privacy-policy.html">Read policy</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Agreement</span>
-                        <h3>Terms of Service</h3>
-                        <p>Legal agreement for EdenTV services with user obligations and responsibilities.</p>
-                    </div>
-                    <a href="../legal/terms-of-service.html">View terms</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Compliance</span>
-                        <h3>App Store Compliance</h3>
-                        <p>Apple App Store guidelines and submission requirements for EdenTV apps.</p>
-                    </div>
-                    <a href="../legal/app-store-compliance.html">Open compliance</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Support</span>
-                        <h3>Support & Help Center</h3>
-                        <p>Support workflows, response expectations, and contact channels.</p>
-                    </div>
-                    <a href="../legal/support.html">Go to support</a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- App-Specific Documentation -->
-    <section id="app-docs" class="section site-section category-section alt">
-        <div class="container">
-            <div class="category-header">
-                <div>
-                    <p class="eyebrow ds-eyebrow">Application documentation</p>
-                    <h2>App release paperwork.</h2>
-                    <p>App-specific policies that accompany our iOS launches.</p>
-                </div>
-                <span class="category-count">11 documents</span>
-            </div>
-
-            <div class="doc-list compact">
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Privacy</span>
-                        <h3>PulseTrackr Privacy</h3>
-                        <p>Data usage and storage details dedicated to PulseTrackr.</p>
-                    </div>
-                    <a href="../docs/pulsetrackr-privacy.html">Open document</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Terms</span>
-                        <h3>PulseTrackr Terms</h3>
-                        <p>User agreement covering community reports, SOS, and safety limits.</p>
-                    </div>
-                    <a href="../docs/pulsetrackr-terms.html">View terms</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Compliance</span>
-                        <h3>PulseTrackr App Store Compliance</h3>
-                        <p>App Store URLs, checklist, metadata, and review notes for PulseTrackr.</p>
-                    </div>
-                    <a href="../docs/pulsetrackr-compliance.html">Review compliance</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Support</span>
-                        <h3>PulseTrackr Support</h3>
-                        <p>Help center entries, FAQs, and troubleshooting flows for PulseTrackr.</p>
-                    </div>
-                    <a href="../docs/pulsetrackr-support.html">Browse support</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Privacy</span>
-                        <h3>JxL Scheduler Privacy</h3>
-                        <p>Data usage and storage details dedicated to JxL Scheduler.</p>
-                    </div>
-                    <a href="../docs/jxl-scheduler-privacy.html">Open document</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Compliance</span>
-                        <h3>JxL Scheduler App Store Compliance</h3>
-                        <p>Checklist and review notes for JxL Scheduler on the App Store.</p>
-                    </div>
-                    <a href="../docs/jxl-scheduler-compliance.html">Review compliance</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Support</span>
-                        <h3>JxL Scheduler Support</h3>
-                        <p>Help center entries, FAQs, and troubleshooting flows for JxL Scheduler.</p>
-                    </div>
-                    <a href="../docs/jxl-scheduler-support.html">Browse support</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Privacy</span>
-                        <h3>ParkMemoryHub Privacy</h3>
-                        <p>Data usage and storage details dedicated to ParkMemoryHub.</p>
-                    </div>
-                    <a href="../docs/parkmemory-privacy.html">Open document</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Terms</span>
-                        <h3>ParkMemoryHub Terms</h3>
-                        <p>User agreement outlining acceptable use, support, and service levels.</p>
-                    </div>
-                    <a href="../docs/parkmemory-terms.html">View terms</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Compliance</span>
-                        <h3>App Store Compliance</h3>
-                        <p>Checklist and statements submitted with ParkMemoryHub on the App Store.</p>
-                    </div>
-                    <a href="../docs/parkmemory-compliance.html">Review compliance</a>
-                </article>
-                <article class="doc-list-item ds-card ds-document-card">
-                    <div>
-                        <span class="doc-type">Support</span>
-                        <h3>Support Documentation</h3>
-                        <p>Help center entries, FAQs, and troubleshooting flows for ParkMemoryHub.</p>
-                    </div>
-                    <a href="../docs/parkmemory-support.html">Browse support</a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Support Section -->
-    <section class="section site-section contact-cta">
-        <div class="container">
-            <div class="contact-shell">
-                <div>
-                    <p class="eyebrow ds-eyebrow">Need something custom?</p>
-                    <h2>We can create tailored privacy, terms, or compliance docs for your release.</h2>
-                    <p>Whether you’re extending an existing product or introducing a new platform, EdenTV handles the end-to-end documentation.</p>
-                </div>
-                <div class="contact-actions">
-                    <a href="mailto:legal@edentv.us" class="btn ds-button btn-primary">Contact legal</a>
-                    <a href="../pages/apps.html" class="btn ds-button btn-secondary">See the work</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer site-footer" data-component="site-footer">
-        <div class="container">
-            <div class="footer-content site-footer__content">
-                <div class="footer-brand site-footer__brand">
-                    <h3>EdenTV</h3>
-                    <p>Creating tomorrow's digital experiences today.</p>
-                </div>
-                <div class="footer-links site-footer__links">
-                    <div class="footer-section site-footer__section">
-                        <h4>Platform</h4>
-                        <a href="apps.html">Apps</a>
-                        <a href="podcasts.html">Podcasts</a>
-                        <a href="multimedia.html">Multimedia</a>
-                        <a href="about.html">About</a>
-                    </div>
-                    <div class="footer-section site-footer__section">
-                        <h4>Legal</h4>
-                        <a href="../legal/privacy-policy.html">Privacy Policy</a>
-                        <a href="../legal/terms-of-service.html">Terms of Service</a>
-                        <a href="../legal/app-store-compliance.html">App Store Compliance</a>
-                    </div>
-                    <div class="footer-section site-footer__section">
-                        <h4>Connect</h4>
-                        <a href="mailto:support@edentv.us">Support</a>
-                        <a href="../legal/support.html">Help Center</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom site-footer__bottom">
-                <p>&copy; 2026 EdenTV. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
+        </div></section>
+    </main>
+    <footer class="footer site-footer" data-component="site-footer"><div class="container"><div class="footer-content site-footer__content"><div class="footer-brand site-footer__brand"><h3>EdenTV</h3><p>Creating thoughtful digital experiences.</p></div><div class="footer-links site-footer__links"><div class="footer-section site-footer__section"><h4>Explore</h4><a href="apps.html">Apps</a><a href="about.html">About</a></div><div class="footer-section site-footer__section"><h4>Documentation</h4><a href="../legal/privacy-policy.html">Privacy</a><a href="../legal/support.html">Support</a></div><div class="footer-section site-footer__section"><h4>Contact</h4><a href="mailto:legal@edentv.us">Legal</a><a href="mailto:support@edentv.us">Product support</a></div></div></div><div class="footer-bottom site-footer__bottom"><p>&copy; 2026 EdenTV. All rights reserved.</p></div></div></footer>
     <script src="../js/script.js"></script>
 </body>
 </html>

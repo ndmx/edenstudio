@@ -110,38 +110,20 @@ Edit design-system tokens in `css/styles.css`:
 
 ## 📱 Portfolio Overview
 
-### iOS & macOS Apps (4 projects)
-- **ParkMemoryHub**: Family memory sharing platform (iOS 18+)
-- **Jx Scheduler**: Logistics scheduling with CloudKit (iOS 18+)
-- **cosmix**: Real-time audio visualizer (macOS 14+)
-- **pulsetrackr**: Health tracking application (iOS)
+The public portfolio is generated from a source-verified inventory of the local
+Codehub workspace. It currently includes 18 projects grouped as Apple-platform
+software, Android, web products, and AI/data/design tools. Status labels are
+deliberately specific: live, current build, prototype, release preparation, or
+in development.
 
-### Android Apps (2 projects)
-- **MoodQuest**: Mood-based adventure planner (Android 8+)
-- **Frisbie**: Android application with Material Design
-
-### Web Applications (6 projects)
-- **PulseTrack**: Nigerian political sentiment tracker (React + Firebase)
-- **snapshot**: Photo sharing platform (React + Firebase)
-- **NebulaChat**: WhatsApp clone with MERN stack (React 19)
-- **LxRose**: Healthcare services platform (React + Express + Firebase)
-- **Guess Correctly**: Halloween memory game with multiplayer (JavaScript + Firebase)
-- **Virtual Wig Studio**: AI-powered wig try-on (Gemini AI)
-
-### Python & Data Tools (3 projects)
-- **Blockchain Transfer Sim**: Educational blockchain with Streamlit
-- **Philly Real Estate Tracker**: ETL pipeline for property analysis
-- **Upscale AI Bootcamp**: Learning management platform (Flask)
-
-### Study Resources (1 project)
-- **AWS SAA-C03 Exam Prep**: 650+ MCQs for AWS certification
-
-**Total**: 16 projects across 5 platforms
+Run `python3 scripts/build_portfolio.py` after changing the verified inventory.
+Run `python3 scripts/build_document_hubs.py` after changing the product document
+indexes.
 
 ## 🔗 Key Pages
 
 - **Homepage**: Modern landing page with cycling feature cards and portfolio overview
-- **Apps**: Comprehensive showcase of 16 projects across all platforms
+- **Apps**: Source-verified project catalog with explicit lifecycle status
 - **Developer Docs**: Complete documentation hub
 - **Legal**: Privacy, terms, compliance, and support
 - **About**: Studio mission and portfolio statistics
@@ -169,15 +151,13 @@ Edit design-system tokens in `css/styles.css`:
 
 ## 📝 Legal & Compliance
 
-All legal documentation is maintained in two places:
+Public documentation is maintained in two places:
 - **Platform-wide**: `/legal/` folder
 - **App-specific**: `/docs/` folder
 
-Each app has its own set of legal documents:
-- Privacy Policy
-- Terms of Service
-- App Store Compliance
-- Support Documentation
+Only products with maintained public documents appear in the documentation
+index. A product may publish privacy, terms, App Store review, or support pages
+as applicable; every product does not automatically receive every document type.
 
 ## 🎯 About EdenTV
 
@@ -201,7 +181,7 @@ Contact us at `contact@edentv.us` for project inquiries and collaborations.
 
 ## 📜 License
 
-© 2024 EdenTV. All rights reserved.
+© 2026 EdenTV. All rights reserved.
 
 ---
 

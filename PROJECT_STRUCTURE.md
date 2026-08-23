@@ -31,7 +31,12 @@ edentv/
 │   ├── parkmemory-privacy.html    # ParkMemoryHub privacy policy
 │   ├── parkmemory-terms.html      # ParkMemoryHub terms
 │   ├── parkmemory-compliance.html # ParkMemoryHub App Store compliance
-│   └── parkmemory-support.html    # ParkMemoryHub support docs
+│   ├── parkmemory-support.html    # ParkMemoryHub support docs
+│   ├── jxl-scheduler-*.html       # JxL Scheduler documents
+│   └── pulsetrackr-*.html         # PulseTrackr documents
+├── scripts/
+│   ├── build_document_hubs.py     # Generate the four public doc indexes
+│   └── build_portfolio.py         # Generate the source-verified portfolio
 ├── README.md                 # Project documentation
 ├── DESIGN_SYSTEM.md          # EdenTV component naming and visual system
 └── PROJECT_STRUCTURE.md      # This file
@@ -69,7 +74,7 @@ edentv/
 ### `/docs/` - App-Specific Documentation
 - Individual app documentation
 - App-specific legal documents
-- Currently contains ParkMemoryHub docs
+- Currently contains ParkMemory Hub, JxL Scheduler, and PulseTrackr documents
 
 ## Link Structure
 
@@ -109,17 +114,16 @@ edentv/
 
 ### Live Content
 - **Homepage**: Fully functional with dynamic cycling cards and portfolio overview
-- **Apps Page**: Comprehensive showcase of 16 projects across 5 platforms (iOS/macOS, Android, Web, Python, Study Resources)
+- **Apps Page**: Source-verified showcase of 18 local projects with explicit lifecycle status
 - **Developer Docs**: Hub for all documentation with links to app-specific docs
 - **About Page**: Studio mission and portfolio statistics
 - **Legal Documents**: Complete platform and app-specific legal documentation
 
 ### Portfolio Categories
-1. **iOS & macOS Apps** (4): ParkMemoryHub, Jx Scheduler, cosmix, pulsetrackr
-2. **Android Apps** (2): MoodQuest, Frisbie
-3. **Web Applications** (6): PulseTrack, snapshot, NebulaChat, LxRose, Guess Correctly, Virtual Wig Studio
-4. **Python & Data Tools** (3): Blockchain Transfer Sim, Philly Real Estate Tracker, Upscale AI Bootcamp
-5. **Study Resources** (1): AWS SAA-C03 Exam Prep
+1. **Apple platforms**: current SwiftUI iPhone and macOS projects
+2. **Android**: the current Kotlin and Compose project
+3. **Web products**: browser and full-stack projects with local source
+4. **AI, data, and design tools**: research, analysis, simulation, and system work
 
 ### Coming Soon
 - **Podcasts**: Page structure ready, content in development
