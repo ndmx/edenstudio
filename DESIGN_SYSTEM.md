@@ -1,6 +1,6 @@
 # EdenTV Design System
 
-EdenTV uses a small web design system for static marketing, support, and developer documentation pages. The system borrows the discipline of Apple platform design: native-feeling controls, restrained surfaces, semantic color, clear typography, and accessible interaction states.
+EdenTV uses a small web design system for static marketing, support, and developer documentation pages. The system pairs native-feeling controls, restrained surfaces, semantic color, clear typography, and accessible interaction states with a light editorial pencil-art direction.
 
 ## Naming Model
 
@@ -48,6 +48,16 @@ The primary wordmark remains `EdenTV`. The favicon and compact mark use a cursiv
 Current brand asset:
 
 `assets/brand/etv-favicon.svg`
+
+## Editorial Artwork
+
+Page artwork lives in `assets/artwork/` and uses warm paper, light graphite, generous negative space, and restrained jade, clay, and antique-gold accents. Body classes select the appropriate composition through `--page-art`:
+
+- `page-home` and `page-about`: studio landscape artwork.
+- `page-apps`: multi-platform product artwork.
+- `page-media` and `page-docs`: media and documentation artwork.
+
+Reusable `.ds-card` surfaces inherit a faint crop of the current page artwork. Keep that treatment subtle enough that content remains the focus.
 
 ## Interaction Principles
 

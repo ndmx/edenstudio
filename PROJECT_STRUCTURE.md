@@ -10,8 +10,12 @@ edentv/
 ├── js/
 │   └── script.js             # All website JavaScript
 ├── assets/
+│   ├── artwork/
+│   │   ├── studio-pencil-paper.webp     # Homepage and About background
+│   │   ├── apps-pencil-paper.webp       # Apps portfolio background
+│   │   └── media-docs-pencil-paper.webp # Media and documentation background
 │   └── brand/
-│       └── etv-favicon.svg   # EdenTV Etv browser icon
+│       └── etv-favicon.svg               # EdenTV Etv browser icon
 ├── pages/
 │   ├── apps.html             # Apps showcase page
 │   ├── podcasts.html         # Podcasts page (coming soon)
@@ -48,8 +52,9 @@ edentv/
 - Currently single `script.js` with all functionality
 
 ### `/assets/` - Brand & Media Assets
-- Brand marks, icons, and reusable media
+- Brand marks, icons, reusable media, and optimized editorial artwork
 - Current favicon is `assets/brand/etv-favicon.svg`
+- Page artwork is stored as optimized WebP in `assets/artwork/`
 
 ### `/pages/` - Main Content Pages
 - All main website pages (apps, podcasts, multimedia, docs, about)

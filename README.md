@@ -6,7 +6,7 @@ A modern, responsive website showcasing EdenTV's complete portfolio of software 
 
 - **Responsive Design**: Optimized for all devices (desktop, tablet, mobile)
 - **Design System**: Shared `site-*` and `ds-*` component classes with reusable visual tokens
-- **Modern UI**: Apple-inspired dark interface with glass surfaces, clear states, and restrained motion
+- **Modern UI**: Light editorial interface with warm paper surfaces, original pencil artwork, clear states, and restrained motion
 - **Dynamic Content**: Interactive cycling cards and animated sections
 - **Complete Documentation**: Comprehensive legal and technical documentation
 - **Well-Organized**: Clean folder structure for easy maintenance
@@ -21,6 +21,10 @@ edentv/
 ├── js/
 │   └── script.js             # All JavaScript
 ├── assets/
+│   ├── artwork/
+│   │   ├── studio-pencil-paper.webp
+│   │   ├── apps-pencil-paper.webp
+│   │   └── media-docs-pencil-paper.webp
 │   └── brand/
 │       └── etv-favicon.svg   # EdenTV Etv browser icon
 ├── pages/
