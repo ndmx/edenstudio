@@ -117,14 +117,34 @@ deliberately specific: live, current build, prototype, release preparation, or
 in development.
 
 Run `python3 scripts/build_portfolio.py` after changing the verified inventory.
-Run `python3 scripts/build_document_hubs.py` after changing the product document
-indexes.
+Run `python3 scripts/build_documents.py` after changing product documents or
+their routing indexes. This rebuilds the category hubs, canonical/structured
+metadata, sitemap, and `assets/document-index.json`. Run it after regenerating
+the portfolio too, so generated metadata stays current.
+
+The Documents & Support library searches the 11 HTML product documents locally
+in the browser. Category indexes, navigation, and repeated quick links are not
+search results. Keep section IDs stable because search links and external
+bookmarks use them. Search state can be shared with `?q=location&type=support`.
+Browsing still works without JavaScript or when the index cannot load.
+
+Edit the visible “Last reviewed” date only after reviewing a document; the build
+preserves it and emits a machine-readable date. The sitemap deliberately omits
+modification dates rather than using a build timestamp. Canonicals use the
+extensionless URLs served by Cloudflare Pages; existing `.html` links remain
+valid. Downloads are not currently part of this HTML library. If added, provide
+an HTML summary with file type and size and explicitly add content extraction.
+
+Check the generated library with `python3 -m unittest discover -s tests -v`.
+For browser checks, serve the repo at port 8765 and run
+`node tests/document_search.browser.cjs` with Playwright available on `NODE_PATH`
+and Chrome installed. Override the server with `DOCUMENT_TEST_URL`.
 
 ## 🔗 Key Pages
 
 - **Homepage**: Modern landing page with cycling feature cards and portfolio overview
 - **Apps**: Source-verified project catalog with explicit lifecycle status
-- **Developer Docs**: Complete documentation hub
+- **Documents & Support**: Searchable product policies and support library
 - **Legal**: Privacy, terms, compliance, and support
 - **About**: Studio mission and portfolio statistics
 

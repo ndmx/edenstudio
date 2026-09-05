@@ -1,0 +1,599 @@
+{
+  "documents": [
+    {
+      "id": "parkmemory-privacy",
+      "product": "ParkMemory Hub",
+      "type": "privacy",
+      "title": "ParkMemory Hub Privacy Policy",
+      "url": "../docs/parkmemory-privacy.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Overview",
+          "anchor": "overview",
+          "text": "ParkMemory Hub helps families and friends collect trip memories, coordinate plans, and optionally share location updates with the members of their circle. The app is designed to use on-device storage together with Apple's iCloud and CloudKit services for sync and sharing. Core Privacy Principles Sharing is limited to the circle you create or join. Location sharing is optional and controlled per device. Memories, plans, and circle updates are stored locally and may be synchronized through iCloud when shared. There is no Firebase dependency in the current ParkMemory Hub app."
+        },
+        {
+          "title": "Information We Handle",
+          "anchor": "information",
+          "text": "ParkMemory Hub may handle the following information when you choose to use related features: Profile information, such as your display name and profile photo Circle information, such as your circle name and circle code Memories you create, including captions, tags, attached photos, and optional memory locations Planner items you create, including titles, notes, times, places, votes, and sharing visibility Live or recent location information, only when you enable location sharing or request your current location Basic app identifiers needed to distinguish devices and circle members"
+        },
+        {
+          "title": "How Information Is Used",
+          "anchor": "usage",
+          "text": "App Experience Show your profile and circle membership Save memories and plans on your device Display shared content from your circle Sync and Sharing Synchronize shared memories, plans, and circle updates through iCloud Let circle members view shared plans and optional location updates Keep each device aligned with the circle it has joined"
+        },
+        {
+          "title": "Photos and Memories",
+          "anchor": "photos",
+          "text": "When you select photos for a memory, the app reads the selected photo data from your photo library with your permission. Photos attached to memories are stored locally on your device. If you share a memory with your circle, the memory content and attached media may also be uploaded through Apple's CloudKit service so the people in your circle can access that shared memory on their devices."
+        },
+        {
+          "title": "Location Data",
+          "anchor": "location",
+          "text": "Location access is optional. You can request your current location when creating a memory or planner item. You can turn location sharing on or off for radar. If you do not enable these features, the app does not need live location for normal use."
+        },
+        {
+          "title": "iCloud and CloudKit",
+          "anchor": "icloud",
+          "text": "Shared circle data is synchronized using Apple's iCloud and CloudKit services. Because ParkMemory Hub currently uses CloudKit to share circle updates between people, shared content may be stored in Apple's cloud infrastructure to support syncing between devices and circle members. Apple may process data as needed to provide its cloud services. Please also review Apple's privacy materials for iCloud and CloudKit."
+        },
+        {
+          "title": "Sharing Controls",
+          "anchor": "controls",
+          "text": "Memories can remain only on your device until you share them in the app. Planner items can be shared with your whole circle, selected members, or only yourself. Location sharing can be turned on or off in the app. You can leave a circle and move this device into a new one."
+        },
+        {
+          "title": "Data Retention",
+          "anchor": "retention",
+          "text": "Local app data stays on your device until you remove it, delete the app, or overwrite it through normal app use. Shared circle data synchronized through CloudKit may remain available to circle members who already have access to that circle's shared content until that shared content is deleted from the circle records."
+        },
+        {
+          "title": "Children",
+          "anchor": "children",
+          "text": "ParkMemory Hub is not intended to collect personal information from children without the involvement of a parent, guardian, or family organizer."
+        },
+        {
+          "title": "Contact",
+          "anchor": "contact",
+          "text": "For privacy or support questions about ParkMemory Hub, contact support@edentv.us. We aim to respond within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "parkmemory-terms",
+      "product": "ParkMemory Hub",
+      "type": "terms",
+      "title": "ParkMemory Hub Terms of Service",
+      "url": "../docs/parkmemory-terms.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Acceptance",
+          "anchor": "acceptance",
+          "text": "By downloading, installing, or using ParkMemory Hub, you agree to these Terms of Service."
+        },
+        {
+          "title": "Service Description",
+          "anchor": "service",
+          "text": "ParkMemory Hub is a circle-based app for families and friends that supports shared memories, trip planning, and optional location sharing."
+        },
+        {
+          "title": "User Conduct",
+          "anchor": "conduct",
+          "text": "Use the app only for lawful purposes. Do not upload content you do not have permission to share. Do not use the app to harass, threaten, or impersonate other people. Do not attempt to interfere with the app's normal operation or security."
+        },
+        {
+          "title": "Content Ownership",
+          "anchor": "content",
+          "text": "You retain ownership of the photos, captions, notes, and other content you create in ParkMemory Hub. By sharing content within your circle, you allow the app to store and synchronize that content as needed to provide the service."
+        },
+        {
+          "title": "Availability",
+          "anchor": "availability",
+          "text": "Some features depend on Apple services such as iCloud and CloudKit. Shared circle updates may be delayed or unavailable when Apple cloud services or device connectivity are unavailable."
+        },
+        {
+          "title": "Termination",
+          "anchor": "termination",
+          "text": "You may stop using the app at any time. You can also leave a circle from inside the app, which moves your device into a new personal circle."
+        },
+        {
+          "title": "Contact",
+          "anchor": "contact",
+          "text": "Questions about these terms can be sent to support@edentv.us. We aim to respond within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "parkmemory-support",
+      "product": "ParkMemory Hub",
+      "type": "support",
+      "title": "ParkMemory Hub Support",
+      "url": "../docs/parkmemory-support.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Getting Started",
+          "anchor": "getting-started",
+          "text": "Install ParkMemory Hub on your iPhone. Open the app and set your display name in Profile. Create a new circle or join an existing circle from an invite link or circle code. Use Memories, Radar, Planner, and Profile as needed."
+        },
+        {
+          "title": "Permissions",
+          "anchor": "permissions",
+          "text": "Photos: Needed to attach photos to memories. Location: Needed only if you want current-location tagging or radar sharing. iCloud: Needed for shared memories, planner updates, and circle sync through CloudKit."
+        },
+        {
+          "title": "iCloud Sync Help",
+          "anchor": "sync",
+          "text": "If updates seem slow or another device does not show the latest shared content: Make sure both devices are signed in to iCloud. Open ParkMemory Hub on both devices. Use the manual Sync with iCloud button in Profile or the feature toolbar. Confirm both devices are using the same circle code."
+        },
+        {
+          "title": "Memories Help",
+          "anchor": "memories",
+          "text": "If a memory is missing on another device, confirm it was created in the same circle. If a photo cannot be attached, confirm the app still has Photos permission. If a memory has multiple photos, the receiving device may need a moment for the shared media to appear."
+        },
+        {
+          "title": "Planner Help",
+          "anchor": "planner",
+          "text": "Circle shares with everyone in the circle. Some Members shares only with the selected people and the creator. Only Me keeps the plan visible only on the creator's device."
+        },
+        {
+          "title": "Radar Help",
+          "anchor": "radar",
+          "text": "Each person must enable location sharing on their own device. Tapping a member opens Apple Maps with their shared coordinates when available. If radar is empty, verify the device has Location permission and that the member is sharing."
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "anchor": "faq",
+          "text": "Do both phones need the same Apple ID? No. Separate Apple IDs are supported. In fact, separate Apple IDs are better for real-world group testing. Can I leave a circle? Yes. In Profile, use Leave Circle. This device will move into a new personal circle with a new circle code. Can I use the app without location services? Yes. Location is optional unless you want current-location tagging or radar sharing. How do I clear old local test data on a device? Delete ParkMemory Hub from that device and reinstall it. That clears the device's local circle, memories, plans, profile data, and sync cache before you set it up again."
+        },
+        {
+          "title": "Contact Support",
+          "anchor": "contact",
+          "text": "Email support@edentv.us with your device model, iOS version, app version, and a short description of the issue. Support requests for ParkMemory Hub are typically answered within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "parkmemory-compliance",
+      "product": "ParkMemory Hub",
+      "type": "compliance",
+      "title": "ParkMemory Hub App Store Compliance",
+      "url": "../docs/parkmemory-compliance.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Overview",
+          "anchor": "overview",
+          "text": "ParkMemory Hub is a group trip app for families and friends. Users create or join a circle, then share memories, plans, and optional location updates through iCloud and CloudKit. Current App Model SwiftUI app for iPhone CloudKit-based sync No Firebase dependency in the current release No advertising, no external payments, and no subscriptions in the current app"
+        },
+        {
+          "title": "Core Functionality",
+          "anchor": "functionality",
+          "text": "Memories: Create memories with captions, tags, attached photos, and optional locations Planner: Create plans, share them with the whole circle, selected members, or only the creator Radar: Share your location with your circle and open member coordinates in Apple Maps Profile: Set your name and profile image, invite members, join circles, sync with iCloud, or leave a circle"
+        },
+        {
+          "title": "User-Generated Content",
+          "anchor": "ugc",
+          "text": "ParkMemory Hub includes user-generated content such as shared photos, captions, notes, and location-tagged memories. Content is intended for private circle sharing, not for public feeds. Users control which circle receives shared content. Location sharing is optional and controlled by each member on their own device."
+        },
+        {
+          "title": "Privacy and Permissions",
+          "anchor": "privacy",
+          "text": "Photos permission: Used only when a user selects photos for a memory. Location permission: Used only for current-location tagging or radar sharing when requested. App privacy: The app's public privacy policy is available at the ParkMemory Hub privacy document."
+        },
+        {
+          "title": "CloudKit and Sync",
+          "anchor": "cloudkit",
+          "text": "The current app uses Apple's CloudKit service for shared sync between circle members. Devices can manually trigger iCloud sync if updates appear delayed. Apps distributed through the App Store use the production CloudKit environment. Shared memories, planner updates, and optional radar updates depend on the app's CloudKit container."
+        },
+        {
+          "title": "Business Model",
+          "anchor": "business",
+          "text": "ParkMemory Hub is currently a free app with no in-app purchases, subscriptions, or third-party advertising."
+        },
+        {
+          "title": "Suggested Review Notes",
+          "anchor": "review-notes",
+          "text": "Suggested App Review note: ParkMemory Hub is a group trip app for families and friends. Users create or join a circle, then share memories, plans, and optional location updates through iCloud and CloudKit. To test group features, create a circle on one device, share the invite link from Profile, open it on a second device, and accept the invite inside the app."
+        },
+        {
+          "title": "Contact",
+          "anchor": "contact",
+          "text": "For compliance or App Store review questions, contact support@edentv.us. We aim to respond within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "jxl-scheduler-privacy",
+      "product": "JxL Scheduler",
+      "type": "privacy",
+      "title": "JxL Scheduler Privacy Policy",
+      "url": "../docs/jxl-scheduler-privacy.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Overview",
+          "anchor": "overview",
+          "text": "JxL Scheduler helps small teams and individual users plan availability, routes, messages, and uploads from an iPhone-first workspace. The app is designed as a local-first app. Core data is stored on the user's device first. Optional iCloud and CloudKit sharing may be used for selected group sync and collaboration. Core Privacy Principles The app does not require a JxL account or app-specific sign-in. Schedules, routes, messages, and uploads are stored locally unless a sharing feature is used. iCloud sharing is optional and uses Apple services. JxL Scheduler does not sell user data or use third-party advertising tracking."
+        },
+        {
+          "title": "Information We Handle",
+          "anchor": "information",
+          "text": "JxL Scheduler may handle the following information when you choose to use related features: Profile information, such as display name and local profile settings Schedule and availability entries, including dates, times, recurrence, and notes Route information, including route names, descriptions, stops, addresses, and coordinates Messages and notes created inside the app Uploaded files or media selected by the user Group membership and sharing metadata when iCloud sharing is enabled Device-generated identifiers needed to keep local records and shared records in sync"
+        },
+        {
+          "title": "How Information Is Used",
+          "anchor": "usage",
+          "text": "Local App Experience Save your schedules, routes, messages, uploads, and profile on your device Show planned availability and route details in the app interface Keep the app usable when offline Optional Sync and Sharing Synchronize selected group data through iCloud and CloudKit Let invited group members view shared schedules, routes, messages, or uploads according to app controls Keep shared records aligned across participating devices"
+        },
+        {
+          "title": "Routes and Location",
+          "anchor": "routes",
+          "text": "Location access is optional and is used for route-related features, such as finding your current location, adding stops, or opening route directions in Apple Maps or Google Maps. You can deny location permission and still use non-location parts of the app. Saved route stops may include addresses and coordinates selected by the user. Map links are opened only when the user chooses to open a route in a map app."
+        },
+        {
+          "title": "Uploads and Files",
+          "anchor": "uploads",
+          "text": "When you add an upload, JxL Scheduler stores the selected file information for use inside the app. If you choose to share an upload through a group feature, the file or its metadata may be stored through Apple's CloudKit service so permitted group members can access it."
+        },
+        {
+          "title": "iCloud and CloudKit",
+          "anchor": "icloud",
+          "text": "Optional group sharing and sync use Apple's iCloud and CloudKit services. When you share data with a group or selected member, that shared data may be stored in Apple's cloud infrastructure to support syncing between invited devices. Apple may process data as needed to provide its cloud services. Please also review Apple's privacy materials for iCloud and CloudKit."
+        },
+        {
+          "title": "Sharing Controls",
+          "anchor": "controls",
+          "text": "You can use JxL Scheduler without joining a group. Routes, schedules, messages, and uploads remain local unless you use a sharing or sync feature. Group sharing is controlled by iCloud share invitations and in-app ownership rules. You can leave a group or reset local profile data from the app when those controls are available in the current app version."
+        },
+        {
+          "title": "Data Retention",
+          "anchor": "retention",
+          "text": "Local app data stays on your device until you remove it, delete it in the app, reset local data, or delete the app. Shared data synchronized through CloudKit may remain available to group members who already have access until that shared data is removed from the shared records or no longer available through iCloud sharing."
+        },
+        {
+          "title": "Children",
+          "anchor": "children",
+          "text": "JxL Scheduler is not directed to children under 13 and is intended for scheduling, route planning, and team coordination by users who can manage their own app data and sharing choices."
+        },
+        {
+          "title": "Contact",
+          "anchor": "contact",
+          "text": "For privacy or support questions about JxL Scheduler, contact support@edentv.us. We aim to respond within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "jxl-scheduler-support",
+      "product": "JxL Scheduler",
+      "type": "support",
+      "title": "JxL Scheduler Support",
+      "url": "../docs/jxl-scheduler-support.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Getting Started",
+          "anchor": "getting-started",
+          "text": "Install JxL Scheduler on your iPhone. Open the app. A local profile is created automatically. Use Schedule, Routes, Messages, Uploads, and Profile as needed. Optional iCloud sharing can be enabled when you want to collaborate with trusted members."
+        },
+        {
+          "title": "Availability and Schedules",
+          "anchor": "availability",
+          "text": "Use the plus button in Schedule to add availability. Tap an existing availability card to edit it. Swipe left on an availability card to delete it. Recurring availability can use start and end dates."
+        },
+        {
+          "title": "Routes Help",
+          "anchor": "routes",
+          "text": "Create a route from the Routes tab using the plus button. Add stops by searching for an address or selecting a map location. Reorder stops from the route detail or edit view. Use Apple Maps or Google Maps links to open route directions when available."
+        },
+        {
+          "title": "Messages Help",
+          "anchor": "messages",
+          "text": "Messages can be used as notes to yourself or for group communication when sharing is enabled. Tap outside the composer to dismiss the keyboard. Use delete or clear controls to remove messages you created."
+        },
+        {
+          "title": "Uploads Help",
+          "anchor": "uploads",
+          "text": "Uploads are stored for use inside the app. Shared upload features depend on the current app version and iCloud availability. If a file is missing, confirm the file is still available on the device or in the shared record."
+        },
+        {
+          "title": "iCloud Sharing Help",
+          "anchor": "sync",
+          "text": "If shared group data does not appear on another device: Make sure both devices are signed in to iCloud. Open JxL Scheduler on both devices. Confirm the receiving member accepted the iCloud share invitation. Try foregrounding the app again to trigger sync."
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "anchor": "faq",
+          "text": "Do I need a JxL account? No. JxL Scheduler does not require a separate app sign-in. Can I use the app offline? Yes. The app is local-first, so schedules, routes, messages, and uploads can be used locally. Shared sync requires iCloud and network availability. Can I use the app without location permission? Yes. Location is optional unless you want current-location route features. How do I clear old local test data? Use reset options in the app when available, or delete and reinstall the app on the device."
+        },
+        {
+          "title": "Contact Support",
+          "anchor": "contact",
+          "text": "Email support@edentv.us with your device model, iOS version, app version, and a short description of the issue. Support requests for JxL Scheduler are typically answered within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "jxl-scheduler-compliance",
+      "product": "JxL Scheduler",
+      "type": "compliance",
+      "title": "JxL Scheduler App Store Compliance",
+      "url": "../docs/jxl-scheduler-compliance.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Overview",
+          "anchor": "overview",
+          "text": "JxL Scheduler is an iPhone scheduling and route-planning app for local-first availability, routes, messages, uploads, and optional iCloud sharing. Current App Model SwiftUI app for iPhone SwiftData local-first storage Optional CloudKit sharing and sync No app-specific account sign-in No advertising, external payments, or subscriptions in the current app"
+        },
+        {
+          "title": "Core Functionality",
+          "anchor": "functionality",
+          "text": "Schedule: Create and edit availability, including recurring availability. Routes: Create routes, add stops, reorder stops, and open directions in Apple Maps or Google Maps. Messages: Keep local notes, direct messages, and group updates depending on sharing state. Uploads: Store selected files and prepare shared records when supported by the current app version. Profile: Manage local profile and optional group sharing settings."
+        },
+        {
+          "title": "User Content",
+          "anchor": "content",
+          "text": "JxL Scheduler includes user-created content such as schedules, route names, route stops, messages, notes, and uploads. Content is intended for private planning and trusted group sharing, not public feeds. Users control when they create, edit, delete, or share supported content. Location-based route data is added by user action or permission-based current-location features."
+        },
+        {
+          "title": "Privacy and Permissions",
+          "anchor": "privacy",
+          "text": "Location permission: Used for route features that need current location or map context. Photos/files permission: Used only when a user selects media or files for upload features. iCloud: Used for optional group sharing and CloudKit sync. App privacy: The app's public privacy policy is available at the JxL Scheduler privacy document."
+        },
+        {
+          "title": "CloudKit and Sync",
+          "anchor": "cloudkit",
+          "text": "The current app uses Apple's CloudKit service for optional shared sync between trusted members. The app remains usable when iCloud is unavailable. Apps distributed through the App Store use the production CloudKit environment. Shared schedules, routes, messages, uploads, and group metadata may depend on the app's CloudKit container."
+        },
+        {
+          "title": "Business Model",
+          "anchor": "business",
+          "text": "JxL Scheduler is currently a free app with no in-app purchases, subscriptions, or third-party advertising."
+        },
+        {
+          "title": "Suggested Review Notes",
+          "anchor": "review-notes",
+          "text": "Suggested App Review note: JxL Scheduler is a local-first scheduling and route-planning app. The app does not require a separate app sign-in. Core schedule, route, message, and upload workflows work locally. Optional group sharing uses Apple's iCloud and CloudKit services. To test local functionality, open the app and create availability, routes, messages, and uploads. To test sharing, sign in to iCloud on test devices and use the app's group sharing controls."
+        },
+        {
+          "title": "Contact",
+          "anchor": "contact",
+          "text": "For compliance or App Store review questions, contact support@edentv.us. We aim to respond within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "pulsetrackr-privacy",
+      "product": "PulseTrackr",
+      "type": "privacy",
+      "title": "PulseTrackr Privacy Policy",
+      "url": "../docs/pulsetrackr-privacy.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Overview",
+          "anchor": "overview",
+          "text": "PulseTrackr is a community safety app that helps users see nearby incident reports, submit incident reports, add community verification signals, and activate SOS alerts to trusted contacts. The app uses a privacy-focused reporting model: public incident locations can be approximate, exact reporter location is treated as private, and trusted-contact SOS sharing only starts after the user activates SOS. Core Privacy Principles PulseTrackr does not sell user data or use third-party advertising tracking. Public incident pins can be offset from exact reporter location. Trusted contacts are stored in the device Keychain until SOS delivery is needed. PulseTrackr does not automatically contact police, ambulance, or other emergency services."
+        },
+        {
+          "title": "Information We Handle",
+          "anchor": "information",
+          "text": "PulseTrackr may handle the following information when you use related features: Incident report details, such as title, description, category, severity, status, neighborhood, and timestamp Location information, including approximate public report coordinates and private reporter coordinates Optional evidence selected or recorded by the user, such as a photo or voice note Community verification signals, such as seen, not seen, unsafe, road blocked, or cleared Trusted contact details, such as display name, relationship label, phone number, email address, and notification channels SOS data, such as last known location, recent route points, direction of travel, and activation or resolution timestamps Device metadata needed for SOS support, such as app version, build number, device model, iOS version, battery state, and network status Firebase anonymous authentication identifiers used to protect backend writes and apply abuse-prevention limits"
+        },
+        {
+          "title": "How Information Is Used",
+          "anchor": "usage",
+          "text": "Community Safety Feed Show active reports near a user's watch area Filter reports by category, urgency, and distance Update report status using community verification signals SOS Support Create an SOS session after the user activates SOS Share exact location updates with selected trusted contacts Keep an audit record for privileged SOS access requests"
+        },
+        {
+          "title": "Location Data",
+          "anchor": "location",
+          "text": "PulseTrackr uses location to show nearby reports, calculate watch-area distance, submit incident reports, and support SOS location sharing. The app requests When In Use location access. Users can choose to hide exact report location. In that mode, public incident pins are offset to a nearby area. Exact reporter location may be sent to the private backend record when submitting a report. During SOS, exact location and recent route points are shared only after the user activates SOS. Location access can be changed at any time in iOS Settings."
+        },
+        {
+          "title": "Reports and Evidence",
+          "anchor": "reports",
+          "text": "Incident reports are user-generated content. A public version of a report can appear in the community feed. Private report records and evidence are protected by backend rules and server-side functions. Photo evidence is optional and uses the photo selected by the user. Voice evidence is optional and uses the microphone only when the user records a voice note. Evidence uploads are limited to image or audio files and are scoped to the anonymous reporter identifier. The public feed is read-only to clients. Report creation and community signals go through Firebase Cloud Functions."
+        },
+        {
+          "title": "SOS and Trusted Contacts",
+          "anchor": "sos",
+          "text": "PulseTrackr lets users save trusted contacts for SOS alerts. These contacts should be people who understand they may receive location alerts from the user. PulseTrackr does not sell, rent, or share mobile numbers or SMS opt-in information with third parties for marketing or promotional purposes. Message frequency varies and only occurs when a PulseTrackr user activates SOS. Message and data rates may apply. Reply STOP to opt out. Trusted contacts are stored locally in the device Keychain. When SOS is activated, selected contact details may be sent to Firebase Cloud Functions so SMS, phone, or email alerts can be delivered through configured providers. Recent route data is limited by the SOS privacy policy before upload. PulseTrackr does not dispatch public emergency services. Users should call local emergency services directly in an emergency."
+        },
+        {
+          "title": "Third-Party Services",
+          "anchor": "services",
+          "text": "PulseTrackr uses service providers to operate map, reporting, and SOS features: Firebase: anonymous authentication, Cloud Firestore, Cloud Functions, Firebase Storage, and App Check. Mapbox: map display when the Mapbox SDK is available in the app build. Twilio: optional SOS trusted-contact SMS, phone, or email delivery when configured. Apple frameworks: location, contacts import, photo selection, microphone access, and device Keychain storage."
+        },
+        {
+          "title": "Privacy Choices",
+          "anchor": "choices",
+          "text": "Turn location access on or off in iOS Settings. Use the in-app privacy toggle to hide exact public report location. Use approximate location at the iOS level if you do not want to share precise location with the app. Do not add optional photo or voice evidence unless you want it included with a report. Add, edit, deactivate, or delete trusted contacts from the SOS contacts screen. Contact support to request help with privacy questions or data deletion."
+        },
+        {
+          "title": "Data Retention",
+          "anchor": "retention",
+          "text": "Local settings and saved trusted contacts remain on the device until the user changes them, deletes them, or removes the app. Private incident reports, SOS sessions, SOS location updates, notification attempts, rate-limit records, and audit records are designed with backend retention metadata. Current backend retention for those private records is 30 days. Public incident feed records may remain available while they are useful for community safety, moderation, and abuse prevention."
+        },
+        {
+          "title": "Children",
+          "anchor": "children",
+          "text": "PulseTrackr is not directed to children under 13. Because the app involves location, incident reporting, and safety-related content, it is intended for users who can make informed privacy and safety decisions."
+        },
+        {
+          "title": "Contact",
+          "anchor": "contact",
+          "text": "For privacy or support questions about PulseTrackr, contact support@edentv.us. We aim to respond within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "pulsetrackr-terms",
+      "product": "PulseTrackr",
+      "type": "terms",
+      "title": "PulseTrackr Terms of Service",
+      "url": "../docs/pulsetrackr-terms.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Acceptance",
+          "anchor": "acceptance",
+          "text": "By downloading, installing, or using PulseTrackr, you agree to these Terms of Service."
+        },
+        {
+          "title": "Service Description",
+          "anchor": "service",
+          "text": "PulseTrackr is a community safety app for nearby incident awareness, community reports, map-based filtering, community verification, and trusted-contact SOS alerts."
+        },
+        {
+          "title": "Safety Disclaimer",
+          "anchor": "safety",
+          "text": "PulseTrackr is not an emergency dispatch service, law enforcement service, medical service, rescue service, or replacement for official emergency systems. If you are in immediate danger, call local emergency services directly. Community incident reports may be incomplete, delayed, inaccurate, or unverified. SOS alerts are sent only to trusted contacts selected by the user and depend on device connectivity and provider availability."
+        },
+        {
+          "title": "SMS and Trusted-Contact Alerts",
+          "anchor": "sms",
+          "text": "PulseTrackr trusted-contact alerts are sent only when a PulseTrackr user activates SOS and only to contacts the user selected. PulseTrackr does not send marketing, promotional, or broadcast SMS messages. PulseTrackr does not sell, rent, or share mobile numbers or SMS opt-in information with third parties for marketing or promotional purposes. Message frequency varies and only occurs when a PulseTrackr user activates SOS. Message and data rates may apply. Reply STOP to opt out."
+        },
+        {
+          "title": "User Conduct",
+          "anchor": "conduct",
+          "text": "Use the app only for lawful safety, awareness, and trusted-contact purposes. Do not submit false, misleading, harassing, discriminatory, threatening, or defamatory reports. Do not upload content you do not have permission to share. Do not use the app to target, stalk, intimidate, or impersonate another person. Do not attempt to bypass rate limits, security controls, or backend access rules."
+        },
+        {
+          "title": "User Content",
+          "anchor": "content",
+          "text": "You retain ownership of incident descriptions, evidence, and other content you submit. By submitting content, you allow PulseTrackr to store, process, display, and share that content as needed to operate the community safety feed, verification workflow, and related safety features. PulseTrackr may limit, remove, or preserve content when needed for safety, legal compliance, moderation, abuse prevention, or service operation."
+        },
+        {
+          "title": "Availability",
+          "anchor": "availability",
+          "text": "Some features depend on Apple services, Firebase, Mapbox, Twilio, internet connectivity, device permissions, and third-party provider availability. Reports, map updates, evidence uploads, and SOS notifications may be delayed or unavailable."
+        },
+        {
+          "title": "Termination",
+          "anchor": "termination",
+          "text": "You may stop using PulseTrackr at any time. You can delete the app to remove local app data from your device. EdenTV may limit access to the service if misuse, abuse, legal risk, or security risk is detected."
+        },
+        {
+          "title": "Contact",
+          "anchor": "contact",
+          "text": "Questions about these terms can be sent to support@edentv.us. We aim to respond within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "pulsetrackr-support",
+      "product": "PulseTrackr",
+      "type": "support",
+      "title": "PulseTrackr Support",
+      "url": "../docs/pulsetrackr-support.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "Getting Started",
+          "anchor": "getting-started",
+          "text": "Install PulseTrackr on your iPhone. Open the app and allow location access if you want nearby reports and watch-area alerts. Use the Map and Feed tabs to see active reports near you. Use Settings to adjust your watch radius, urgent alerts, community notices, and report-location privacy. Add trusted contacts before travel if you want SOS alerts available."
+        },
+        {
+          "title": "Permissions",
+          "anchor": "permissions",
+          "text": "Location: Used to show nearby reports, submit reports, calculate distance, and share exact location during SOS. Contacts: Used only when you choose to import a trusted contact for SOS alerts. Microphone: Used only when you record an optional voice note for an incident report. Photos: Used only when you choose an optional photo for an incident report."
+        },
+        {
+          "title": "Map and Feed Help",
+          "anchor": "feed",
+          "text": "Change your watch radius in Settings if the feed is too broad or too narrow. Urgent alerts include high-risk security, fire, medical, and other severe reports. Community notices include traffic, utility, weather, structure, and local-awareness reports. If no location is available, the map may show a default overview until location is granted."
+        },
+        {
+          "title": "Reporting Help",
+          "anchor": "reporting",
+          "text": "Open the Report tab. Add a short title, neighborhood or landmark, and description. Confirm whether the incident is happening now or already happened. Optionally attach a photo or voice note. Review or change the suggested classification. Tap Report now. If the Hide exact report location setting is on, the public map pin is moved to a nearby approximate area. The exact reporting coordinate may still be used privately for backend validation and safety workflows."
+        },
+        {
+          "title": "SOS Help",
+          "anchor": "sos",
+          "text": "Add at least one trusted contact before you need SOS. Use contacts who know they may receive PulseTrackr SOS location alerts from you. When SOS is active, PulseTrackr can share your last known location, recent route, direction of travel, and live updates with selected trusted contacts. PulseTrackr does not automatically contact police, ambulance, fire, or other emergency services. If you are in immediate danger, call local emergency services directly."
+        },
+        {
+          "title": "Troubleshooting",
+          "anchor": "troubleshooting",
+          "text": "Reports are not loading Check your connection, confirm location access is enabled, and reduce or increase the watch radius in Settings. Report submission fails Check your connection and try again. Large evidence files may take longer to upload. SOS contacts are not notified Confirm the contact has a valid phone number or email address, is marked active, and uses at least one delivery channel. Delivery also depends on configured SMS, phone, or email providers. Location is inaccurate Open iOS Settings and confirm PulseTrackr has Location access. If Precise Location is off, watch-area and SOS accuracy may be reduced."
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "anchor": "faq",
+          "text": "Does PulseTrackr replace emergency services? No. PulseTrackr is a community safety and trusted-contact alert app. It does not dispatch official emergency services. Can I submit a report without evidence? Yes. A text report with a valid location is enough. Photo and voice evidence are optional. Can other users see my exact location? Public report pins can be approximate when Hide exact report location is enabled. Exact SOS location is shared only after SOS activation with trusted contacts and authorized backend workflows. Can I use the app without contacts permission? Yes. Contacts permission is only needed if you import a trusted contact. You can also add contact details manually."
+        },
+        {
+          "title": "Contact Support",
+          "anchor": "contact",
+          "text": "Email support@edentv.us with your device model, iOS version, app version, and a short description of the issue. Support requests for PulseTrackr are typically answered within 2 business days."
+        }
+      ]
+    },
+    {
+      "id": "pulsetrackr-compliance",
+      "product": "PulseTrackr",
+      "type": "compliance",
+      "title": "PulseTrackr App Store Compliance",
+      "url": "../docs/pulsetrackr-compliance.html",
+      "reviewed": "2026-08-23",
+      "sections": [
+        {
+          "title": "App Store URLs",
+          "anchor": "urls",
+          "text": "Ready-to-paste fields Marketing URL: https://edentv.us/pages/pulsetrackr.html Support URL: https://edentv.us/docs/pulsetrackr-support.html Privacy Policy URL: https://edentv.us/docs/pulsetrackr-privacy.html User Privacy Choices URL: https://edentv.us/docs/pulsetrackr-privacy.html#choices Terms URL: https://edentv.us/docs/pulsetrackr-terms.html Use the Support URL in the platform version information section and the Privacy Policy URL in App Privacy. Marketing URL and User Privacy Choices URL can also be supplied where available."
+        },
+        {
+          "title": "Overview",
+          "anchor": "overview",
+          "text": "PulseTrackr is an iPhone community safety app for nearby incident awareness, crowd-sourced reports, map-based filtering, community verification, and trusted-contact SOS alerts. Current App Model SwiftUI app for iPhone Firebase backend for reports, anonymous authentication, storage, cloud functions, and App Check Mapbox map support with Apple map fallback surfaces in the app code Optional evidence attachments: photo and voice note No advertising, external payments, subscriptions, or in-app purchases in the current app"
+        },
+        {
+          "title": "Core Functionality",
+          "anchor": "functionality",
+          "text": "Map: View active reports near the user and inspect incident details. Feed: Browse reports inside a selected watch radius and filter by urgency or category. Report: Submit a community incident report with classification, status, location, optional photo, and optional voice note. Community signals: Mark reports as seen, not seen, unsafe, road blocked, or cleared. SOS: Add trusted contacts and activate SOS location updates to selected contacts. Settings: Manage watch radius, alert filters, report-location privacy, precise location status, and SOS contacts."
+        },
+        {
+          "title": "User-Generated Content",
+          "anchor": "content",
+          "text": "PulseTrackr includes user-generated incident reports, optional evidence, and community verification signals. Reports are intended for local safety awareness, not entertainment or public shaming. Public report fields are limited to safety-relevant incident information and approximate location when enabled. Backend rate limits reduce report and signal abuse. Public Firestore records are read-only to clients; writes go through Cloud Functions."
+        },
+        {
+          "title": "Privacy and Permissions",
+          "anchor": "privacy",
+          "text": "Location: Required for nearby reports, report submission, and SOS location updates. Contacts: Used only when importing a trusted contact for SOS. Microphone: Used only when recording an optional report voice note. Photos: Used only when choosing an optional report photo. Anonymous authentication: Used for backend authorization, rate limits, App Check, and abuse prevention. App privacy: The public privacy policy is available at the PulseTrackr privacy document."
+        },
+        {
+          "title": "Safety Positioning",
+          "anchor": "safety",
+          "text": "PulseTrackr should be reviewed as a community safety information app, not as an emergency dispatch, medical, police, or rescue service. The app clearly states that it does not automatically contact police, ambulance, fire, or emergency services. SOS alerts are sent to user-selected trusted contacts only. Users in immediate danger should contact local emergency services directly. Incident information may be unconfirmed and should be treated as community-sourced awareness."
+        },
+        {
+          "title": "Business Model",
+          "anchor": "business",
+          "text": "PulseTrackr is currently a free app with no in-app purchases, subscriptions, third-party advertising, or external payment flow."
+        },
+        {
+          "title": "Suggested Metadata",
+          "anchor": "metadata",
+          "text": "Subtitle Nearby safety alerts Promotional text See nearby community safety reports, submit incidents with optional evidence, verify updates, and alert trusted contacts with SOS location sharing. Description starter PulseTrackr helps you stay aware of safety reports near you. View active incidents on a map, adjust your watch radius, submit reports with optional photo or voice evidence, and use community signals to help others understand what is happening nearby. For personal safety, add trusted contacts and activate SOS to share exact location updates with them when needed."
+        },
+        {
+          "title": "Suggested Review Notes",
+          "anchor": "review-notes",
+          "text": "Suggested App Review note: PulseTrackr is a community safety incident reporter. The app uses location to show nearby reports and to submit reports. Users can hide exact public report location; public report pins may be offset while exact reporter coordinates are retained only for private backend workflows. Optional photo and voice evidence can be attached by the user. The SOS feature alerts user-selected trusted contacts and does not automatically contact police, ambulance, fire, or other emergency services. To test, allow location access, open the Map or Feed tabs, submit a report from the Report tab, add a trusted contact in Settings, and activate/cancel SOS from the app interface."
+        },
+        {
+          "title": "Contact",
+          "anchor": "contact",
+          "text": "For compliance or App Store review questions, contact support@edentv.us. We aim to respond within 2 business days."
+        }
+      ]
+    }
+  ]
+}
