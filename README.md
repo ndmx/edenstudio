@@ -1,6 +1,6 @@
 # EdenTV Creator Studio Website
 
-A modern, responsive website showcasing EdenTV's complete portfolio of software and media projects across all platforms, with comprehensive developer documentation and legal compliance materials.
+A modern, responsive website presenting EdenTV’s software and media work across platforms, with comprehensive developer documentation and legal compliance materials.
 
 ## 🌟 Features
 
@@ -181,7 +181,7 @@ as applicable; every product does not automatically receive every document type.
 
 ## 🎯 About EdenTV
 
-EdenTV is a design studio responsible for creating software and media across multiple platforms. Our portfolio spans iOS and Android mobile applications, full-stack web platforms, data processing tools, and educational resources. Every project showcased on this website is designed, developed, and maintained by the EdenTV team.
+EdenTV is a design studio responsible for creating software and media across multiple platforms. Our portfolio spans iOS and Android mobile applications, full-stack web platforms, data processing tools, and educational resources. Featured applications and founder experiments are described individually; their inclusion does not establish studio ownership of every brand. Alexander Ukaga’s broader project history and credited client work live at https://alexanderukaga.me/projects.
 
 ### Platform Expertise
 - **Mobile Development**: iOS (SwiftUI), Android (Kotlin), macOS
