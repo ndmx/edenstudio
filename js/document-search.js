@@ -110,7 +110,7 @@
     }
 
     function documentHref(url, anchor) {
-        if (!/^\.\.\/docs\/[a-z0-9-]+\.html$/i.test(String(url || ""))) {
+        if (!/^(?:\/docs\/[a-z0-9-]+|\.\.\/docs\/[a-z0-9-]+\.html)$/i.test(String(url || ""))) {
             return "#";
         }
         if (!anchor) {
