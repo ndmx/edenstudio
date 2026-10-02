@@ -1,0 +1,10 @@
+{
+  "name": "edentv-lumina-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"build": "esbuild main.tsx --bundle --minify --splitting --format=esm --jsx=automatic --define:process.env.NODE_ENV=\"\\\"production\\\"\" --outdir=../../assets/lumina --entry-names=showcase --chunk-names=[name]-[hash]"},
+  "dependencies": {
+    "@react-three/drei": "10.7.7", "@react-three/fiber": "9.5.0", "@react-three/postprocessing": "3.0.4", "postprocessing": "6.39.0", "react": "19.2.4", "react-dom": "19.2.4", "three": "0.183.2"
+  },
+  "devDependencies": {"esbuild": "0.28.1"}
+}

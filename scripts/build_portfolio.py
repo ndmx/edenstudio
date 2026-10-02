@@ -44,7 +44,7 @@ def card(project):
     else:
         links = [("Project overview", "https://alexanderukaga.me/projects")]
         if name == 'Lumina Codex':
-            links = [("View package", "https://www.npmjs.com/package/@xlumina/system")]
+            links = [("View showcase", "/pages/lumina"), ("View package", "https://www.npmjs.com/package/@xlumina/system")]
     actions = '<nav class="project-actions" aria-label="' + name + ' links">' + ''.join(f'<a href="{url}">{label}</a>' for label,url in links) + '</nav>'
     tag_html = "".join(f'<span class="tech-badge">{tag}</span>' for tag in tags)
     return f'<article class="project-card ds-card"><div class="project-label">{status}</div><h3>{name}</h3><p>{description}</p><div class="project-tags">{tag_html}</div>{actions}</article>'
