@@ -24,7 +24,7 @@ def refresh(path):
     html = path.read_text()
     html = re.sub(r"Developer [Dd]ocs", "Documents &amp; Support", html)
     html = re.sub(r'(class="nav-link[^"]*"[^>]*>)Documents &amp; Support', r'\1Documents', html)
-    html = re.sub(r'styles\.css\?v=[^"\s]+', 'styles.css?v=20260905', html)
+    html = re.sub(r'styles\.css\?v=[^"\s]+', 'styles.css?v=20261002', html)
     html = re.sub(r'<link\b[^>]*rel="canonical"[^>]*>\s*', '', html)
     html = re.sub(r'\s*<!-- generated site metadata -->.*?<!-- /generated site metadata -->', '', html, flags=re.S)
     url = canonical(path)
