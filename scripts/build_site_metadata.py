@@ -54,6 +54,19 @@ def refresh(path):
             product = "pulsetrackr" if path.stem.startswith("pulsetrackr") else "jxl" if path.stem.startswith("jxl") else "parkmemory"
             html = html.replace('developer-docs.html#app-docs', f'developer-docs.html#{product}-docs')
     html = re.sub(r'\s*</head>', lambda _: '\n<!-- generated site metadata -->\n' + metadata + '\n<!-- /generated site metadata -->\n</head>', html)
+    # Internal links use the canonical path; legacy .html requests remain supported.
+    from urllib.parse import urlsplit
+    import posixpath
+    def clean_link(match):
+        href = match[1]
+        u = urlsplit(href)
+        if u.scheme or u.netloc or not u.path.endswith('.html'):
+            return match[0]
+        base = '/' + path.relative_to(ROOT).parent.as_posix() + '/'
+        clean = posixpath.normpath(posixpath.join(base, u.path))
+        clean = '/' if clean == '/index.html' else clean[:-5]
+        return 'href="' + clean + ('?' + u.query if u.query else '') + ('#' + u.fragment if u.fragment else '') + '"'
+    html = re.sub(r'href="([^"]+)"', clean_link, html)
     path.write_text(html)
     return url
 

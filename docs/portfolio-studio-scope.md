@@ -30,3 +30,26 @@ listed separately from current local projects.
 Release checks: portfolio lint, TypeScript and production build; studio document
 tests and HTML checks; responsive browser checks; push and exact remote SHA
 verification before deployment; live content and link checks afterward.
+
+## iOS document and routing update — October 2, 2026
+
+Only the four featured iOS apps receive the standardized four-document set:
+PulseTrackr, ParkMemory Hub, JxL Scheduler, and Kasapa. Existing 11 documents
+retain their review dates and public addresses. Added JxL terms and four Kasapa
+pages from the local-first implementation, README, and relationship/persistence
+contracts. Kasapa is a prototype; no App Store approval, remote delivery,
+moderation service, or server-side deletion is claimed.
+
+`app_documents.py` owns app/document identities. `build_documents.py` rebuilds
+additions, cards, legal indexes, metadata, and the 16-document search index.
+Existing iOS policy bodies are preserved. New overview pages connect each app
+to its documents. Other projects receive an overview/package link rather than
+manufactured policies. No client-owned terms are created.
+
+Internal links and search results use canonical extensionless paths. `_redirects`
+provides six short URLs; root `404.html` prevents Cloudflare's SPA fallback from
+returning the homepage for unknown routes. Existing `.html` URLs remain valid.
+
+The 26 Python checks cover document completeness, links and anchors, search
+extraction, card actions, overview links, and static redirect targets. Live HTTP
+checks remain necessary to verify deployed response codes and redirects.

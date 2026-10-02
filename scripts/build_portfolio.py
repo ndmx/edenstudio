@@ -35,8 +35,19 @@ GROUPS = [
 
 def card(project):
     name, status, description, tags = project
+    from app_documents import APPS, TYPES
+    app = next(((slug, info) for slug, info in APPS.items() if info[0] == name), None)
+    if app:
+        slug, (_, anchor, _) = app
+        primary = f'/pages/{slug}'
+        links = [("View app", primary)] + [(label, f'/docs/{slug}-{kind}') for kind,label in TYPES.items()]
+    else:
+        links = [("Project overview", "https://alexanderukaga.me/projects")]
+        if name == 'Lumina Codex':
+            links = [("View package", "https://www.npmjs.com/package/@xlumina/system")]
+    actions = '<nav class="project-actions" aria-label="' + name + ' links">' + ''.join(f'<a href="{url}">{label}</a>' for label,url in links) + '</nav>'
     tag_html = "".join(f'<span class="tech-badge">{tag}</span>' for tag in tags)
-    return f'<article class="project-card ds-card"><div class="project-label">{status}</div><h3>{name}</h3><p>{description}</p><div class="project-tags">{tag_html}</div></article>'
+    return f'<article class="project-card ds-card"><div class="project-label">{status}</div><h3>{name}</h3><p>{description}</p><div class="project-tags">{tag_html}</div>{actions}</article>'
 
 sections = "".join(f'<section id="{slug}" class="section site-section category-section"><div class="container"><div class="category-header"><div><p class="eyebrow ds-eyebrow">Featured work</p><h2>{title}.</h2><p>{intro}</p></div></div><div class="project-grid">{"".join(card(p) for p in projects)}</div></div></section>' for slug, title, intro, projects in GROUPS)
 

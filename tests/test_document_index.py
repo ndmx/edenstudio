@@ -126,7 +126,7 @@ class FixtureParserTests(unittest.TestCase):
         self.assertEqual(self.doc["product"], "ParkMemory Hub")
         self.assertEqual(self.doc["type"], "privacy")
         self.assertEqual(self.doc["title"], "ParkMemory Hub Privacy Policy")
-        self.assertEqual(self.doc["url"], "../docs/parkmemory-privacy.html")
+        self.assertEqual(self.doc["url"], "/docs/parkmemory-privacy")
         self.assertEqual(self.doc["reviewed"], "2026-01-05")
 
     def test_indexes_real_sections_only(self):
@@ -168,25 +168,11 @@ class ProductDocsTests(unittest.TestCase):
         cls.documents = bdi.build_index(bdi.DOCS_DIR)
         cls.by_id = {doc["id"]: doc for doc in cls.documents}
 
-    def test_indexes_eleven_product_documents(self):
-        self.assertEqual(len(self.paths), 11)
-        self.assertEqual(len(self.documents), 11)
-        self.assertEqual(
-            {path.name for path in self.paths},
-            {
-                "jxl-scheduler-compliance.html",
-                "jxl-scheduler-privacy.html",
-                "jxl-scheduler-support.html",
-                "parkmemory-compliance.html",
-                "parkmemory-privacy.html",
-                "parkmemory-support.html",
-                "parkmemory-terms.html",
-                "pulsetrackr-compliance.html",
-                "pulsetrackr-privacy.html",
-                "pulsetrackr-support.html",
-                "pulsetrackr-terms.html",
-            },
-        )
+    def test_every_ios_app_has_four_documents(self):
+        from app_documents import APPS, TYPES
+        expected = {f'{slug}-{kind}.html' for slug in APPS for kind in TYPES}
+        self.assertEqual({p.name for p in self.paths}, expected)
+        self.assertEqual(len(self.documents), 16)
 
     def test_does_not_index_legal_routing_files(self):
         legal_names = {path.name for path in bdi.LEGAL_DIR.glob("*.html")}
@@ -202,7 +188,7 @@ class ProductDocsTests(unittest.TestCase):
             self.assertIn(doc["product"], set(bdi.PRODUCT_NAMES.values()))
             self.assertIn(doc["type"], bdi.DOCUMENT_TYPES)
             self.assertTrue(doc["title"])
-            self.assertEqual(doc["url"], f"../docs/{doc['id']}.html")
+            self.assertEqual(doc["url"], f"/docs/{doc['id']}")
             self.assertRegex(doc["reviewed"], r"^20\d{2}-\d{2}-\d{2}$")
             self.assertTrue(doc["sections"])
             for section in doc["sections"]:

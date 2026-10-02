@@ -1789,3 +1789,12 @@ section,
         transition-duration: 0.01ms !important;
     }
 }
+
+.project-actions { display:flex; flex-wrap:wrap; gap:.65rem 1rem; margin-top:1.2rem; }
+.project-actions a { text-decoration:underline; text-underline-offset:3px; padding:.35rem 0; }
+.project-actions a:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
+.app-document { max-width:850px; padding:2rem 1.25rem 4rem; }
+.app-document header { margin:2rem 0; }
+.app-document h1 { font-size:clamp(2rem,5vw,3.3rem); }
+.app-document .doc-section { margin:2rem 0; }
+.app-document p { line-height:1.75; }

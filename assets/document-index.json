@@ -1,11 +1,166 @@
 {
   "documents": [
     {
+      "id": "kasapa-privacy",
+      "product": "Kasapa",
+      "type": "privacy",
+      "title": "Kasapa Privacy",
+      "url": "/docs/kasapa-privacy",
+      "reviewed": "2026-10-02",
+      "sections": [
+        {
+          "title": "Current prototype",
+          "anchor": "scope",
+          "text": "This notice describes Kasapa’s Milestone 3 on-device prototype. It has no network backend or account server. Names, connections, and conversations in the prototype are local application records; they are not a live professional network."
+        },
+        {
+          "title": "Information stored on the device",
+          "anchor": "data",
+          "text": "The app stores profile and business details, cards, connection states, exact sharing grants, local messages and conversation metadata, reports, and action history. The persistence layer writes a JSON snapshot in the app’s Application Support storage."
+        },
+        {
+          "title": "How sharing works",
+          "anchor": "sharing",
+          "text": "Discovery searches public name, headline, company, and discoverable tags. Private fields and individual cards require a connected relationship and the corresponding directional grant. These controls govern visibility within the local prototype; accepting a connection does not transmit data to a remote person."
+        },
+        {
+          "title": "Your controls and retention",
+          "anchor": "controls",
+          "text": "You can edit profiles and cards, change sharing grants, remove connections, block peers, and delete a local conversation thread. Blocking revokes grants and hides conversations but retains messages and local report/action history. Unblocking does not restore the connection or its grants. The reviewed implementation does not establish a timed automatic deletion schedule."
+        },
+        {
+          "title": "Services and support contact",
+          "anchor": "services",
+          "text": "The reviewed prototype uses on-device persistence and no third-party packages. This notice does not make a claim about Apple’s device backup services. If you email support, the information you choose to send is handled through email, separately from app storage. Send only what is needed to explain the issue."
+        },
+        {
+          "title": "Privacy questions",
+          "anchor": "contact",
+          "text": "Contact privacy@edentv.us with the Kasapa version and a description of your question. EdenTV cannot remotely retrieve or erase records from this local-only prototype. Avoid sending private messages, contact lists, or credentials."
+        }
+      ]
+    },
+    {
+      "id": "kasapa-terms",
+      "product": "Kasapa",
+      "type": "terms",
+      "title": "Kasapa Terms",
+      "url": "/docs/kasapa-terms",
+      "reviewed": "2026-10-02",
+      "sections": [
+        {
+          "title": "Prototype terms",
+          "anchor": "scope",
+          "text": "Kasapa is an experimental, on-device professional-networking interface. It is not a live messaging service, identity-verification service, or directory of real people. Use sample information when exploring it."
+        },
+        {
+          "title": "Acceptable use",
+          "anchor": "conduct",
+          "text": "Only enter information you are authorized to use. Do not impersonate others, harass people, or use the prototype to store or distribute unlawful material. Local block and report controls do not contact a remote moderation team."
+        },
+        {
+          "title": "Your content and software rights",
+          "anchor": "content",
+          "text": "You retain rights in the content you enter. Using the prototype does not transfer ownership of its software or branding. Granting local profile access is a visibility choice, not a transfer of content ownership."
+        },
+        {
+          "title": "Limitations",
+          "anchor": "limits",
+          "text": "Messages, connection requests, and reports stay within the local application model. They are not delivered to another device. Experimental changes may affect stored data; keep important information elsewhere. No uninterrupted availability, remote delivery, or recovery service is promised."
+        },
+        {
+          "title": "Help and terms questions",
+          "anchor": "contact",
+          "text": "Contact support@edentv.us for prototype help or legal@edentv.us for questions about these terms. These terms do not remove rights that cannot be excluded by applicable law."
+        }
+      ]
+    },
+    {
+      "id": "kasapa-support",
+      "product": "Kasapa",
+      "type": "support",
+      "title": "Kasapa Support",
+      "url": "/docs/kasapa-support",
+      "reviewed": "2026-10-02",
+      "sections": [
+        {
+          "title": "Getting started",
+          "anchor": "getting-started",
+          "text": "Use the supplied prototype build and complete the local profile flow. Discover, Network, Messages, and Profile operate on the local data model. An internet connection does not turn the prototype into a multi-device network."
+        },
+        {
+          "title": "Connections and sharing",
+          "anchor": "sharing",
+          "text": "Accept an incoming request to create a connection, then check exactly which fields or cards are shared. Sharing is directional: sharing your own field does not reveal another profile’s private field. A missing private detail may mean no matching grant exists."
+        },
+        {
+          "title": "Messages",
+          "anchor": "messaging",
+          "text": "Open Messages or a connected profile to compose. Messaging requires a connected relationship. Messages are local records, not remotely delivered messages or read receipts. Deleting a thread requires confirmation."
+        },
+        {
+          "title": "Blocking and reports",
+          "anchor": "blocking",
+          "text": "Manage blocked peers from Profile → Blocked accounts. Blocking removes both-direction grants and hides the peer from ordinary lists. Unblocking returns the relationship to neutral; reconnect and review grants explicitly. Reports are stored locally and are not submitted to a moderation service."
+        },
+        {
+          "title": "Troubleshooting",
+          "anchor": "troubleshooting",
+          "text": "If expected information is absent, check the connection state and sharing grants first. Record the version, device/OS, action taken, and visible error. Preserve important data before reinstalling or replacing a prototype build; do not assume a server copy exists."
+        },
+        {
+          "title": "Contact support",
+          "anchor": "contact",
+          "text": "Email support@edentv.us with Kasapa in the subject and steps to reproduce the issue. Redact private profile fields and messages from screenshots. Never send credentials."
+        }
+      ]
+    },
+    {
+      "id": "kasapa-compliance",
+      "product": "Kasapa",
+      "type": "compliance",
+      "title": "Kasapa App Store review",
+      "url": "/docs/kasapa-compliance",
+      "reviewed": "2026-10-02",
+      "sections": [
+        {
+          "title": "Review status",
+          "anchor": "status",
+          "text": "These are preparation notes for Kasapa’s Milestone 3 prototype, not a statement of App Store submission, approval, or compliance certification. Distribution readiness must be assessed against the actual submitted build."
+        },
+        {
+          "title": "Current behavior",
+          "anchor": "architecture",
+          "text": "The reviewed app is a native SwiftUI prototype with local JSON persistence, no network backend, no account server, and no third-party packages. Profile sharing, messaging, block/report, and action history operate locally."
+        },
+        {
+          "title": "Suggested review flow",
+          "anchor": "review-flow",
+          "text": "Complete local onboarding; inspect Discover; send and accept an eligible incoming connection; change an exact field/card grant; open a connected conversation; delete a thread; block and unblock a peer. Confirm that unblocking restores neither grants nor the former connection."
+        },
+        {
+          "title": "Safety and messaging boundaries",
+          "anchor": "safety",
+          "text": "Local reports do not reach a human moderation service. Messages have no remote delivery or read receipts. A production social service would need separate assessment of moderation, abuse handling, account lifecycle, and data disclosures before release."
+        },
+        {
+          "title": "Before submission",
+          "anchor": "submission",
+          "text": "Check the release build’s permissions, bundled SDKs, privacy disclosures, screenshots, support URLs, and any account/deletion flows. Review these notes whenever networking or third-party services are added; do not reuse the local-only description for a changed architecture."
+        },
+        {
+          "title": "Review contact",
+          "anchor": "contact",
+          "text": "For build-specific questions contact support@edentv.us. State the build number and review step. This public page contains no reviewer credentials."
+        }
+      ]
+    },
+    {
       "id": "parkmemory-privacy",
       "product": "ParkMemory Hub",
       "type": "privacy",
       "title": "ParkMemory Hub Privacy Policy",
-      "url": "../docs/parkmemory-privacy.html",
+      "url": "/docs/parkmemory-privacy",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -65,7 +220,7 @@
       "product": "ParkMemory Hub",
       "type": "terms",
       "title": "ParkMemory Hub Terms of Service",
-      "url": "../docs/parkmemory-terms.html",
+      "url": "/docs/parkmemory-terms",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -110,7 +265,7 @@
       "product": "ParkMemory Hub",
       "type": "support",
       "title": "ParkMemory Hub Support",
-      "url": "../docs/parkmemory-support.html",
+      "url": "/docs/parkmemory-support",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -160,7 +315,7 @@
       "product": "ParkMemory Hub",
       "type": "compliance",
       "title": "ParkMemory Hub App Store Compliance",
-      "url": "../docs/parkmemory-compliance.html",
+      "url": "/docs/parkmemory-compliance",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -210,7 +365,7 @@
       "product": "JxL Scheduler",
       "type": "privacy",
       "title": "JxL Scheduler Privacy Policy",
-      "url": "../docs/jxl-scheduler-privacy.html",
+      "url": "/docs/jxl-scheduler-privacy",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -266,11 +421,51 @@
       ]
     },
     {
+      "id": "jxl-scheduler-terms",
+      "product": "JxL Scheduler",
+      "type": "terms",
+      "title": "JxL Scheduler Terms",
+      "url": "/docs/jxl-scheduler-terms",
+      "reviewed": "2026-10-02",
+      "sections": [
+        {
+          "title": "Use and scope",
+          "anchor": "scope",
+          "text": "JxL Scheduler helps you organize schedules, routes, messages, and uploads on your device, with optional group sharing through iCloud. These terms apply to that application, not to an employer’s scheduling or employment agreement."
+        },
+        {
+          "title": "Your responsibilities",
+          "anchor": "responsibilities",
+          "text": "Use the app lawfully and only share material you are entitled to share. Obtain permission before sharing another person’s location, messages, or documents. Do not use shared groups to harass others or access information without authorization."
+        },
+        {
+          "title": "Shared information",
+          "anchor": "sharing",
+          "text": "You retain your rights in content you create. Inviting people to an iCloud group makes shared content available to those participants. Review group membership and permissions before sharing sensitive information. Removing access cannot recall copies someone has already made."
+        },
+        {
+          "title": "Availability and operational decisions",
+          "anchor": "availability",
+          "text": "Device storage, permissions, connectivity, and iCloud availability affect the experience. Confirm important schedules and routes independently; do not rely on the app for emergency response. Keep separate copies of records needed for your operations. These terms do not promise uninterrupted service or a particular delivery time."
+        },
+        {
+          "title": "Software and third-party services",
+          "anchor": "rights",
+          "text": "The app’s availability does not transfer ownership of its software or branding. Apple’s applicable iCloud and distribution terms also apply to those services. Nothing on this page limits rights that cannot be excluded under applicable law."
+        },
+        {
+          "title": "Questions",
+          "anchor": "contact",
+          "text": "For application help, contact support@edentv.us. For questions about these terms, contact legal@edentv.us. Include the app name and version, but not private schedules or credentials."
+        }
+      ]
+    },
+    {
       "id": "jxl-scheduler-support",
       "product": "JxL Scheduler",
       "type": "support",
       "title": "JxL Scheduler Support",
-      "url": "../docs/jxl-scheduler-support.html",
+      "url": "/docs/jxl-scheduler-support",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -320,7 +515,7 @@
       "product": "JxL Scheduler",
       "type": "compliance",
       "title": "JxL Scheduler App Store Compliance",
-      "url": "../docs/jxl-scheduler-compliance.html",
+      "url": "/docs/jxl-scheduler-compliance",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -370,7 +565,7 @@
       "product": "PulseTrackr",
       "type": "privacy",
       "title": "PulseTrackr Privacy Policy",
-      "url": "../docs/pulsetrackr-privacy.html",
+      "url": "/docs/pulsetrackr-privacy",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -435,7 +630,7 @@
       "product": "PulseTrackr",
       "type": "terms",
       "title": "PulseTrackr Terms of Service",
-      "url": "../docs/pulsetrackr-terms.html",
+      "url": "/docs/pulsetrackr-terms",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -490,7 +685,7 @@
       "product": "PulseTrackr",
       "type": "support",
       "title": "PulseTrackr Support",
-      "url": "../docs/pulsetrackr-support.html",
+      "url": "/docs/pulsetrackr-support",
       "reviewed": "2026-08-23",
       "sections": [
         {
@@ -540,7 +735,7 @@
       "product": "PulseTrackr",
       "type": "compliance",
       "title": "PulseTrackr App Store Compliance",
-      "url": "../docs/pulsetrackr-compliance.html",
+      "url": "/docs/pulsetrackr-compliance",
       "reviewed": "2026-08-23",
       "sections": [
         {

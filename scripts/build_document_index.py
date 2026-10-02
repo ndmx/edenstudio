@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a lightweight search index from product documents in docs/.
 
-Reads the 11 product HTML files, extracts real section anchors with
+Reads the supported iOS product HTML files, extracts real section anchors with
 html.parser, and writes assets/document-index.json for the documents hub.
 Excludes legal routing indexes and page chrome (nav, footer, TOC, quick
 links, sidebar). Does not invent anchors that are absent from the HTML.
@@ -23,6 +23,7 @@ OUTPUT_PATH = ROOT / "assets" / "document-index.json"
 
 DOCUMENT_TYPES = ("privacy", "terms", "support", "compliance")
 PRODUCT_NAMES = {
+    "kasapa": "Kasapa",
     "parkmemory": "ParkMemory Hub",
     "jxl-scheduler": "JxL Scheduler",
     "pulsetrackr": "PulseTrackr",
@@ -271,7 +272,7 @@ def parse_document(html: str, filename: str) -> dict | None:
         "product": product,
         "type": doc_type,
         "title": parser.title,
-        "url": f"../docs/{Path(filename).name}",
+        "url": f"/docs/{Path(filename).stem}",
         "reviewed": parser.reviewed,
         "sections": parser.sections,
     }

@@ -51,6 +51,8 @@ class DocumentSiteTests(unittest.TestCase):
                 target = (ROOT / url.path.lstrip('/') if url.path.startswith('/') else path.parent / unquote(url.path)).resolve() if url.path else path
                 if target.is_dir():
                     target /= 'index.html'
+                if not target.is_file() and not target.suffix:
+                    target = target.with_suffix('.html')
                 with self.subTest(page=path.name, href=href):
                     self.assertTrue(target.is_file(), str(target))
                     if url.fragment and target.is_file() and target.suffix == '.html':
@@ -74,8 +76,9 @@ class DocumentSiteTests(unittest.TestCase):
             self.assertEqual(len(blocks), 1, path.name)
             graph = json.loads(blocks[0])['@graph']
             if path.parent.name == 'docs':
-                self.assertEqual(graph[0]['lastReviewed'], '2026-08-23')
-                self.assertIn('<time datetime="2026-08-23">August 23, 2026</time>', text)
+                date = graph[0]['lastReviewed']
+                self.assertRegex(date, r'^2026-\d{2}-\d{2}$')
+                self.assertIn(f'<time datetime="{date}">', text)
             self.assertNotIn('dateModified', graph[0])
 
     def test_search_preserves_block_boundaries_and_inline_words(self):
